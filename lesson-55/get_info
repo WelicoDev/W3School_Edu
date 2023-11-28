@@ -1,0 +1,40 @@
+Misol
+"Model" elementining qiymatini oling:
+
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+x = car.get("model")
+
+print(x)
+
+
+////////////////////////////////////////////
+
+Ta'rifi va qo'llanilishi
+Usul get()belgilangan kalit bilan elementning qiymatini qaytaradi.
+
+Sintaksis
+dictionary.get(keyname, value)
+Parametr qiymatlari
+Parameter	Description
+keyname	Required. The keyname of the item you want to return the value from
+value	Optional. A value to return if the specified key does not exist.
+Default value None
+
+
+Misol
+Mavjud bo'lmagan elementning qiymatini qaytarishga harakat qiling:
+
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+x = car.get("price", 15000)
+
+print(x)

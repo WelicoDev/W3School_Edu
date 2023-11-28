@@ -1,0 +1,39 @@
+"Banan" so'zini qidiring va uchta elementdan iborat to'plamni qaytaring:
+
+1 - "o'yin" dan oldingi hamma narsa
+2 - "o'yin"
+3 - "o'yin" dan keyin hamma narsa
+
+txt = "I could eat bananas all day"
+
+x = txt.partition("bananas")
+
+print(x)
+
+Ta'rifi va qo'llanilishi
+Usul partition()belgilangan qatorni qidiradi va satrni uchta elementdan iborat kortejga ajratadi.
+
+Birinchi element belgilangan qatordan oldingi qismni o'z ichiga oladi.
+
+Ikkinchi element belgilangan qatorni o'z ichiga oladi.
+
+Uchinchi element qatordan keyingi qismni o'z ichiga oladi.
+
+Eslatma: Ushbu usul ko'rsatilgan satrning birinchi paydo bo'lishini qidiradi .
+
+Sintaksis
+string.partition(value)
+Parametr qiymatlari
+Parameter	Description
+value	---- Required. The string to search for
+
+
+Misol
+Belgilangan qiymat topilmasa, partition() usuli quyidagilarni o'z ichiga olgan kortejni qaytaradi: 1 - butun qator, 2 - bo'sh qator, 3 - bo'sh qator:
+
+txt = "I could eat bananas all day"
+
+x = txt.partition("apples")
+
+print(x)
+

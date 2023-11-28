@@ -1,0 +1,127 @@
+Python modullari
+Modul nima?
+Modulni kod kutubxonasi bilan bir xil deb hisoblang.
+
+Ilovangizga kiritmoqchi bo'lgan funktsiyalar to'plamini o'z ichiga olgan fayl.
+
+Modul yaratish
+Modul yaratish uchun kerakli kodni fayl kengaytmali faylga saqlash kifoya .py:
+
+Misol
+Ushbu kodni nomli faylga saqlangmymodule.py
+
+def greeting(name):
+  print("Hello, " + name)
+
+
+////////////////////////////////////////////////
+
+Moduldan foydalaning
+Endi biz yaratgan moduldan quyidagi importbayonot yordamida foydalanishimiz mumkin:
+
+Misol
+mymodule nomli modulni import qiling va salomlashish funksiyasini chaqiring:
+
+import mymodule
+
+mymodule.greeting("Jonathan")
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Eslatma: Moduldan funksiyadan foydalanganda sintaksisdan foydalaning: modul_name.function_name .
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Moduldagi o'zgaruvchilar
+Modulda yuqorida ta'riflanganidek funksiyalar, shuningdek, barcha turdagi o'zgaruvchilar (massivlar, lug'atlar, ob'ektlar va boshqalar) bo'lishi mumkin:
+
+Misol
+Ushbu kodni faylga saqlangmymodule.py
+
+person1 = {
+  "name": "John",
+  "age": 36,
+  "country": "Norway"
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Modulga nom berish
+Siz modul faylini xohlaganingizcha nomlashingiz mumkin, lekin u fayl kengaytmasiga ega bo'lishi kerak .py
+
+
+Modulni qayta nomlash
+Kalit so'zdan foydalanib, modulni import qilganingizda taxallus yaratishingiz mumkin as:
+
+Misol
+mymodulechaqirilgan uchun taxallus yarating mx:
+
+import mymodule as mx
+
+a = mx.person1["age"]
+print(a)
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+O'rnatilgan modullar
+Python-da bir nechta o'rnatilgan modullar mavjud bo'lib, ularni xohlagan vaqtda import qilishingiz mumkin.
+
+Misol
+Modulni import qiling va foydalaning platform:
+
+import platform
+
+x = platform.system()
+print(x)
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+dir() funksiyasidan foydalanish
+Moduldagi barcha funksiya nomlarini (yoki o'zgaruvchilar nomlarini) ro'yxatga olish uchun o'rnatilgan funksiya mavjud. Funktsiya dir():
+
+Misol
+Platforma moduliga tegishli barcha belgilangan nomlarni sanab o'ting:
+
+import platform
+
+x = dir(platform)
+print(x)
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Eslatma: dir() funktsiyasi barcha modullarda, shuningdek o'zingiz yaratgan modullarda ishlatilishi mumkin.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Moduldan import qilish
+Kalit so'zdan foydalanib, moduldan faqat qismlarni import qilishni tanlashingiz mumkin from.
+
+Misol
+Nomlangan modul mymodulebitta funktsiyaga va bitta lug'atga ega:
+
+def greeting(name):
+  print("Hello, " + name)
+
+person1 = {
+  "name": "John",
+  "age": 36,
+  "country": "Norway"
+}
+
+/////////////////////////////////////////////////////
+
+Misol
+Moduldan faqat person1 lug'atini import qiling:
+
+from mymodule import person1
+
+print (person1["age"])
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Eslatma: Kalit so'z yordamida import qilayotganda from , moduldagi elementlarga murojaat qilganda modul nomidan foydalanmang. Misol: person1["age"], emas mymodule.person1["age"]
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+

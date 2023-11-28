@@ -1,0 +1,224 @@
+Python funktsiyalari
+Funktsiya kod bloki bo'lib, u faqat chaqirilganda ishlaydi.
+
+Siz parametrlar sifatida ma'lum bo'lgan ma'lumotlarni funktsiyaga o'tkazishingiz mumkin.
+
+Funktsiya natijada ma'lumotlarni qaytarishi mumkin.
+
+Funktsiyani yaratish
+Pythonda funksiya def kalit so'zi yordamida aniqlanadi :
+
+
+Misol
+def my_function():
+  print("Hello from a function")
+
+
+///////////////////////////////////////////////////////////
+
+Funktsiyani chaqirish
+Funktsiyani chaqirish uchun funktsiya nomidan keyin qavsdan foydalaning:
+
+Misol
+def my_function():
+  print("Hello from a function")
+
+my_function()
+
+///////////////////////////////////////////////////////////////
+
+Argumentlar
+Axborot funksiyalarga argument sifatida uzatilishi mumkin.
+
+Argumentlar funksiya nomidan keyin qavslar ichida ko'rsatiladi. Siz xohlagancha argumentlar qo'shishingiz mumkin, ularni vergul bilan ajratib qo'ying.
+
+Quyidagi misolda bitta argument (fname) bilan funksiya mavjud. Funktsiya chaqirilganda, biz to'liq ismni chop etish uchun funktsiya ichida ishlatiladigan ismni o'tkazamiz:
+
+Misol
+def my_function(fname):
+  print(fname + " Refsnes")
+
+my_function("Emil")
+my_function("Tobias")
+my_function("Linus")
+
+
+///////////////////////////////////////////////////////////////////
+
+Argumentlar ko'pincha Python hujjatlarida argsga qisqartiriladi .
+
+/////////////////////////////////////////////////////////////////////
+
+Parametrlar yoki argumentlar?
+Parametr va argument atamalari bir xil narsa uchun ishlatilishi mumkin: funktsiyaga uzatiladigan ma'lumotlar.
+
+Funktsiya nuqtai nazaridan:
+
+Parametr funksiya taʼrifida qavslar ichida koʻrsatilgan oʻzgaruvchidir.
+
+Argument bu funksiya chaqirilganda unga yuboriladigan qiymatdir.
+
+//////////////////////////////////////////////////////////////////////////
+
+
+Argumentlar soni
+Odatiy bo'lib, funktsiya to'g'ri argumentlar soni bilan chaqirilishi kerak. Ya'ni, agar sizning funktsiyangiz 2 ta argumentni kutsa, siz funktsiyani 2 ta argument bilan chaqirishingiz kerak, ko'p emas va kam emas.
+
+Misol
+Bu funksiya 2 ta argumentni kutadi va 2 ta argumentni oladi:
+
+def my_function(fname, lname):
+  print(fname + " " + lname)
+
+my_function("Emil", "Refsnes")
+
+
+//////////////////////////////////////////////////////////////////////////////////
+!ERROR
+
+Agar siz funktsiyani 1 yoki 3 ta argument bilan chaqirmoqchi bo'lsangiz, siz xatoga duch kelasiz:
+Misol
+Bu funksiya 2 ta argumentni kutadi, lekin faqat 1 tasini oladi:
+
+def my_function(fname, lname):
+  print(fname + " " + lname)
+
+my_function("Emil")
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+Ixtiyoriy dalillar, *args
+Agar funktsiyangizga qancha argument o'tkazilishini bilmasangiz, *funktsiya ta'rifida parametr nomidan oldin a qo'shing.
+
+Shunday qilib, funktsiya bir qator argumentlarni oladi va mos ravishda elementlarga kirishi mumkin:
+
+Misol
+Agar argumentlar soni noma'lum bo'lsa, *parametr nomidan oldin a qo'shing:
+
+def my_function(*kids):
+  print("The youngest child is " + kids[2])
+
+my_function("Emil", "Tobias", "Linus")
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+Python hujjatlarida o'zboshimchalik bilan argumentlar ko'pincha *args ga qisqartiriladi .
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+Kalit so'z argumentlari
+Siz argumentlarni kalit = qiymat sintaksisi bilan ham yuborishingiz mumkin .
+
+Shunday qilib, argumentlar tartibi muhim emas.
+
+Misol
+def my_function(child3, child2, child1):
+  print("The youngest child is " + child3)
+
+my_function(child1 = "Emil", child2 = "Tobias", child3 = "Linus")
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+Kalit so'z argumentlari iborasi ko'pincha Python hujjatlarida kwargs qisqartiriladi .
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+Ixtiyoriy kalit so'z argumentlari, **kwargs
+Agar funktsiyangizga qancha kalit so'z argumentlari o'tkazilishini bilmasangiz, ikkita yulduzcha qo'shing: **funktsiya ta'rifidagi parametr nomidan oldin.
+
+Shunday qilib, funktsiya argumentlar lug'atini oladi va shunga mos ravishda elementlarga kirishi mumkin:
+
+Misol
+Agar kalit so'z argumentlari soni noma'lum bo'lsa, **parametr nomidan oldin ikkita qo'shing:
+
+def my_function(**kid):
+  print("His last name is " + kid["lname"])
+
+my_function(fname = "Tobias", lname = "Refsnes")
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+Python hujjatlarida ixtiyoriy Kword argumentlari ko'pincha **kwargs qisqartiriladi .
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+Standart parametr qiymati
+Quyidagi misol standart parametr qiymatidan qanday foydalanishni ko'rsatadi.
+
+Agar funktsiyani argumentsiz chaqirsak, u standart qiymatdan foydalanadi:
+
+Misol
+def my_function(country = "Norway"):
+  print("I am from " + country)
+
+my_function("Sweden")
+my_function("India")
+my_function()
+my_function("Brazil")
+
+/////////////////////////////////////////////////////////////////////////////////
+
+Ro'yxatni argument sifatida o'tkazish
+Har qanday turdagi argumentlarni funksiyaga yuborishingiz mumkin (satr, raqam, roʻyxat, lugʻat va h.k.) va u funksiya ichida bir xil maʼlumotlar turi sifatida koʻrib chiqiladi.
+
+Misol uchun, agar siz Ro'yxatni argument sifatida yuborsangiz, u funktsiyaga kelganda ham Ro'yxat bo'lib qoladi:
+
+Misol
+def my_function(food):
+  for x in food:
+    print(x)
+
+fruits = ["apple", "banana", "cherry"]
+
+my_function(fruits)
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+Qaytish qiymatlari
+Funktsiyaga qiymat qaytarishiga ruxsat berish uchun quyidagi return bayonotdan foydalaning:
+
+Misol
+def my_function(x):
+  return 5 * x
+
+print(my_function(3))
+print(my_function(5))
+print(my_function(9))
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
+O'tish bayonoti
+functionta'riflar bo'sh bo'lishi mumkin emas, lekin agar sizda biron sababga ko'ra functionmazmunsiz ta'rif mavjud bo'lsa, passxatolikka yo'l qo'ymaslik uchun bayonotni kiriting.
+
+Misol
+def myfunction():
+  pass
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+Rekursiya
+Python funksiya rekursiyasini ham qabul qiladi, ya'ni belgilangan funksiya o'zini chaqira oladi.
+
+Rekursiya umumiy matematik va dasturlash tushunchasidir. Bu funktsiya o'zini chaqirishini anglatadi. Buning afzalligi shundaki, natijaga erishish uchun ma'lumotlar orqali aylanishingiz mumkin.
+
+Ishlab chiquvchi rekursiya bilan juda ehtiyot bo'lishi kerak, chunki hech qachon tugamaydigan yoki ortiqcha xotira yoki protsessor quvvatini ishlatadigan funktsiyani yozish juda oson bo'lishi mumkin. Biroq, to'g'ri yozilsa, rekursiya dasturlashda juda samarali va matematik jihatdan oqlangan yondashuv bo'lishi mumkin.
+
+Ushbu misolda tri_recursion() funksiyasi biz o'zini chaqirish uchun belgilagan (“recurse”). Biz k o'zgaruvchisidan ma'lumot sifatida foydalanamiz , bu har safar takrorlanganda ( -1 ) kamayadi. Rekursiya shart 0 dan katta bo'lmaganda (ya'ni 0 bo'lganda) tugaydi.
+
+Yangi ishlab chiquvchi uchun bu aniq qanday ishlashini aniqlash biroz vaqt talab qilishi mumkin, buni aniqlashning eng yaxshi usuli uni sinab ko'rish va o'zgartirishdir.
+
+Misol
+Rekursiyaga misol
+
+def tri_recursion(k):
+  if(k > 0):
+    result = k + tri_recursion(k - 1)
+    print(result)
+  else:
+    result = 0
+  return result
+
+print("\n\nRecursion Example Results")
+tri_recursion(6)

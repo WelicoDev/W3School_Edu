@@ -1,0 +1,28 @@
+Python print()funktsiyasi ko'pincha o'zgaruvchilarni chiqarish uchun ishlatiladi.
+
+Misol
+ ** x = "Python is awesome"
+ ** print(x)
+
+Funktsiyada print()siz vergul bilan ajratilgan bir nechta o'zgaruvchilarni chiqarasiz:
+
+Misol
+ ** x = "Python"
+ ** y = "is"
+ ** z = "awesome"
+ ** print(x, y, z)
+
++Operatordan bir nechta o'zgaruvchilarni chiqarish uchun ham foydalanishingiz mumkin :
+
+Misol
+ ** x = "Python "
+ ** y = "is "
+ ** z = "awesome"
+ ** print(x + y + z)
+
+Raqamlar uchun +belgi matematik operator sifatida ishlaydi:
+
+Misol
+x = 5
+y = 10
+print(x + y)

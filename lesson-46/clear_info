@@ -1,0 +1,20 @@
+Misol
+To'plamdan barcha elementlarni olib tashlang fruits:
+
+fruits = {"apple", "banana", "cherry"}
+
+fruits.clear()
+
+print(fruits)
+
+
+
+/////////////////////////////////////////////////////////
+
+Ta'rifi va qo'llanilishi
+Usul clear()to'plamdagi barcha elementlarni olib tashlaydi.
+
+Sintaksis
+set.clear()
+Parametr qiymatlari
+Parametrlar yo'q

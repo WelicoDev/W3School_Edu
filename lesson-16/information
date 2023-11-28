@@ -1,0 +1,18 @@
+Satrlarni birlashtirish
+Ikki qatorni birlashtirish yoki birlashtirish uchun siz + operatoridan foydalanishingiz mumkin.
+
+Misol
+aO'zgaruvchini bo'zgaruvchiga birlashtiring c:
+
+a = "Hello"
+b = "World"
+c = a + b
+print(c)
+
+Misol
+Ularning orasiga bo'sh joy qo'shish uchun quyidagini qo'shing " ":
+
+a = "Hello"
+b = "World"
+c = a + " " + b
+print(c)

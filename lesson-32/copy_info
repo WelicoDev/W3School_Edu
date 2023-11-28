@@ -1,0 +1,21 @@
+Misol
+
+Ro'yxatni nusxalash fruits:
+
+fruits = ['apple', 'banana', 'cherry', 'orange']
+
+x = fruits.copy()
+
+print(x)
+
+///////////////////////////////////////////////////////
+
+Ta'rifi va qo'llanilishi
+Usul copy()belgilangan ro'yxatning nusxasini qaytaradi.
+
+Sintaksis
+list.copy()
+Parametr qiymatlari
+Parametrlar yoʻq
+
+

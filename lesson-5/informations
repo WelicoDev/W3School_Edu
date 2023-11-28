@@ -1,0 +1,54 @@
+Varia b l e s
+O'zgaruvchilar ma'lumotlar qiymatlarini saqlash uchun konteynerlardir.
+
+O'zgaruvchilar yaratish
+Pythonda o'zgaruvchini e'lon qilish buyrug'i yo'q.
+
+O'zgaruvchi unga birinchi marta qiymat bergan paytda yaratiladi.
+
+
+x = 5
+y = "John"
+print(x)
+print(y)
+
+O'zgaruvchilarni ma'lum bir turdagi bilan e'lon qilish shart emas va ular o'rnatilgandan keyin ham turini o'zgartirishi mumkin.
+
+Misol
+x = 4       # x is of type int
+x = "Sally" # x is now of type str
+print(x)
+
+Agar siz o'zgaruvchining ma'lumotlar turini belgilamoqchi bo'lsangiz, bu casting yordamida amalga oshirilishi mumkin.
+
+Misol
+x = str(3)    # x will be '3'
+y = int(3)    # y will be 3
+z = float(3)  # z will be 3.0
+
+Turni oling
+Funktsiya yordamida o'zgaruvchining ma'lumotlar turini olishingiz mumkin type().
+
+Misol
+x = 5
+y = "John"
+print(type(x))
+print(type(y))
+
+Bitta yoki ikkita tirnoq?
+Satr o'zgaruvchilari bitta yoki ikkita tirnoq yordamida e'lon qilinishi mumkin:
+
+Misol
+x = "John"
+# is the same as
+x = 'John'
+
+Harflar katta-kichikligiga sezgir
+O'zgaruvchilar nomlari katta-kichik harflarga sezgir.
+
+Misol
+Bu ikkita o'zgaruvchini yaratadi:
+
+a = 4
+A = "Sally"
+#A will not overwrite a

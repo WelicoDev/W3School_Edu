@@ -1,0 +1,78 @@
+Python Datetime
+
+Python sanalari
+
+Python'da sana o'ziga xos ma'lumotlar turi emas, lekin biz sana ob'ektlari sifatida sanalar bilan ishlash uchun nomlangan modulni import qilishimiz mumkin datetime.
+
+Misol
+
+Datetime modulini import qiling va joriy sanani ko'rsating:
+
+import datetime
+
+x = datetime.datetime.now()
+print(x)
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Chiqish sanasi
+Yuqoridagi misoldagi kodni bajarganimizda, natija quyidagicha bo'ladi:
+
+2023-11-19 13:49:43.220410
+Sana yil, oy, kun, soat, daqiqa, soniya va mikrosoniyani o'z ichiga oladi.
+
+//////////////////////////////////////////////////////////////////////////////
+
+
+Modulda datetimesana ob'ekti haqidagi ma'lumotlarni qaytarishning ko'plab usullari mavjud.
+
+Mana bir nechta misollar, ular haqida keyinroq ushbu bobda bilib olasiz:
+
+////////////////////////////////////////////////////////////////////////
+
+Misol
+Ish kunining yili va nomini qaytaring:
+
+import datetime
+
+x = datetime.datetime.now()
+
+print(x.year)
+print(x.strftime("%A"))
+
+
+///////////////////////////////////////////////////////////////////////
+
+Sana obyektlarini yaratish
+Sana yaratish uchun modul datetime()sinfidan (konstruktor) foydalanishimiz mumkin datetime.
+
+datetime()Sana yaratish uchun sinf uchta parametrni talab qiladi: yil, oy, kun .
+
+Misol
+Sana ob'ektini yarating:
+
+import datetime
+
+x = datetime.datetime(2020, 5, 17)
+
+print(x)
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Sinf datetime(), shuningdek, vaqt va vaqt mintaqasi (soat, daqiqa, soniya, mikrosekund, tzone) uchun parametrlarni oladi, lekin ular ixtiyoriy va standart qiymati , 0( Nonesoat mintaqasi uchun).
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+strftime() usuli
+Ob'ektda datetimesana ob'ektlarini o'qiladigan satrlarga formatlash usuli mavjud.
+
+Usul chaqiriladi strftime()va formatqaytarilgan satr formatini belgilash uchun bitta parametrni oladi:
+
+Misol
+Oy nomini ko'rsating:
+
+import datetime
+
+x = datetime.datetime(2018, 6, 1)
+
+print(x.strftime("%B"))

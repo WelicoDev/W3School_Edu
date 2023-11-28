@@ -1,0 +1,41 @@
+Xaritalash jadvalini yarating va translate()undan istalgan "S" belgilarini "P" belgisi bilan almashtirish usulida foydalaning:
+
+txt = "Hello Sam!"
+mytable = str.maketrans("S", "P")
+print(txt.translate(mytable))
+
+
+Ta'rifi va qo'llanilishi
+Usul belgilangan belgilarni almashtirish usuli maketrans()bilan ishlatilishi mumkin bo'lgan xaritalash jadvalini qaytaradi . translate()
+
+Sintaksis
+str.maketrans(x, y, z)
+
+Misol
+Ko'p belgilarni almashtirish uchun xaritalash jadvalidan foydalaning:
+
+txt = "Hi Sam!"
+x = "mSa"
+y = "eJo"
+mytable = str.maketrans(x, y)
+print(txt.translate(mytable))
+
+
+Xaritalash jadvalidagi uchinchi parametr satrdan olib tashlamoqchi bo'lgan belgilarni tavsiflaydi:
+
+txt = "Good night Sam!"
+x = "mSa"
+y = "eJo"
+z = "odnght"
+mytable = str.maketrans(x, y, z)
+print(txt.translate(mytable))
+
+Misol
+Usulning maketrans()o'zi unicode-da har bir almashtirishni tavsiflovchi lug'atni qaytaradi:
+
+txt = "Good night Sam!"
+x = "mSa"
+y = "eJo"
+z = "odnght"
+print(str.maketrans(x, y, z))
+

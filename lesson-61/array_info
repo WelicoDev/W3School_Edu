@@ -1,0 +1,110 @@
+Eslatma: Python-da massivlar uchun o'rnatilgan yordam yo'q, lekin uning o'rniga Python ro'yxatlaridan foydalanish mumkin.
+
+Massivlar
+
+Eslatma: Bu sahifa sizga RO‘YXATLARdan ARRAYS sifatida qanday foydalanishni ko‘rsatadi,
+ammo Python’da massivlar bilan ishlash uchun NumPy kutubxonasi kabi kutubxonani import qilishingiz kerak bo‘ladi .
+
+Massivlar bir nechta qiymatlarni bitta o'zgaruvchida saqlash uchun ishlatiladi:
+
+Misol
+Avtomobil nomlarini o'z ichiga olgan massiv yarating:
+
+cars = ["Ford", "Volvo", "BMW"]
+
+
+///////////////////////////////////////////////////////////////////////////////////
+
+Massiv nima?
+Massiv - bu bir vaqtning o'zida bir nechta qiymatlarni ushlab turishi mumkin bo'lgan maxsus o'zgaruvchi.
+
+Agar sizda elementlar ro'yxati (masalan, avtomobil nomlari ro'yxati) bo'lsa, mashinalarni bitta o'zgaruvchida saqlash quyidagicha ko'rinishi mumkin:
+
+car1 = "Ford"
+car2 = "Volvo"
+car3 = "BMW"
+Biroq, agar siz mashinalar orasidan aylanib, ma'lum birini topmoqchi bo'lsangiz-chi? Va agar sizda 3 ta emas, balki 300 ta mashina bo'lsa-chi?
+
+Yechim - massiv!
+
+Massiv bitta nom ostida ko'p qiymatlarni saqlashi mumkin va siz indeks raqamiga murojaat qilish orqali qiymatlarga kirishingiz mumkin.
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+Massiv elementlariga kirish
+Indeks raqamiga murojaat qilib, massiv elementiga murojaat qilasiz .
+
+Misol
+Birinchi qator elementining qiymatini oling:
+
+x = cars[0]
+
+////////////////////////////////////////////////////////////////////////////////////
+
+Misol
+Birinchi qator elementining qiymatini o'zgartiring:
+
+cars[0] = "Toyota"
+
+////////////////////////////////////////////////////////////////////////////////////
+
+Massiv uzunligi
+len()Massiv uzunligini (massivdagi elementlar soni) qaytarish uchun usuldan foydalaning .
+
+Misol
+Massivdagi elementlar sonini qaytaring cars :
+
+x = len(cars)
+
+/////////////////////////////////////////////
+
+Eslatma: Massiv uzunligi har doim massivning eng yuqori indeksidan bir kattaroqdir.
+
+//////////////////////////////////////////////
+
+Massiv elementlarini aylanish
+Siz for inmassivning barcha elementlari bo'ylab aylanish uchun tsikldan foydalanishingiz mumkin.
+
+Misol
+Massivdagi har bir elementni chop eting cars:
+
+for x in cars:
+  print(x)
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
+Massiv elementlarini qo'shish
+append()Massivga element qo'shish uchun usuldan foydalanishingiz mumkin .
+
+Misol
+Massivga yana bitta element qo'shing cars:
+
+cars.append("Honda")
+
+///////////////////////////////////////////////////////////////////////////
+
+Massiv elementlarini olib tashlash
+pop()Massivdan elementni olib tashlash uchun usuldan foydalanishingiz mumkin .
+
+Misol
+Massivning ikkinchi elementini o'chiring cars:
+
+cars.pop(1)
+
+
+remove()Massivdan elementni olib tashlash uchun ham usuldan foydalanishingiz mumkin .
+
+Misol
+"Volvo" qiymatiga ega bo'lgan elementni o'chiring:
+
+cars.remove("Volvo")
+
+////////////////////////////////////////////////////////////
+
+Eslatma: Ro'yxat remove()  usuli faqat ko'rsatilgan qiymatning birinchi takrorlanishini olib tashlaydi.
+
+//////////////////////////////////////////////////////////////////////////
+
+Eslatma: Python-da massivlar uchun o'rnatilgan yordam yo'q, lekin uning o'rniga Python ro'yxatlaridan foydalanish mumkin.
+
+/////////////////////////////////////////////////////////////////////////

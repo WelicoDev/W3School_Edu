@@ -1,0 +1,51 @@
+Har bir soʻz roʻyxat elementi boʻlgan qatorni roʻyxatga ajrating:
+
+txt = "welcome to the jungle"
+
+x = txt.split()
+
+print(x)
+
+Ta'rifi va qo'llanilishi
+Usul split()qatorni ro'yxatga ajratadi.
+
+Siz ajratuvchini belgilashingiz mumkin, standart ajratuvchi har qanday bo'shliqdir.
+
+Eslatma: maxsplit ko'rsatilganda, ro'yxatda ko'rsatilgan elementlar soni va bittadan iborat bo'ladi .
+
+Sintaksis
+string.split(separator, maxsplit)
+Parametr qiymatlari
+Parameter	Description
+separator ----	Optional. Specifies the separator to use when splitting the string. By default any whitespace is a separator
+maxsplit  ----	Optional. Specifies how many splits to do. Default value is -1, which is "all occurrences"
+
+
+Misol
+Satrni verguldan so'ng bo'sh joy qo'yib ajratuvchi sifatida ajrating:
+
+txt = "hello, my name is Peter, I am 26 years old"
+
+x = txt.split(", ")
+
+print(x)
+
+Misol
+Ajratuvchi sifatida xesh belgisidan foydalaning:
+
+txt = "apple#banana#cherry#orange"
+
+x = txt.split("#")
+
+print(x)
+
+Misol
+Satrni maksimal 2 ta elementdan iborat ro'yxatga ajrating:
+
+txt = "apple#banana#cherry#orange"
+
+# setting the maxsplit parameter to 1, will return a list with 2 elements!
+x = txt.split("#", 1)
+
+print(x)
+

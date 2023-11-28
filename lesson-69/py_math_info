@@ -1,0 +1,77 @@
+Python matematika
+Python o'rnatilgan matematik funktsiyalar to'plamiga ega, jumladan, keng matematik modul, bu sizga raqamlar bo'yicha matematik vazifalarni bajarish imkonini beradi.
+
+O'rnatilgan matematik funktsiyalar
+va funksiyalari takrorlanadigan eng past yoki eng yuqori qiymatni topish uchun ishlatilishi mumkin min():max()
+
+Misol
+x = min(5, 10, 25)
+y = max(5, 10, 25)
+
+print(x)
+print(y)
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Funktsiya abs()belgilangan raqamning mutlaq (musbat) qiymatini qaytaradi:
+
+Misol
+x = abs(-7.25)
+
+print(x)
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Funktsiya x ning qiymatini y (x y ) ning kuchiga qaytaradi .pow(x, y)
+
+Misol
+4 ning qiymatini 3 ning kuchiga qaytaring (4 * 4 * 4 bilan bir xil):
+
+x = pow(4, 3)
+
+print(x)
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Matematika moduli
+mathPython shuningdek , matematik funktsiyalar ro'yxatini kengaytiradigan o'rnatilgan modulga ega .
+
+Uni ishlatish uchun siz mathmodulni import qilishingiz kerak:
+
+import math
+Modulni import qilgandan so'ng math, modulning usullari va konstantalaridan foydalanishni boshlashingiz mumkin.
+
+Masalan, usul math.sqrt()raqamning kvadrat ildizini qaytaradi:
+
+Misol
+import math
+
+x = math.sqrt(64)
+
+print(x)
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Usul math.ceil()raqamni yuqoriga qarab eng yaqin butun songa yaxlitlaydi va math.floor() usul raqamni pastga qarab eng yaqin butun songa yaxlitlaydi va natijani qaytaradi:
+
+Misol
+import math
+
+x = math.ceil(1.4)
+y = math.floor(1.4)
+
+print(x) # returns 2
+print(y) # returns 1
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Konstanta math.piPI qiymatini qaytaradi (3.14...):
+
+Misol
+import math
+
+x = math.pi
+
+print(x)

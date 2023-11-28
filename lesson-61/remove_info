@@ -1,0 +1,20 @@
+Python ro'yxatini olib tashlash() usuli
+
+Misol
+Ro'yxatdagi "banan" elementini olib tashlang fruit :
+
+fruits = ['apple', 'banana', 'cherry']
+
+fruits.remove("banana")
+print(fruits)
+
+///////////////////////////////////////////////////////////////////////////////////////////
+Ta'rifi va qo'llanilishi
+Usul remove()ko'rsatilgan qiymatga ega elementning birinchi paydo bo'lishini olib tashlaydi.
+
+Sintaksis
+list.remove(elmnt)
+Parametr qiymatlari
+Parameter	Description
+///
+elmnt	---- Required. Any type (string, number, list etc.) The element you want to remove

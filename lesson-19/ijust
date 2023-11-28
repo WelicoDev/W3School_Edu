@@ -1,0 +1,31 @@
+Misol
+
+“Banan” so‘zining 20 ta belgidan iborat, chapga asoslangan versiyasini qaytaring:
+
+txt = "banana"
+
+x = txt.ljust(20)
+
+print(x, "is my favorite fruit.")
+
+Eslatma: Natijada, banan so'zining o'ng tomonida 14 ta bo'sh joy mavjud.
+
+Ta'rifi va qo'llanilishi
+Usul ljust()to'ldirish belgisi sifatida belgilangan belgidan (bo'sh joy sukut bo'yicha) foydalanib, satrni chapga tekislaydi.
+
+Sintaksis
+string.ljust(length, character)
+
+Parametr qiymatlari
+Parameter	Description
+length ----	Required. The length of the returned string
+character ----	Optional. A character to fill the missing space (to the right of the string). Default is " " (space).
+
+Misol
+To'ldirish belgisi sifatida "O" harfidan foydalanish:
+
+txt = "banana"
+
+x = txt.ljust(20, "O")
+
+print(x)

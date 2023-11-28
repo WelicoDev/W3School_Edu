@@ -1,0 +1,46 @@
+Python Dictionary values() usuli
+
+Misol
+Qiymatlarni qaytaring:
+
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+x = car.values()
+
+print(x)
+
+////////////////////////////////////////////////////////////////////////
+
+Ta'rifi va qo'llanilishi
+Usul values()ko'rish ob'ektini qaytaradi. Ko'rish ob'ekti ro'yxat sifatida lug'at qiymatlarini o'z ichiga oladi.
+
+Ko'rish obyekti lug'atga qilingan har qanday o'zgarishlarni aks ettiradi, quyidagi misolga qarang.
+
+Sintaksis
+dictionary.values()
+Parametr qiymatlari
+Parametrlar yo'q
+
+
+
+//////////////////////////////////////////////////
+
+Ko'proq misollar
+Misol
+Lug'atda qiymatlar o'zgartirilsa, ko'rish ob'ekti ham yangilanadi:
+
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+x = car.values()
+
+car["year"] = 2018
+
+print(x)

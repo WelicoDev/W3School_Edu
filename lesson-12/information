@@ -1,0 +1,8 @@
+Python ob'ektga yo'naltirilgan tildir va shuning uchun u ma'lumotlar turlarini, shu jumladan uning ibtidoiy turlarini aniqlash uchun sinflardan foydalanadi.
+
+Shuning uchun python-da quyma konstruktor funktsiyalari yordamida amalga oshiriladi:
+
+ ** int() - butun son literalidan, float literalidan (barcha o'nli kasrlarni olib tashlash orqali) yoki satr literalidan (satr butun sonni bildirishi sharti bilan) butun sonni yaratadi.
+ ** float() - butun son, float literal yoki satr literalidan float raqamini yaratadi (satr float yoki butun sonni bildirsa)
+ ** str() - qatorlar, butun sonlar va float literallari kabi turli xil ma'lumotlar turlaridan qatorni yaratadi
+

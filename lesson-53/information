@@ -1,0 +1,29 @@
+Lug'atdan nusxa ko'chiring
+Lug'atni oddiygina terish orqali nusxa ko'chira olmaysiz dict2 = dict1, chunki: faqat ga havoladict2 bo'ladi va ga kiritilgan o'zgartirishlar avtomatik ravishda ichida ham amalga oshiriladi .dict1dict1dict2
+
+Nusxa olish usullari mavjud, ulardan biri o'rnatilgan Lug'at usulidan foydalanishdir copy().
+
+Usul bilan lug'at nusxasini yarating copy():
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+mydict = thisdict.copy()
+print(mydict)
+
+/////////////////////////////////////////////////////////////////////////////////
+
+Nusxa olishning yana bir usuli - o'rnatilgan funksiyadan foydalanish dict().
+
+Misol
+Funktsiyaga ega lug'at nusxasini yarating dict() :
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+mydict = dict(thisdict)
+print(mydict)

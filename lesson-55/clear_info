@@ -1,0 +1,22 @@
+Ro'yxatdagi barcha elementlarni olib tashlang car:
+
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+car.clear()
+
+print(car)
+
+//////////////////////////////////////////////
+
+Ta'rifi va qo'llanilishi
+Usul clear()lug'atdan barcha elementlarni olib tashlaydi.
+
+Sintaksis
+dictionary.clear()
+
+Parametr qiymatlari
+Parametrlar yo'q

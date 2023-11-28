@@ -1,0 +1,50 @@
+Elementlarni qo'shish
+Roʻyxat oxiriga element qoʻshish uchun append() usulidan foydalaning:
+
+Misol
+append()Elementni qo'shish usulidan foydalanish :
+
+thislist = ["apple", "banana", "cherry"]
+thislist.append("orange")
+print(thislist)
+
+Elementlarni kiritish
+Belgilangan indeksga ro'yxat elementini kiritish uchun insert()usuldan foydalaning.
+
+Usul insert()belgilangan indeksga element kiritadi:
+
+Misol
+Elementni ikkinchi pozitsiya sifatida kiriting:
+
+thislist = ["apple", "banana", "cherry"]
+thislist.insert(1, "orange")
+print(thislist)
+
+Eslatma: Yuqoridagi misollar natijasida ro'yxatlar endi 4 ta elementni o'z ichiga oladi.
+
+
+Ro'yxatni kengaytirish
+Boshqa ro'yxatdagi elementlarni joriy ro'yxatga qo'shish uchun extend()usuldan foydalaning.
+
+Misol
+tropicalga elementlarni qo'shing thislist:
+
+thislist = ["apple", "banana", "cherry"]
+tropical = ["mango", "pineapple", "papaya"]
+thislist.extend(tropical)
+print(thislist)
+
+Elementlar ro'yxatning oxiriga qo'shiladi .
+
+Har qanday takrorlanadigan qo'shing
+Usul ro'yxatlarniextend() qo'shishi shart emas , siz har qanday takrorlanadigan ob'ektni (kortejlar, to'plamlar, lug'atlar va boshqalar) qo'shishingiz mumkin.
+
+
+Misol
+Ro'yxat elementlarini ro'yxatga qo'shing:
+
+thislist = ["apple", "banana", "cherry"]
+thistuple = ("kiwi", "orange")
+thislist.extend(thistuple)
+print(thislist)
+

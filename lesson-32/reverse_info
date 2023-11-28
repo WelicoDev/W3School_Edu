@@ -1,0 +1,16 @@
+Ro'yxat tartibini teskari aylantiring fruit :
+
+fruits = ['apple', 'banana', 'cherry']
+
+fruits.reverse()
+
+//////////////////////////////////////////////
+
+Ta'rifi va qo'llanilishi
+Usul reverse()elementlarning tartiblash tartibini o'zgartiradi.
+
+Sintaksis
+list.reverse()
+Parametr qiymatlari
+Parametrlar yoʻq
+

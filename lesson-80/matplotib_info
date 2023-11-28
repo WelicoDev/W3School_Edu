@@ -1,0 +1,11 @@
+Matplotlib nima?
+Matplotlib - bu python-da vizualizatsiya uchun yordamchi dastur bo'lib xizmat qiluvchi past darajadagi grafik chizmalar kutubxonasi.
+
+Matplotlib Jon D. Hunter tomonidan yaratilgan.
+
+Matplotlib ochiq manba va biz undan erkin foydalanishimiz mumkin.
+
+Matplotlib asosan python-da yozilgan, bir nechta segmentlar C, Objective-C va Javascript for Platform mosligida yozilgan.
+
+Matplotlib kod bazasi qayerda?
+Matplotlib uchun manba kodi ushbu github omborida joylashgan https://github.com/matplotlib/matplotlib

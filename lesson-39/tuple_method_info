@@ -1,0 +1,64 @@
+Tuple usullari
+Pythonda ikkita o'rnatilgan usul mavjud bo'lib, ularni kortejlarda ishlatishingiz mumkin.
+
+Method	Description
+count()	-------  Returns the number of times a specified value occurs in a tuple
+index()	-------  Searches the tuple for a specified value and returns the position of where it was found
+
+
+
+////////////////////////////
+
+
+Python Tuple count() usuli
+
+MisolO'zingizning Python serveringizni oling
+5 qiymati kortejda necha marta paydo bo'lishini qaytaring:
+
+thistuple = (1, 3, 7, 8, 7, 5, 4, 6, 8, 5)
+
+x = thistuple.count(5)
+
+print(x)
+
+
+///
+Ta'rifi va qo'llanilishi
+Usul count()belgilangan qiymat kortejda necha marta paydo bo'lishini qaytaradi.
+
+Sintaksis
+tuple.count(value)
+Parametr qiymatlari
+Parameter	Description
+value	------   Required. The item to search for
+
+
+
+/////////////////////////////////////////////////////////////////////////////////
+
+
+Python Tuple index() usuli
+
+MisolO'zingizning Python serveringizni oling
+Qiymati 8 ning birinchi borligini qidiring va uning o'rnini qaytaring:
+
+thistuple = (1, 3, 7, 8, 7, 5, 4, 6, 8, 5)
+
+x = thistuple.index(8)
+
+print(x)
+
+
+////////////////////////////////////////////
+
+Ta'rifi va qo'llanilishi
+Usul index()belgilangan qiymatning birinchi paydo bo'lishini topadi.
+
+index()Agar qiymat topilmasa, usul istisno keltiradi .
+
+Sintaksis
+tuple.index(value)
+Parametr qiymatlari
+Parameter	Description
+value	Required. The item to search for
+

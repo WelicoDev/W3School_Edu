@@ -1,0 +1,89 @@
+Tuple elementlariga kirish
+To'rtburchak qavslar ichidagi indeks raqamiga murojaat qilib, kortej elementlariga kirishingiz mumkin:
+
+Tupledagi ikkinchi elementni chop eting:
+
+thistuple = ("apple", "banana", "cherry")
+print(thistuple[1])
+
+
+Eslatma: Birinchi element 0 indeksiga ega
+
+
+
+//////////////////////////////////////////////
+Manfiy indekslash
+Manfiy indekslash oxiridan boshlanadi degan ma'noni anglatadi.
+
+-1oxirgi elementga ishora qiladi, -2ikkinchi oxirgi elementga ishora qiladi va hokazo.
+
+Misol
+Tuplening oxirgi elementini chop eting:
+
+thistuple = ("apple", "banana", "cherry")
+print(thistuple[-1])
+
+
+///////////////////////////////////////////////////////////////
+
+Indekslar diapazoni
+Siz diapazonni qaerdan boshlash va qayerdan tugatishni belgilash orqali bir qator indekslarni belgilashingiz mumkin.
+
+Diapazonni belgilashda qaytariladigan qiymat belgilangan elementlarga ega yangi kortej bo'ladi.
+
+Misol
+Uchinchi, to'rtinchi va beshinchi bandlarni qaytaring:
+
+thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+print(thistuple[2:5])
+
+/////////////////////////
+
+Eslatma: Qidiruv 2-indeksda (qo'shilgan) boshlanadi va 5-indeksda (qo'shilmagan) tugaydi.
+
+Esda tutingki, birinchi element 0 indeksiga ega.
+
+
+//////////////////////////////////////////////////////////////////////
+
+Boshlanish qiymatini qoldirsangiz, diapazon birinchi elementdan boshlanadi:
+
+Misol
+Bu misol elementlarni boshidan qaytaradi, lekin EMAS, "kivi":
+
+thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+print(thistuple[:4])
+
+Yakuniy qiymatni qoldirib, diapazon ro'yxatning oxiriga o'tadi:
+
+Misol
+Ushbu misol "gilos" dan va oxirigacha bo'lgan narsalarni qaytaradi:
+
+thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+print(thistuple[2:])
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+
+Manfiy indekslar diapazoni
+Qidiruvni kortej oxiridan boshlashni istasangiz, manfiy indekslarni belgilang:
+
+Misol
+Ushbu misol indeks -4 (shu jumladan) dan indeks -1 ga (chiqarilgan) elementlarni qaytaradi.
+
+thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+print(thistuple[-4:-1])
+
+
+////////////////////////////////////////////////////////////////
+
+Element mavjudligini tekshiring
+Tupleda ko'rsatilgan element mavjudligini aniqlash uchun inkalit so'zdan foydalaning:
+
+Misol
+Tupleda "olma" mavjudligini tekshiring:
+
+thistuple = ("apple", "banana", "cherry")
+if "apple" in thistuple:
+  print("Yes, 'apple' is in the fruits tuple")

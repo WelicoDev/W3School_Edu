@@ -1,0 +1,93 @@
+Ikki to'plamga qo'shiling
+Python-da ikki yoki undan ortiq to'plamlarni birlashtirishning bir necha yo'li mavjud.
+
+union()Ikkala to'plamdagi barcha elementlarni o'z ichiga olgan yangi to'plamni qaytaradigan usuldan yoki update()bir to'plamdagi barcha elementlarni boshqasiga kiritadigan usuldan foydalanishingiz mumkin :
+
+MisolO'zingizning Python serveringizni oling
+Usul union()ikkala to'plamdagi barcha elementlar bilan yangi to'plamni qaytaradi:
+
+set1 = {"a", "b" , "c"}
+set2 = {1, 2, 3}
+
+set3 = set1.union(set2)
+print(set3)
+
+/////////////////////////////
+
+
+Misol
+Usul update()set2dagi elementlarni set1ga kiritadi:
+
+set1 = {"a", "b" , "c"}
+set2 = {1, 2, 3}
+
+set1.update(set2)
+print(set1)
+Eslatma: Ikkala union()va update() har qanday takroriy elementlarni istisno qiladi.
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+
+FAQAT dublikatlarini saqlang
+Usul intersection_update()faqat ikkala to'plamda mavjud bo'lgan narsalarni saqlaydi.
+
+Misol
+Ikkala to'plamda mavjud bo'lgan narsalarni saqlang xva o'rnating y:
+
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+
+x.intersection_update(y)
+
+print(x)
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Hammasini saqlang, lekin dublikatlarni EMAS
+Usul symmetric_difference_update()faqat ikkala to'plamda mavjud bo'lmagan elementlarni saqlaydi.
+
+Misol
+Ikkala to'plamda ham mavjud bo'lmagan narsalarni saqlang:
+
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+
+x.symmetric_difference_update(y)
+
+print(x)
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+Usul symmetric_difference()faqat ikkala to'plamda YO'Q elementlarni o'z ichiga olgan yangi to'plamni qaytaradi.
+
+Misol
+Ikkala to'plamdagi barcha elementlarni o'z ichiga olgan to'plamni qaytaring, ikkalasida mavjud bo'lgan elementlardan tashqari:
+
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+
+z = x.symmetric_difference(y)
+
+print(z)
+
+
+
+******************************************************************************
+
+Eslatma:True va qiymatlari 1to'plamlarda bir xil qiymat sifatida qabul qilinadi va ular dublikat sifatida ko'rib chiqiladi:
+
+//
+
+Misol
+True va 1bir xil qiymat hisoblanadi:
+
+x = {"apple", "banana", "cherry", True}
+y = {"google", 1, "apple", 2}
+
+z = x.symmetric_difference(y)
+
+print(z)

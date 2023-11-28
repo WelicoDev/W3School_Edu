@@ -1,0 +1,69 @@
+Belgilangan elementni olib tashlang
+Usul remove()belgilangan elementni olib tashlaydi.
+
+"Banan" ni olib tashlang:
+
+thislist = ["apple", "banana", "cherry"]
+thislist.remove("banana")
+print(thislist)
+
+Belgilangan qiymatga ega bir nechta element bo'lsa, remove()usul birinchi hodisani olib tashlaydi:
+
+Misol
+"Banan" ning birinchi ko'rinishini olib tashlang:
+
+thislist = ["apple", "banana", "cherry", "banana", "kiwi"]
+thislist.remove("banana")
+print(thislist)
+
+
+Belgilangan indeksni olib tashlang
+Usul pop()belgilangan indeksni olib tashlaydi.
+
+Misol
+Ikkinchi elementni olib tashlang:
+
+thislist = ["apple", "banana", "cherry"]
+thislist.pop(1)
+print(thislist)
+
+
+Agar siz indeksni ko'rsatmasangiz, pop()usul oxirgi elementni olib tashlaydi.
+
+Misol
+Oxirgi elementni olib tashlang:
+
+thislist = ["apple", "banana", "cherry"]
+thislist.pop()
+print(thislist)
+
+Kalit delso'z belgilangan indeksni ham olib tashlaydi:
+
+Misol
+Birinchi elementni olib tashlang:
+
+thislist = ["apple", "banana", "cherry"]
+del thislist[0]
+print(thislist)
+
+
+Kalit delso'z ham ro'yxatni butunlay o'chirib tashlashi mumkin.
+
+Misol
+To'liq ro'yxatni o'chirish:
+
+thislist = ["apple", "banana", "cherry"]
+del thislist
+
+
+Roʻyxatni tozalang
+Usul clear()ro'yxatni bo'shatadi.
+
+Ro'yxat hali ham saqlanib qolmoqda, ammo uning mazmuni yo'q.
+
+Misol
+Ro'yxat tarkibini tozalang:
+
+thislist = ["apple", "banana", "cherry"]
+thislist.clear()
+print(thislist)

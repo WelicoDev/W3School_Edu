@@ -1,0 +1,39 @@
+Ikki roʻyxatga qoʻshiling
+Python-da ikki yoki undan ortiq ro'yxatlarni birlashtirish yoki birlashtirishning bir necha yo'li mavjud.
+
+Eng oson yo'llardan biri operatordan foydalanishdir + .
+
+Ikki ro'yxatga qo'shiling:
+
+list1 = ["a", "b", "c"]
+list2 = [1, 2, 3]
+
+list3 = list1 + list2
+print(list3)
+////////////////////////////////////////////////
+
+Ikki roʻyxatga qoʻshilishning yana bir usuli bu roʻyxat 2 dagi barcha elementlarni roʻyxat 1 ga birma-bir qoʻshishdir:
+
+Misol
+2 ro'yxatni 1 ro'yxatiga qo'shing:
+
+list1 = ["a", "b" , "c"]
+list2 = [1, 2, 3]
+
+for x in list2:
+  list1.append(x)
+
+print(list1)
+
+//////////////////////////////////////////////////////
+
+extend() Yoki maqsad bir roʻyxatdagi elementlarni boshqa roʻyxatga qoʻshish boʻlgan usuldan foydalanishingiz mumkin :
+
+Misol
+extend()Ro'yxat 1 ning oxiriga list2 qo'shish uchun usuldan foydalaning :
+
+list1 = ["a", "b" , "c"]
+list2 = [1, 2, 3]
+
+list1.extend(list2)
+print(list1)

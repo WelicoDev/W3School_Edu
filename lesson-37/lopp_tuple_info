@@ -1,0 +1,43 @@
+Tuple orqali aylanish
+Loop yordamida kortej elementlarini aylanib o'tishingiz mumkin for.
+
+Misol
+Elementlarni takrorlang va qiymatlarni chop eting:
+
+thistuple = ("apple", "banana", "cherry")
+for x in thistuple:
+  print(x)
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+Indeks raqamlari bo'ylab aylanish
+Siz shuningdek, indeks raqamiga murojaat qilib, kortej elementlarini aylanib o'tishingiz mumkin.
+
+Tegishli takrorlanuvchini yaratish uchun range()va funksiyalaridan foydalaning .len()
+
+Misol
+Barcha elementlarni indeks raqamiga qarab chop eting:
+
+thistuple = ("apple", "banana", "cherry")
+for i in range(len(thistuple)):
+  print(thistuple[i])
+
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+While siklidan foydalanish
+Loop yordamida kortej elementlarini aylanib o'tishingiz mumkin while.
+
+len()Kortej uzunligini aniqlash uchun funktsiyadan foydalaning , so'ngra 0 dan boshlang va ularning indekslariga murojaat qilib, kortej elementlari bo'ylab yo'lingizni aylantiring.
+
+Har bir iteratsiyadan keyin indeksni 1 ga oshirishni unutmang.
+
+Misol
+whileBarcha indeks raqamlarini o'tish uchun tsikldan foydalanib, barcha elementlarni chop eting :
+
+thistuple = ("apple", "banana", "cherry")
+i = 0
+while i < len(thistuple):
+  print(thistuple[i])
+  i = i + 1

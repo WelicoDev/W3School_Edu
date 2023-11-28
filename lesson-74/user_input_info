@@ -1,0 +1,30 @@
+Python foydalanuvchi kiritish
+Foydalanuvchi kiritish
+Python foydalanuvchi kiritish imkonini beradi.
+
+Bu shuni anglatadiki, biz foydalanuvchidan ma'lumot so'rashimiz mumkin.
+
+Usul Python 3.6 da Python 2.7 dan biroz farq qiladi.
+
+Python 3.6 input()usulidan foydalanadi.
+
+Python 2.7 raw_input()usulidan foydalanadi.
+
+Quyidagi misol foydalanuvchi nomini so'raydi va siz foydalanuvchi nomini kiritganingizda, u ekranda chop etiladi:
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Python 3.6
+username = input("Enter username:")
+print("Username is: " + username)
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Python 2.7
+username = raw_input("Enter username:")
+print("Username is: " + username)
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Python funksiya haqida gap ketganda ishlashni to'xtatadi input()va foydalanuvchi ma'lum bir ma'lumot berganida davom etadi.
+

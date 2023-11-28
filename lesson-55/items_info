@@ -1,0 +1,47 @@
+Python Dictionary items() usuli
+
+Misol
+Lug'atning kalit-qiymat juftliklarini qaytaring:
+
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+x = car.items()
+
+print(x)
+
+
+////////////////////////////////////////////////////////
+
+Ta'rifi va qo'llanilishi
+Usul items()ko'rish ob'ektini qaytaradi. Ko'rish ob'ekti ro'yxatdagi kortejlar sifatida lug'atning kalit-qiymat juftlarini o'z ichiga oladi.
+
+Ko'rish obyekti lug'atga qilingan har qanday o'zgarishlarni aks ettiradi, quyidagi misolga qarang.
+
+Sintaksis
+dictionary.items()
+
+Parametr qiymatlari
+Parametrlar yo'q
+
+
+/////////////////////////////////////////////////////////////
+
+Ko'proq misollar
+Misol
+Lug'atdagi element qiymatni o'zgartirganda, ko'rish ob'ekti ham yangilanadi:
+
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+x = car.items()
+
+car["year"] = 2018
+
+print(x)

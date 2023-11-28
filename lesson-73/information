@@ -1,0 +1,131 @@
+Python urinishdan tashqari
+Blok trysizga kod blokini xatolar uchun tekshirish imkonini beradi.
+
+Blok exceptsizga xatoni hal qilishga imkon beradi.
+
+Blok elsexato bo'lmaganda kodni bajarishga imkon beradi.
+
+Blok finally, sinash natijasidan qat'i nazar, kodni bajarishga imkon beradi- va bloklardan tashqari.
+
+Istisno bilan ishlash
+Xato yoki biz uni istisno qilganda, Python odatda to'xtab qoladi va xato xabarini yaratadi.
+
+Ushbu istisnolar bayonot yordamida hal qilinishi mumkin try:
+
+////////////////////////////////////////////////////////////
+
+Misol
+Blok tryistisno hosil qiladi, chunki xaniqlanmagan:
+
+try:
+  print(x)
+except:
+  print("An exception occurred")
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ERROR
+
+Sinab ko'rish bloki xatoga yo'l qo'yganligi sababli, istisno bloki bajariladi.
+
+Sinab ko'rish bloki bo'lmasa, dastur ishdan chiqadi va xatoga yo'l qo'yadi:
+
+Misol
+Ushbu bayonot xatoga olib keladi, chunki xaniqlanmagan:
+
+print(x)
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Ko'p istisnolar
+
+Siz xohlagancha istisno bloklarini belgilashingiz mumkin, masalan, agar siz maxsus xatolik uchun maxsus kod blokini bajarmoqchi bo'lsangiz:
+
+Misol
+Agar try bloki a NameErrorva boshqa xatolarni ko'tarsa, bitta xabarni chop eting:
+
+try:
+  print(x)
+except NameError:
+  print("Variable x is not defined")
+except:
+  print("Something else went wrong")
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Boshqa
+elseHech qanday xatolik yuzaga kelmasa, bajariladigan kod blokini aniqlash uchun kalit so'zdan foydalanishingiz mumkin :
+
+Misol
+Ushbu misolda tryblok hech qanday xato yaratmaydi:
+
+try:
+  print("Hello")
+except:
+  print("Something went wrong")
+else:
+  print("Nothing went wrong")
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Nihoyat
+Blok finally, belgilangan bo'lsa, urinib ko'rish bloki xatolik tug'diradimi yoki yo'qmi, qat'iy nazar bajariladi.
+
+Misol
+try:
+  print(x)
+except:
+  print("Something went wrong")
+finally:
+  print("The 'try except' is finished")
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Bu ob'ektlarni yopish va resurslarni tozalash uchun foydali bo'lishi mumkin:
+
+Misol
+Yozish mumkin bo'lmagan faylni ochishga va unga yozishga harakat qiling:
+
+try:
+  f = open("demofile.txt")
+  try:
+    f.write("Lorum Ipsum")
+  except:
+    print("Something went wrong when writing to the file")
+  finally:
+    f.close()
+except:
+  print("Something went wrong when opening the file")
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Dastur fayl ob'ektini ochiq qoldirmasdan davom etishi mumkin.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Istisno ko'taring
+Python dasturchisi sifatida, agar biror holat yuzaga kelsa, istisno qilishni tanlashingiz mumkin.
+
+Istisnoni tashlash (yoki oshirish) uchun raisekalit so'zdan foydalaning.
+
+Misol
+Xatoni ko'taring va agar x 0 dan past bo'lsa, dasturni to'xtating:
+
+x = -1
+
+if x < 0:
+  raise Exception("Sorry, no numbers below zero")
+
+Kalit raiseso'z istisno qilish uchun ishlatiladi.
+
+Siz qanday xatoni ko'tarishni va matnni foydalanuvchiga chop etishni belgilashingiz mumkin.
+
+Misol
+Agar x butun son bo'lmasa, TypeErrorni ko'taring:
+
+x = "hello"
+
+if not type(x) is int:
+  raise TypeError("Only integers are allowed")
+

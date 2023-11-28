@@ -1,0 +1,18 @@
+Ta'rifi va qo'llanilishi
+Usul find()belgilangan qiymatning birinchi paydo bo'lishini topadi.
+
+find()Agar qiymat topilmasa, usul -1 ni qaytaradi .
+
+Usul find()deyarli usul bilan bir xil index() , yagona farq shundaki, index() agar qiymat topilmasa, usul istisno qiladi. (Quyida misolga qarang)
+
+Sintaksis
+string.find(value, start, end)
+
+Misol
+5 dan 10 gacha bo'lgan o'rinlarni qidirishda "e" harfi birinchi marta matnda qayerda uchraydi?:
+
+txt = "Hello, welcome to my world."
+
+x = txt.find("e", 5, 10)
+
+print(x)

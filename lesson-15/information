@@ -1,0 +1,42 @@
+Python-da siz satrlarda foydalanishingiz mumkin bo'lgan o'rnatilgan usullar to'plami mavjud.
+
+Katta harf
+Misol
+Usul upper()satrni katta harf bilan qaytaradi:
+
+a = "Hello, World!"
+print(a.upper())
+
+Kichik harf
+Misol
+Usul lower()kichik harfda satrni qaytaradi:
+
+a = "Hello, World!"
+print(a.lower())
+
+Bo'sh joyni olib tashlang
+Bo'sh joy haqiqiy matndan oldingi va/yoki keyingi bo'sh joy bo'lib, siz ko'pincha bu bo'shliqni olib tashlashni xohlaysiz.
+
+Misol
+Usul strip()boshidan yoki oxiridagi har qanday bo'shliqni olib tashlaydi:
+
+a = " Hello, World! "
+print(a.strip()) # returns "Hello, World!"
+
+Stringni almashtiring
+Misol
+Usul replace()satrni boshqa satr bilan almashtiradi:
+
+a = "Hello, World!"
+print(a.replace("H", "J"))
+
+Split String
+Usul split()belgilangan ajratuvchi orasidagi matn ro'yxat elementlariga aylanadigan ro'yxatni qaytaradi.
+
+Misol
+Usul split()ajratuvchining misollarini topsa, satrni pastki qatorlarga ajratadi:
+
+a = "Hello, World!"
+print(a.split(",")) # returns ['Hello', ' World!']
+
+

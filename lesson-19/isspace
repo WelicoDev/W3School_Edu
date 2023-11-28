@@ -1,0 +1,22 @@
+Matndagi barcha belgilar bo'sh joy yoki yo'qligini tekshiring:
+
+txt = "   "
+
+x = txt.isspace()
+
+print(x)
+
+Ta'rifi va qo'llanilishi
+isspace()Agar satrdagi barcha belgilar bo'sh joy bo'lsa, usul "True", aks holda "False" ni qaytaradi .
+
+Sintaksis
+string.isspace()
+
+Misol
+Matndagi barcha belgilar bo'sh joy yoki yo'qligini tekshiring:
+
+txt = "   s   "
+
+x = txt.isspace()
+
+print(x)

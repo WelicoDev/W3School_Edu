@@ -1,0 +1,21 @@
+Misol
+Ikkala to'plamda mavjud bo'lgan narsalarni olib tashlang:
+
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+
+x.difference_update(y)
+
+print(x)
+
+
+Ta'rifi va qo'llanilishi
+Usul difference_update()ikkala to'plamda mavjud bo'lgan narsalarni olib tashlaydi.
+
+Usul difference_update()usuldan farq qiladi difference(), chunki difference() usul kiruvchi elementlarsiz yangi to'plamni qaytaradidifference_update() va usul asl to'plamdan keraksiz narsalarni olib tashlaydi .
+
+Sintaksis
+set.difference_update(set)
+Parametr qiymatlari
+Parameter	Description
+set	Required. The set to check for differences in

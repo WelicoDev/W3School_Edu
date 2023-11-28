@@ -1,0 +1,108 @@
+Python raqamlari
+Pythonda uchta raqamli tur mavjud:
+
+int
+float
+complex
+Raqamli turdagi o'zgaruvchilar ularga qiymat berganingizda yaratiladi:
+
+ ** x = 1    # int
+ ** y = 2.8  # float
+ ** z = 1j   # complex
+
+Python-dagi har qanday ob'ekt turini tekshirish uchun funktsiyadan foydalaning type():
+
+ ** print(type(x))
+ ** print(type(y))
+ ** print(type(z))
+
+INT
+Int yoki butun son - bu musbat yoki manfiy, o'nli kasrsiz, cheksiz uzunlikdagi butun son.
+
+Misol
+Butun sonlar:
+
+x = 1
+y = 35656222554887711
+z = -3255522
+
+print(type(x))
+print(type(y))
+print(type(z))
+
+FLOAT
+Float yoki "suzuvchi nuqta raqami" bir yoki bir nechta o'nli kasrlarni o'z ichiga olgan ijobiy yoki salbiy sondir.
+
+Misol
+Floats:
+
+x = 1.10
+y = 1.0
+z = -35.59
+
+print(type(x))
+print(type(y))
+print(type(z))
+
+Float, shuningdek, 10 ning kuchini ko'rsatish uchun "e" bilan ilmiy raqamlar bo'lishi mumkin.
+
+Misol
+Floats:
+
+x = 35e3
+y = 12E4
+z = -87.7e100
+
+print(type(x))
+print(type(y))
+print(type(z))
+
+KOMLEKS
+
+Kompleks sonlar xayoliy qism sifatida "j" bilan yoziladi:
+
+Misol
+Kompleks:
+
+x = 3+5j
+y = 5j
+z = -5j
+
+print(type(x))
+print(type(y))
+print(type(z))
+
+Konvertatsiya turi
+int(), float()va usullari yordamida bir turdan ikkinchi turga o'zgartirishingiz mumkin complex():
+
+ ** x = 1    # int
+ ** y = 2.8  # float
+ ** z = 1j   # complex
+ **
+ ** #convert from int to float:
+ ** a = float(x)
+ **
+ ** #convert from float to int:
+ ** b = int(y)
+ **
+ ** #convert from int to complex:
+ ** c = complex(x)
+ **
+ ** print(a)
+ ** print(b)
+ ** print(c)
+ **
+ ** print(type(a))
+ ** print(type(b))
+ ** print(type(c))
+
+Eslatma: Siz murakkab sonlarni boshqa raqam turiga aylantira olmaysiz.
+
+Tasodifiy raqam
+Python-da tasodifiy son yaratish funksiyasi yo'q , lekin Python-da tasodifiy sonlarni yaratish uchun ishlatilishi mumkin bo'lgan random()o'rnatilgan modul mavjud :random
+
+Tasodifiy modulni import qiling va 1 dan 9 gacha tasodifiy raqamni ko'rsating:
+
+ ** import random
+ ** print(random.randrange(1, 10))
+

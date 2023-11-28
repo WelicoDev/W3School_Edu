@@ -1,0 +1,41 @@
+Misol
+Ikkala to'plamda mavjud bo'lgan elementlarni o'z ichiga olgan to'plamni qaytaring xva o'rnating y:
+
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+
+z = x.intersection(y)
+
+print(z)
+
+///////////////////////////////////////
+
+Ta'rifi va qo'llanilishi
+Usul intersection()ikki yoki undan ortiq to'plamlar orasidagi o'xshashlikni o'z ichiga olgan to'plamni qaytaradi.
+
+Ma'nosi: Qaytarilgan to'plam faqat ikkala to'plamda mavjud bo'lgan elementlarni o'z ichiga oladi yoki agar taqqoslash ikkitadan ortiq to'plam bilan amalga oshirilsa, barcha to'plamlarda mavjud.
+
+Sintaksis
+set.intersection(set1, set2 ... etc)
+Parametr qiymatlari
+Parameter	Description
+set1 ----	Required. The set to search for equal items in
+set2 ----	Optional. The other set to search for equal items in.
+You can compare as many sets you like.
+Separate the sets with a comma
+
+
+////////////////////////////////////////////////////////////////
+
+
+Ko'proq misollar
+Misol
+3 to'plamni solishtiring va barcha 3 to'plamda mavjud bo'lgan narsalar bilan to'plamni qaytaring:
+
+x = {"a", "b", "c"}
+y = {"c", "d", "e"}
+z = {"f", "g", "c"}
+
+result = x.intersection(y, z)
+
+print(result)

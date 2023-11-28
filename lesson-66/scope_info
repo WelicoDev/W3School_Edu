@@ -1,0 +1,103 @@
+Python doirasi
+O'zgaruvchiga faqat o'zi yaratilgan hudud ichidan foydalanish mumkin. Bu doira deyiladi .
+
+Mahalliy qamrov
+Funktsiya ichida yaratilgan o'zgaruvchi ushbu funktsiyaning mahalliy doirasiga kiradi va faqat shu funktsiya ichida ishlatilishi mumkin.
+
+Misol
+Funktsiya ichida yaratilgan o'zgaruvchi ushbu funktsiya ichida mavjud:
+
+def myfunc():
+  x = 300
+  print(x)
+
+myfunc()
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Funktsiya ichki funksiyasi
+Yuqoridagi misolda tushuntirilganidek, o'zgaruvchi xfunktsiyadan tashqarida mavjud emas, lekin u funktsiya ichidagi har qanday funktsiya uchun mavjud:
+
+Misol
+Mahalliy o'zgaruvchiga funksiya ichidagi funksiyadan kirish mumkin:
+
+def myfunc():
+  x = 300
+  def myinnerfunc():
+    print(x)
+  myinnerfunc()
+
+myfunc()
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Global qamrov
+Python kodining asosiy qismida yaratilgan o'zgaruvchi global o'zgaruvchi bo'lib, global qamrovga tegishli.
+
+Global o'zgaruvchilar har qanday miqyosda mavjud, global va mahalliy.
+
+Misol
+Funktsiyadan tashqarida yaratilgan o'zgaruvchi global bo'lib, har kim foydalanishi mumkin:
+
+x = 300
+
+def myfunc():
+  print(x)
+
+myfunc()
+
+print(x)
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+O'zgaruvchilarni nomlash
+Agar siz funksiya ichida va tashqarisida bir xil o‘zgaruvchi nomi bilan ishlasangiz, Python ularni ikkita alohida o‘zgaruvchi sifatida ko‘rib chiqadi, biri global miqyosda (funktsiyadan tashqarida) va ikkinchisi mahalliy miqyosda (funktsiya ichida) mavjud:
+
+Misol
+Funktsiya mahalliyni x, so'ngra kod globalni chop etadi x:
+
+x = 300
+
+def myfunc():
+  x = 200
+  print(x)
+
+myfunc()
+
+print(x)
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Global kalit so'z
+Agar siz global o'zgaruvchini yaratishingiz kerak bo'lsa, lekin mahalliy doirada qolib ketsangiz, globalkalit so'zdan foydalanishingiz mumkin.
+
+Kalit globalso'z o'zgaruvchini global qiladi.
+
+Misol
+Agar siz globalkalit so'zdan foydalansangiz, o'zgaruvchi global qamrovga tegishli:
+
+def myfunc():
+  global x
+  x = 300
+
+myfunc()
+
+print(x)
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Bundan tashqari, globalfunktsiya ichidagi global o'zgaruvchiga o'zgartirish kiritmoqchi bo'lsangiz, kalit so'zdan foydalaning.
+
+Misol
+Funktsiya ichidagi global o'zgaruvchining qiymatini o'zgartirish uchun kalit so'z yordamida o'zgaruvchiga murojaat qiling global:
+
+x = 300
+
+def myfunc():
+  global x
+  x = 200
+
+myfunc()
+
+print(x)

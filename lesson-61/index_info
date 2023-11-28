@@ -1,0 +1,36 @@
+Python List index() usuli
+
+Misol
+"Gilos" qiymatining pozitsiyasi qanday:
+
+fruits = ['apple', 'banana', 'cherry']
+
+x = fruits.index("cherry")
+
+//////////////////////////////////////////////////////////////////
+
+Ta'rifi va qo'llanilishi
+Usul index()belgilangan qiymatning birinchi paydo bo'lishidagi pozitsiyani qaytaradi.
+
+Sintaksis
+list.index(elmnt)
+Parametr qiymatlari
+Parameter	Description
+elmnt	Required. Any type (string, number, list, etc.). The element to search for
+
+///////////////////////////////////////////////////////////////
+
+
+Ko'proq misollar
+Misol
+32 qiymatining o'rni qanday:
+
+fruits = [4, 55, 64, 32, 16, 32]
+
+x = fruits.index(32)
+
+///////////////////////////////////////////
+
+Eslatma: Usul index()faqat qiymatning birinchi takrorlanishini qaytaradi.
+
+////////////////////////////////////////////

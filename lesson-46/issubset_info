@@ -1,0 +1,34 @@
+Misol
+Agar to'plamdagi barcha elementlar xto'plamda mavjud bo'lsa, True qiymatini qaytaring y:
+
+x = {"a", "b", "c"}
+y = {"f", "e", "d", "c", "b", "a"}
+
+z = x.issubset(y)
+
+print(z)
+
+////////////////////////////////////////////////////////////////////////////////////
+
+Ta'rifi va qo'llanilishi
+issubset()Agar to'plamdagi barcha elementlar belgilangan to'plamda mavjud bo'lsa, usul "True" ni qaytaradi, aks holda "False" ni qaytaradi .
+
+Sintaksis
+set.issubset(set)
+Parametr qiymatlari
+Parameter	Description
+set	Required. The set to search for equal items in
+Ko'proq misollar
+Misol
+Belgilangan to'plamda barcha elementlar mavjud bo'lmasa-chi?
+
+Agar to'plamdagi barcha elementlar xto'plamda mavjud bo'lmasa, False qiymatini qaytaring y:
+
+x = {"a", "b", "c"}
+y = {"f", "e", "d", "c", "b"}
+
+z = x.issubset(y)
+
+print(z)
+
+

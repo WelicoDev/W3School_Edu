@@ -1,0 +1,8 @@
+Ta'rifi va qo'llanilishi
+Usul lower()barcha belgilar kichik harf bo'lgan qatorni qaytaradi.
+
+ Belgilar va raqamlar e'tiborga olinmaydi.
+
+Sintaksis
+string.lower()
+

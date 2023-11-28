@@ -1,0 +1,54 @@
+Element qiymatini o'zgartirish
+Muayyan elementning qiymatini o'zgartirish uchun indeks raqamiga qarang:
+
+Ikkinchi elementni o'zgartiring:
+
+thislist = ["apple", "banana", "cherry"]
+thislist[1] = "blackcurrant"
+print(thislist)
+
+Element qiymatlari diapazonini o'zgartirish
+Muayyan diapazondagi elementlarning qiymatini o'zgartirish uchun yangi qiymatlar bilan ro'yxatni belgilang va yangi qiymatlarni kiritmoqchi bo'lgan indeks raqamlari oralig'iga murojaat qiling:
+
+Misol
+"Banan" va "gilos" qiymatlarini "qora smorodina" va "tarvuz" qiymatlari bilan o'zgartiring:
+
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "mango"]
+thislist[1:3] = ["blackcurrant", "watermelon"]
+print(thislist)
+
+
+Agar siz almashtirganingizdan ko'proq narsalarni qo'shsangiz, yangi elementlar siz ko'rsatgan joyga kiritiladi va qolgan elementlar mos ravishda harakatlanadi:
+
+Misol
+Ikkinchi qiymatni ikkita yangi qiymat bilan almashtiring :
+
+thislist = ["apple", "banana", "cherry"]
+thislist[1:2] = ["blackcurrant", "watermelon"]
+print(thislist)
+
+***Eslatma: Kiritilgan elementlar soni almashtirilgan elementlar soniga mos kelmasa, roʻyxat uzunligi oʻzgaradi.
+
+Agar siz almashtirganingizdan kamroq narsalarni kiritsangiz, yangi elementlar siz ko'rsatgan joyga kiritiladi va qolgan elementlar mos ravishda harakatlanadi:
+
+Ikkinchi va uchinchi qiymatlarni bitta qiymat bilan almashtiring :
+
+thislist = ["apple", "banana", "cherry"]
+thislist[1:3] = ["watermelon"]
+print(thislist)
+
+
+Elementlarni kiritish
+Mavjud qiymatlarni almashtirmasdan yangi ro'yxat elementini kiritish uchun biz usuldan foydalanishimiz mumkin insert().
+
+Usul insert()belgilangan indeksga element kiritadi:
+
+Misol
+Uchinchi element sifatida "tarvuz" ni qo'ying:
+
+thislist = ["apple", "banana", "cherry"]
+thislist.insert(2, "watermelon")
+print(thislist)
+
+Eslatma: Yuqoridagi misol natijasida ro'yxat endi 4 ta elementni o'z ichiga oladi.
+

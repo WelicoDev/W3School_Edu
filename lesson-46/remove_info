@@ -1,0 +1,24 @@
+Python Set remove() usuli
+
+Misol
+To'plamdan "banan" ni olib tashlang:
+
+fruits = {"apple", "banana", "cherry"}
+
+fruits.remove("banana")
+
+print(fruits)
+
+
+/////////////////////////////////////////////////////////////////////////
+
+Ta'rifi va qo'llanilishi
+Usul remove()belgilangan elementni to'plamdan olib tashlaydi.
+
+Bu usul usuldan farq qiladi discard(), chunki ko'rsatilgan element mavjud bo'lmasa, remove() usul xatolikni keltirib chiqaradidiscard() va usul yo'q .
+
+Sintaksis
+set.remove(item)
+Parametr qiymatlari
+Parameter	Description
+item	Required. The item to search for, and remove

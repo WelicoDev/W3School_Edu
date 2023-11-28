@@ -1,0 +1,7 @@
+Ta'rifi va qo'llanilishi
+Usul isidentifier(), agar satr haqiqiy identifikator bo'lsa, True qiymatini qaytaradi, aks holda False.
+
+Agar satrda faqat alfanumerik harflar (az) va (0-9) yoki pastki chiziq (_) bo'lsa, u haqiqiy identifikator hisoblanadi. Yaroqli identifikator raqam bilan boshlanmasligi yoki bo‘sh joyni o‘z ichiga olmaydi.
+
+Sintaksis
+string.isidentifier()

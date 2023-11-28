@@ -1,0 +1,36 @@
+Misol
+Agar to'plamda hech qanday element xbo'lmasa, True qiymatini qaytaring y:
+
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "facebook"}
+
+z = x.isdisjoint(y)
+
+print(z)
+
+//////////////////////////////////////////////////////////////
+
+
+Ta'rifi va qo'llanilishi
+Usul isdisjoint()ikkala to'plamda elementlardan hech biri mavjud bo'lmasa, True qiymatini qaytaradi, aks holda u False qiymatini qaytaradi.
+
+Sintaksis
+set.isdisjoint(set)
+Parametr qiymatlari
+Parameter	Description
+set	Required. The set to search for equal items in
+
+
+///////////////////////////////////////
+
+Misol
+Ikkala to'plamda hech qanday element bo'lmasa-chi?
+
+Ikkala to'plamda bir yoki bir nechta element mavjud bo'lsa, False qiymatini qaytaring:
+
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+
+z = x.isdisjoint(y)
+
+print(z)

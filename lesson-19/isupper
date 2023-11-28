@@ -1,0 +1,25 @@
+Matndagi barcha belgilar katta harf bilan yozilganligini tekshiring:
+
+txt = "THIS IS NOW!"
+
+x = txt.isupper()
+
+print(x)
+
+Ta'rifi va qo'llanilishi
+Usul isupper(), agar barcha belgilar bosh harfda bo'lsa, True, aks holda False qiymatini qaytaradi.
+
+Raqamlar, belgilar va bo'shliqlar belgilanmaydi, faqat alifbo belgilar.
+
+Sintaksis
+string.isupper()
+
+Matndagi barcha belgilar katta harf bilan yozilganligini tekshiring:
+
+a = "Hello World!"
+b = "hello 123"
+c = "MY NAME IS PETER"
+
+print(a.isupper())
+print(b.isupper())
+print(c.isupper())

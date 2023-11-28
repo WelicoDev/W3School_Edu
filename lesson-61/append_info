@@ -1,0 +1,27 @@
+Misol
+Ro'yxatga element qo'shing fruits:
+
+fruits = ['apple', 'banana', 'cherry']
+fruits.append("orange")
+
+//////////////////////////////////////////////////
+
+Ta'rifi va qo'llanilishi
+Usul append()elementni ro'yxat oxiriga qo'shadi.
+
+Sintaksis
+list.append(elmnt)
+Parametr qiymatlari
+Parameter	Description
+elmnt	Required. An element of any type (string, number, object etc.)
+
+///////////////////////////////////////////////////////////////////////////
+
+
+Ko'proq misollar
+Misol
+Ro'yxatga ro'yxat qo'shing:
+
+a = ["apple", "banana", "cherry"]
+b = ["Ford", "BMW", "Volvo"]
+a.append(b)

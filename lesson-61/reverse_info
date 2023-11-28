@@ -1,0 +1,22 @@
+Python List reverse() usuli
+
+Misol
+Ro'yxat tartibini teskari aylantiring fruit :
+
+fruits = ['apple', 'banana', 'cherry']
+
+fruits.reverse()
+print(fruits)
+
+/////////////////////////////////////////////////////////////////////
+
+Ta'rifi va qo'llanilishi
+Usul reverse()elementlarning tartiblash tartibini o'zgartiradi.
+
+Sintaksis
+list.reverse()
+Parametr qiymatlari
+Parametrlar yo'q
+
+Aloqador sahifalar
+O'rnatilgan reversed() funktsiyasi teskari iterator ob'ektini qaytaradi.

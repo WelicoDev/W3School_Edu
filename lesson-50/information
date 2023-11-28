@@ -1,0 +1,29 @@
+Elementlarni qo'shish
+Lug'atga element qo'shish yangi indeks kaliti yordamida va unga qiymat belgilash orqali amalga oshiriladi:
+
+Misol
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict["color"] = "red"
+print(thisdict)
+
+
+//////////////////////////////////////////////////////////////////
+
+Lug'atni yangilash
+Usul update()lug'atni berilgan argument elementlari bilan yangilaydi. Agar element mavjud bo'lmasa, element qo'shiladi.
+
+Argument lug'at yoki kalit: qiymat juftliklari bilan takrorlanadigan ob'ekt bo'lishi kerak.
+
+Misol
+Usul yordamida lug'atga rangli element qo'shing update() :
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict.update({"color": "red"})

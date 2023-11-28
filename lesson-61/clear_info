@@ -1,0 +1,16 @@
+Python List clear() usuli
+
+Misol
+Ro'yxatdagi barcha elementlarni olib tashlang fruits:
+
+fruits = ['apple', 'banana', 'cherry', 'orange']
+
+fruits.clear()
+Ta'rifi va qo'llanilishi
+Usul clear()ro'yxatdagi barcha elementlarni olib tashlaydi.
+
+Sintaksis
+list.clear()
+Parametr qiymatlari
+Parametrlar yo'q
+

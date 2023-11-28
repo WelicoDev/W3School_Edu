@@ -1,0 +1,17 @@
+Elementlarga kirish
+Siz indeks yoki kalitga murojaat qilib, toʻplamdagi elementlarga kira olmaysiz.
+
+Lekin siz halqa yordamida toʻplam elementlarini aylanib oʻtishingiz for yoki kalit soʻz yordamida toʻplamda belgilangan qiymat mavjudligini soʻrashingiz mumkin in.
+
+MisolO'zingizning Python serveringizni oling
+To'plamni aylantiring va qiymatlarni chop eting:
+
+thisset = {"apple", "banana", "cherry"}
+
+for x in thisset:
+  print(x)
+
+******************************************************
+Elementlarni o'zgartirish
+///
+To'plam yaratilgandan so'ng, siz uning elementlarini o'zgartira olmaysiz, lekin siz yangi elementlarni qo'shishingiz mumkin.

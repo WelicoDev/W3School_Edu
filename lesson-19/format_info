@@ -1,0 +1,25 @@
+Ta'rifi va qo'llanilishi
+Usul format()belgilangan qiymat(lar) ni formatlaydi va ularni satrning to'ldiruvchisiga kiritadi.
+
+To'ldiruvchi jingalak qavslar yordamida aniqlanadi: {}. Toʻldiruvchilar haqida quyida joylashgan “Toʻldiruvchi” boʻlimida oʻqing.
+
+Usul format()formatlangan qatorni qaytaradi.
+
+Sintaksis
+string.format(value1, value2...)
+
+Parameter	Description
+value1, value2... ---	Required. One or more values that should be formatted and inserted in the string.
+
+The values are either a list of values separated by commas, a key=value list, or a combination of both.
+
+The values can be of any data type.
+
+
+***
+Misol
+Turli to'ldiruvchi qiymatlardan foydalanish:
+
+txt1 = "My name is {fname}, I'm {age}".format(fname = "John", age = 36)
+txt2 = "My name is {0}, I'm {1}".format("John",36)
+txt3 = "My name is {}, I'm {}".format("John",36)

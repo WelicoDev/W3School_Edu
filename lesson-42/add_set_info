@@ -1,0 +1,49 @@
+Elementlarni qo'shish
+To'plam yaratilgandan so'ng, siz uning elementlarini o'zgartira olmaysiz, lekin siz yangi elementlarni qo'shishingiz mumkin.
+
+To'plamga bitta element qo'shish uchun add() usuldan foydalaning.
+
+MisolO'zingizning Python serveringizni oling
+Quyidagi usul yordamida to'plamga element qo'shing add() :
+
+thisset = {"apple", "banana", "cherry"}
+
+thisset.add("orange")
+
+print(thisset)
+
+
+
+///////////////////////////////////////////////////////////////
+
+To'plamlarni qo'shish
+Joriy to'plamga boshqa to'plamdan elementlar qo'shish uchun update() usuldan foydalaning.
+
+Misol
+dan elementlar tropicalqo'shing thisset:
+
+thisset = {"apple", "banana", "cherry"}
+tropical = {"pineapple", "mango", "papaya"}
+
+thisset.update(tropical)
+
+print(thisset)
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Har qanday takrorlanadigan qo'shing
+Usuldagi ob'ekt update()to'plam bo'lishi shart emas, u har qanday takrorlanadigan ob'ekt bo'lishi mumkin (kortejlar, ro'yxatlar, lug'atlar va boshqalar).
+
+Misol
+Ro'yxat elementlarini to'plamga qo'shing:
+
+thisset = {"apple", "banana", "cherry"}
+mylist = ["kiwi", "orange"]
+
+thisset.update(mylist)
+
+print(thisset)

@@ -1,0 +1,32 @@
+Python
+Python - mashhur dasturlash tili.
+U Guido van Rossum tomonidan yaratilgan va 1991 yilda chiqarilgan.
+
+U quyidagilar uchun ishlatiladi:
+
+ --veb-ishlab chiqish (server tomonida),
+ --dasturiy ta'minotni ishlab chiqish,
+ --matematika,
+ --tizim skripti.
+
+Python nima qila oladi?
+ --Python veb-ilovalarni yaratish uchun serverda ishlatilishi mumkin.
+ --Python ish oqimlarini yaratish uchun dasturiy ta'minot bilan birga ishlatilishi mumkin.
+ --Python ma'lumotlar bazasi tizimlariga ulanishi mumkin. Shuningdek, u fayllarni o'qishi va o'zgartirishi mumkin.
+ --Python katta ma'lumotlarni qayta ishlash va murakkab matematikani bajarish uchun ishlatilishi mumkin.
+ --Python tez prototiplash yoki ishlab chiqarishga tayyor dasturiy ta'minotni ishlab chiqish uchun ishlatilishi mumkin.
+
+Nima uchun Python?
+ --Python turli platformalarda ishlaydi (Windows, Mac, Linux, Raspberry Pi va boshqalar).
+ --Python ingliz tiliga o'xshash oddiy sintaksisga ega.
+ --Pythonda ishlab chiquvchilarga boshqa dasturlash tillariga qaraganda kamroq qatorli dasturlar yozish imkonini beruvchi sintaksis mavjud.
+ --Python tarjimon tizimida ishlaydi, ya'ni kod yozilishi bilanoq bajarilishi mumkin. Bu prototip yaratish juda tez bo'lishi mumkinligini anglatadi.
+ --Pythonni protsessual, ob'ektga yo'naltirilgan yoki funktsional usulda tuzatish mumkin.
+
+Python sintaksisi boshqa dasturlash tillariga nisbatan
+Python o'qish uchun mo'ljallangan va matematika ta'sirida ingliz tiliga o'xshashliklarga ega.
+Ko'pincha nuqta-vergul yoki qavs ishlatadigan boshqa dasturlash tillaridan farqli o'laroq, Python buyruqni bajarish uchun yangi qatorlardan foydalanadi.
+Python qamrovni aniqlash uchun bo'sh joydan foydalanib, chekinishga tayanadi; tsikllar, funksiyalar va sinflar doirasi kabi. Boshqa dasturlash tillari ko'pincha bu maqsadda jingalak qavslardan foydalanadi.
+
+
+

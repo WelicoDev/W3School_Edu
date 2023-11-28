@@ -1,0 +1,117 @@
+Tuple
+Kortejlar bir o'zgaruvchida bir nechta elementlarni saqlash uchun ishlatiladi.
+
+Tuple - Python-da ma'lumotlar to'plamini saqlash uchun ishlatiladigan 4 ta o'rnatilgan ma'lumotlar turlaridan biri, qolgan 3 tasi List , Set va Lug'at bo'lib , ularning barchasi turli sifat va foydalanishga ega.
+
+Kortej - bu tartiblangan va o'zgarmas to'plam .
+
+Tuplar dumaloq qavslar bilan yoziladi.
+
+mytuple = ("apple", "banana", "cherry")
+
+print(mytuple)
+
+Tuple elementlari
+Tuple elementlari tartiblangan, o'zgarmas va takroriy qiymatlarga ruxsat beradi.
+
+Tuple elementlari indekslanadi, birinchi element indeksga ega [0], ikkinchi element indeksga ega [1]va hokazo.
+
+Buyurtma qilingan
+Kortejlar buyurtma qilingan desak, bu elementlarning belgilangan tartibi borligini va bu tartib o'zgarmasligini bildiradi.
+
+
+O'zgarmas
+Kortejlar o'zgarmasdir, ya'ni kortej yaratilgandan keyin biz elementlarni o'zgartira olmaymiz, qo'sha olmaymiz yoki olib tashlay olmaymiz.
+
+Dublikatlarga ruxsat berish
+Kortejlar indekslanganligi sababli ular bir xil qiymatdagi elementlarga ega bo'lishi mumkin:
+
+Misol
+Kortejlar takroriy qiymatlarga ruxsat beradi:
+
+thistuple = ("apple", "banana", "cherry", "apple", "cherry")
+print(thistuple)
+
+////////////////////////////////////////////////////////////////
+
+Tuple uzunligi
+Tupleda nechta element borligini aniqlash uchun funktsiyadan foydalaning len():
+
+Misol
+Tupledagi elementlar sonini chop eting:
+
+thistuple = ("apple", "banana", "cherry")
+print(len(thistuple))
+
+
+//////////////////////////////////////////////////////////////////////////////////
+
+Bitta element bilan to'plam yarating
+Faqat bitta element bilan kortej yaratish uchun elementdan keyin vergul qo'shishingiz kerak, aks holda Python uni kortej sifatida tan olmaydi.
+
+Misol
+Bitta element qatori, vergulni eslab qoling:
+
+thistuple = ("apple",)
+print(type(thistuple))
+
+#NOT a tuple
+thistuple = ("apple")
+print(type(thistuple))
+
+Tuple Items - Ma'lumotlar turlari
+Tuple elementlari har qanday turdagi ma'lumotlarga ega bo'lishi mumkin:
+
+Misol
+String, int va boolean ma'lumotlar turlari:
+
+tuple1 = ("apple", "banana", "cherry")
+tuple2 = (1, 5, 7, 9, 3)
+tuple3 = (True, False, False)
+
+Tuple turli xil ma'lumotlarni o'z ichiga olishi mumkin:
+
+Misol
+Satrlar, butun sonlar va mantiqiy qiymatlardan iborat kortej:
+
+tuple1 = ("abc", 34, True, 40, "male")
+
+//////////////////////////////////////////////////////
+
+turi()
+Python nuqtai nazaridan, kortejlar "tuple" ma'lumotlar turiga ega ob'ektlar sifatida aniqlanadi:
+
+<class 'tuple'>
+Misol
+Kortejning ma'lumotlar turi qanday?
+
+mytuple = ("apple", "banana", "cherry")
+print(type(mytuple))
+
+
+//////////////////////////////////////////////////////////////
+
+Tuple() konstruktori
+Tuple() konstruktoridan tuple yaratish uchun ham foydalanish mumkin .
+
+Misol
+Tuple() usulidan foydalanib, kortej yaratish:
+
+thistuple = tuple(("apple", "banana", "cherry")) # note the double round-brackets
+print(thistuple)
+
+
+//////////////////////////////////////
+
+Python to'plamlari (massivlar)
+Python dasturlash tilida to'rtta turdagi ma'lumotlar to'plami mavjud:
+
+Ro'yxat - bu tartiblangan va o'zgaruvchan to'plam. Takroriy a'zolarga ruxsat beradi.
+Tuple - bu tartiblangan va o'zgarmas to'plam. Takroriy a'zolarga ruxsat beradi.
+Toʻplam tartibsiz, oʻzgarmas* va indekslanmagan toʻplamdir. Takroriy a'zolar yo'q.
+Lug'at tartibli** va o'zgaruvchan to'plamdir. Takroriy a'zolar yo'q.
+*Toʻplam elementlarini oʻzgartirish mumkin emas, lekin siz xohlagan vaqtda narsalarni olib tashlashingiz va/yoki qoʻshishingiz mumkin.
+
+**Python 3.7 versiyasidan boshlab lug'atlar buyurtma qilingan . Python 3.6 va undan oldingi versiyalarida lug'atlar tartibsizdir .
+
+

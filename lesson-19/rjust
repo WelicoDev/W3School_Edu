@@ -1,0 +1,20 @@
+“Banan” so‘zining 20 ta belgidan iborat, o‘ngga asoslangan versiyasini qaytaring:
+
+txt = "banana"
+
+x = txt.rjust(20)
+
+print(x, "is my favorite fruit.")
+
+Eslatma: Natijada, banan so'zining chap tomonida 14 ta bo'sh joy mavjud.
+
+Ta'rifi va qo'llanilishi
+Usul rjust()to'ldirish belgisi sifatida belgilangan belgidan (bo'sh joy sukut bo'yicha) foydalanib, satrni to'g'ri tekislaydi.
+
+Sintaksis
+string.rjust(length, character)
+
+Parametr qiymatlari
+Parameter	Description
+length	---- Required. The length of the returned string
+character ----	Optional. A character to fill the missing space (to the left of the string). Default is " " (space).

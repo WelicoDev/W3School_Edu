@@ -1,0 +1,124 @@
+Lug'at
+Lug'atlar ma'lumotlar qiymatlarini kalit: qiymat juftlarida saqlash uchun ishlatiladi.
+
+Lug'at buyurtma qilingan*, o'zgaruvchan va dublikatlarga ruxsat bermaydigan to'plamdir.
+
+  --- Python 3.7 versiyasidan boshlab lug'atlar buyurtma qilingan . Python 3.6 va undan oldingi versiyalarida lug'atlar tartibsizdir .
+
+
+Lug'at ob'ektlari
+Lug'at ob'ektlari tartiblangan, o'zgaruvchan va dublikatlarga ruxsat bermaydi.
+
+Lug'at elementlari kalit: qiymat juftliklarida taqdim etiladi va kalit nomidan foydalanish mumkin.
+
+Misol
+Lug'atning "brend" qiymatini chop eting:
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(thisdict["brand"])
+
+
+
+
+///////////////////////////////////////////////////////////////
+
+Buyurtma qilinganmi yoki buyurtmasizmi?
+Python 3.7 versiyasidan boshlab lug'atlar buyurtma qilingan . Python 3.6 va undan oldingi versiyalarida lug'atlar tartibsizdir .
+
+Lug'atlar tartiblangan desak, bu elementlarning belgilangan tartibi borligini va bu tartib o'zgarmasligini bildiradi.
+
+Tartibsiz degani elementlarning belgilangan tartibi yo'qligini bildiradi, siz indeks yordamida elementga murojaat qila olmaysiz.
+
+O'zgaruvchan
+Lug'atlar o'zgaruvchan, ya'ni lug'at yaratilgandan so'ng elementlarni o'zgartirishimiz, qo'shishimiz yoki olib tashlashimiz mumkin.
+
+Dublikatlarga ruxsat berilmagan
+Lug'atlarda bir xil kalitga ega ikkita element bo'lishi mumkin emas:
+
+Misol
+Ikki nusxadagi qiymatlar mavjud qiymatlarni qayta yozadi:
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964,
+  "year": 2020
+}
+print(thisdict)
+
+////////////////////////////////////////////////////////////////
+
+Lug'at uzunligi
+Lug'atda nechta element borligini aniqlash uchun funktsiyadan foydalaning len():
+
+Misol
+Lug'atdagi elementlar sonini chop eting:
+
+print(len(thisdict))
+
+//////////////////////////////////////////////////////////////
+
+Lug'at ob'ektlari - Ma'lumotlar turlari
+Lug'at elementlaridagi qiymatlar har qanday turdagi ma'lumotlarga ega bo'lishi mumkin:
+
+Misol
+String, int, boolean va list ma'lumotlar turlari:
+
+thisdict = {
+  "brand": "Ford",
+  "electric": False,
+  "year": 1964,
+  "colors": ["red", "white", "blue"]
+}
+
+////////////////////////////////////////////////////////////
+
+type()
+Python nuqtai nazaridan, lug'atlar "dict" ma'lumotlar turiga ega ob'ektlar sifatida aniqlanadi:
+
+<class 'dict'>
+Misol
+Lug'atning ma'lumotlar turini chop eting:
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(type(thisdict))
+
+
+////////////////////////////////////////////////////////////
+
+dict() konstruktori
+Lug'at yaratish uchun dict() konstruktoridan foydalanish ham mumkin .
+
+Misol
+Lug'at yaratish uchun dict() usulidan foydalanish:
+
+thisdict = dict(name = "John", age = 36, country = "Norway")
+print(thisdict)
+
+/////////////////////////////////////////////////////////////
+
+
+Python to'plamlari (massivlar)
+Python dasturlash tilida to'rtta turdagi ma'lumotlar to'plami mavjud:
+
+Ro'yxat - bu tartiblangan va o'zgaruvchan to'plam. Takroriy a'zolarga ruxsat beradi.
+Tuple - bu tartiblangan va o'zgarmas to'plam. Takroriy a'zolarga ruxsat beradi.
+Toʻplam tartibsiz, oʻzgarmas* va indekslanmagan toʻplamdir. Takroriy a'zolar yo'q.
+Lug'at tartibli** va o'zgaruvchan to'plamdir. Takroriy a'zolar yo'q.
+
+///////////////////////////////////////////////////////////////////////
+
+*Toʻplam elementlarini oʻzgartirish mumkin emas, lekin siz xohlagan vaqtda narsalarni olib tashlashingiz va/yoki qoʻshishingiz mumkin.
+
+**Python 3.7 versiyasidan boshlab lug'atlar buyurtma qilingan . Python 3.6 va undan oldingi versiyalarida lug'atlar tartibsizdir .
+
+To'plam turini tanlashda ushbu turdagi xususiyatlarni tushunish foydalidir. Muayyan ma'lumotlar to'plami uchun to'g'ri turni tanlash ma'noni saqlab qolish va samaradorlik yoki xavfsizlikni oshirishni anglatishi mumkin.
+

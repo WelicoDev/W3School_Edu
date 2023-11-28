@@ -1,0 +1,35 @@
+Python List extension() usuli
+
+Misol
+carsRo'yxatga quyidagi elementlarni qo'shing fruits:
+
+fruits = ['apple', 'banana', 'cherry']
+
+cars = ['Ford', 'BMW', 'Volvo']
+
+fruits.extend(cars)
+
+print(fruits)
+
+///////////////////////////////////////////////////////////////
+
+Ta'rifi va qo'llanilishi
+Usul extend()belgilangan ro'yxat elementlarini (yoki har qanday takrorlanadigan) joriy ro'yxatning oxiriga qo'shadi.
+
+Sintaksis
+list.extend(iterable)
+Parametr qiymatlari
+Parameter	Description
+iterable	Required. Any iterable (list, set, tuple, etc.)
+
+//////////////////////////////////////////////////////////
+
+Ko'proq misollar
+Misol
+Ro'yxatga bir qator qo'shing fruits:
+
+fruits = ['apple', 'banana', 'cherry']
+
+points = (1, 4, 5, 9)
+
+fruits.extend(points)

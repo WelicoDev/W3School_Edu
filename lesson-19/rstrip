@@ -1,0 +1,27 @@
+Satr oxiridagi oq bo'shliqlarni olib tashlang:
+
+txt = "     banana     "
+
+x = txt.rstrip()
+
+print("of all fruits", x, "is my favorite")
+
+
+Ta'rifi va qo'llanilishi
+Usul rstrip()har qanday keyingi belgilarni (satr oxiridagi belgilar) o'chiradi, bo'sh joy esa olib tashlash uchun birlamchi keyingi belgilar hisoblanadi.
+
+Sintaksis
+string.rstrip(characters)
+
+Parametr qiymatlari
+Parameter	Description
+characters ----	Optional. A set of characters to remove as trailing characters
+
+Misol
+Agar ular vergul, nuqta, s, q yoki w bo'lsa, keyingi belgilarni olib tashlang:
+
+txt = "banana,,,,,ssqqqww....."
+
+x = txt.rstrip(",.qsw")
+
+print(x)

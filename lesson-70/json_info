@@ -1,0 +1,148 @@
+Python JSON
+JSON - bu ma'lumotlarni saqlash va almashish uchun sintaksis.
+
+JSON - JavaScript ob'ekt belgilari bilan yozilgan matn.
+
+Pythonda JSON
+jsonPython-da JSON ma'lumotlari bilan ishlash uchun ishlatilishi mumkin bo'lgan o'rnatilgan paket mavjud .
+
+//////////////////////////////////
+
+json modulini import qiling:
+
+import json
+
+/////////////////////////////////////
+
+JSONni tahlil qilish - JSON-dan Python-ga aylantirish
+Agar sizda JSON satri bo'lsa, uni json.loads()usul yordamida tahlil qilishingiz mumkin.
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Natijada Python lug'ati bo'ladi .
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Misol
+JSON-dan Python-ga aylantirish:
+
+import json
+
+# some JSON:
+x =  '{ "name":"John", "age":30, "city":"New York"}'
+
+# parse x:
+y = json.loads(x)
+
+# the result is a Python dictionary:
+print(y["age"])
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Python-dan JSON-ga aylantiring
+Agar sizda Python ob'ekti bo'lsa, uni usul yordamida JSON qatoriga aylantirishingiz mumkin json.dumps().
+
+Misol
+Python-dan JSON-ga aylantirish:
+
+import json
+
+# a Python object (dict):
+x = {
+  "name": "John",
+  "age": 30,
+  "city": "New York"
+}
+
+# convert into JSON:
+y = json.dumps(x)
+
+# the result is a JSON string:
+print(y)
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Siz quyidagi turdagi Python obyektlarini JSON satrlariga aylantirishingiz mumkin:
+
+ ** dikt
+ ** ro'yxati
+ ** tuple
+ ** ip
+ ** int
+ ** float
+ ** True
+ ** False
+ ** None
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Misol
+Python obyektlarini JSON satrlariga aylantiring va qiymatlarni chop eting:
+
+import json
+
+print(json.dumps({"name": "John", "age": 30}))
+print(json.dumps(["apple", "bananas"]))
+print(json.dumps(("apple", "bananas")))
+print(json.dumps("hello"))
+print(json.dumps(42))
+print(json.dumps(31.76))
+print(json.dumps(True))
+print(json.dumps(False))
+print(json.dumps(None))
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Misol
+Barcha qonuniy ma'lumotlar turlarini o'z ichiga olgan Python ob'ektini aylantiring:
+
+import json
+
+x = {
+  "name": "John",
+  "age": 30,
+  "married": True,
+  "divorced": False,
+  "children": ("Ann","Billy"),
+  "pets": None,
+  "cars": [
+    {"model": "BMW 230", "mpg": 27.5},
+    {"model": "Ford Edge", "mpg": 24.1}
+  ]
+}
+
+print(json.dumps(x ))
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Natijani formatlash
+Yuqoridagi misol JSON satrini chop etadi, lekin uni o'qish unchalik oson emas, hech qanday chekinish va qator uzilishlari yo'q.
+
+Usul json.dumps()natijani o'qishni osonlashtiradigan parametrlarga ega:
+
+Misol
+indentChiziqlar sonini aniqlash uchun parametrdan foydalaning :
+
+json.dumps(x, indent=4)
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Shuningdek, siz ajratuvchilarni belgilashingiz mumkin, standart qiymat (", ", ": "), bu har bir ob'ektni ajratish uchun vergul va bo'sh joydan, kalitlarni qiymatlardan ajratish uchun esa ikki nuqta va bo'sh joydan foydalanishni anglatadi:
+
+Misol
+separatorsStandart ajratgichni o'zgartirish uchun parametrdan foydalaning :
+
+json.dumps(x, indent=4, separators=(". ", " = "))
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Natijaga buyurtma bering
+Usul json.dumps()natijada kalitlarni buyurtma qilish uchun parametrlarga ega:
+
+Misol
+sort_keysNatijani tartiblash kerak yoki yo'qligini aniqlash uchun parametrdan foydalaning :
+
+json.dumps(x, indent=4, sort_keys=True)

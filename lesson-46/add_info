@@ -1,0 +1,32 @@
+Misol
+To'plamga element qo'shing fruits:
+
+fruits = {"apple", "banana", "cherry"}
+
+fruits.add("orange")
+
+print(fruits)
+
+Ta'rifi va qo'llanilishi
+Usul add()to'plamga element qo'shadi.
+
+Agar element allaqachon mavjud bo'lsa, add()usul elementni qo'shmaydi.
+
+Sintaksis
+set.add(elmnt)
+Parametr qiymatlari
+Parameter	Description
+elmnt	----  Required. The element to add to the set
+
+
+////////////////////////////////
+
+Ko'proq misollar
+Misol
+Mavjud elementni qo'shishga harakat qiling:
+
+fruits = {"apple", "banana", "cherry"}
+
+fruits.add("apple")
+
+print(fruits)

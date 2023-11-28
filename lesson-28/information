@@ -1,0 +1,114 @@
+Ro'yxatni tushunish
+Mavjud ro'yxat qiymatlari asosida yangi ro'yxat yaratmoqchi bo'lganingizda, ro'yxatni tushunish qisqaroq sintaksisni taklif qiladi.
+
+Misol:
+
+Mevalar ro'yxatiga asoslanib, siz faqat "a" harfi bo'lgan mevalarni o'z ichiga olgan yangi ro'yxatni xohlaysiz.
+
+for ---- Ro'yxatni tushunmasdan , ichida shartli test bilan bayonot yozishingiz kerak bo'ladi :
+
+
+Misol
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newlist = []
+
+for x in fruits:
+  if "a" in x:
+    newlist.append(x)
+
+print(newlist)
+
+Ro'yxatni tushunish bilan siz buni faqat bitta kod qatori bilan qilishingiz mumkin:
+
+Misol
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+
+newlist = [x for x in fruits if "a" in x]
+
+print(newlist)
+
+
+INFO !
+Sintaksis
+newlist = [expression for item in iterable if condition == True]
+Qaytish qiymati yangi ro'yxat bo'lib, eski ro'yxatni o'zgarishsiz qoldiradi.
+
+Vaziyat
+Vaziyat faqat qiymatga ega bo'lgan narsalarni qabul qiladigan filtrga o'xshaydiTrue .
+
+
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+
+newlist = [x for x in fruits if x != "apple"]
+
+print(newlist)
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+Takrorlash mumkin
+Takrorlanadigan har qanday takrorlanadigan ob'ekt bo'lishi mumkin, masalan, ro'yxat, kortej, to'plam va boshqalar.
+
+Misol
+range()Bu funksiyadan takrorlanuvchi yaratish uchun foydalanishingiz mumkin :
+
+newlist = [x for x in range(10)]
+
+
+Xuddi shu misol, lekin shart bilan:
+
+Misol
+Faqat 5 dan kichik raqamlarni qabul qiling:
+
+newlist = [x for x in range(10) if x < 5]
+
+print(newlist)
+
+
+/////////////////////////////////////////////////////////////////////////////
+
+Ifoda
+Ifoda iteratsiyaning joriy elementidir, lekin u ayni paytda yangi roʻyxatdagi roʻyxat elementi kabi tugashidan oldin uni boshqarishingiz mumkin boʻlgan natijadir :
+
+Misol
+Yangi ro'yxatdagi qiymatlarni katta harfga o'rnating:
+
+
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+
+newlist = [x.upper() for x in fruits]
+
+print(newlist)
+
+
+Vaziyat if x != "apple"  "olma" dan boshqa barcha elementlar uchun qaytadi True, yangi ro'yxat "olma" dan tashqari barcha mevalarni o'z ichiga oladi.
+
+Shart ixtiyoriy va o'tkazib yuborilishi mumkin:
+
+Misol
+Hech qanday ifbayonotsiz:
+
+newlist = [x for x in fruits]
+
+
+////////////////////////////////////////////////////////////////////
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+
+newlist = ['hello' for x in fruits]
+
+print(newlist)
+
+
+Ifoda filtr kabi emas, balki natijani boshqarish usuli sifatida shartlarni ham o'z ichiga olishi mumkin :
+
+
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+
+newlist = [x if x != "banana" else "orange" for x in fruits]
+
+print(newlist)
+
+
+Yuqoridagi misoldagi ibora shunday deydi:
+
+"Agar banan bo'lmasa, uni qaytaring, agar banan bo'lsa, apelsinni qaytaring".

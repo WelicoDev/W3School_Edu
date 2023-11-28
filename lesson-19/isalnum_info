@@ -1,0 +1,16 @@
+Ta'rifi va qo'llanilishi
+isalnum()Agar barcha belgilar alfavit-raqamli bo'lsa, bu usul alifbo harfi (az) va raqamlarni (0-9) bildirsa, "True" qiymatini qaytaradi.
+
+Alfanumerik bo'lmagan belgilarga misol: (bo'shliq)!#%&? va boshqalar.
+
+Sintaksis
+string.isalnum()
+
+Misol
+Matndagi barcha belgilar alfanumerik ekanligini tekshiring:
+
+txt = "Company 12"
+
+x = txt.isalnum()
+
+print(x)

@@ -1,0 +1,28 @@
+Python lug'atini yangilash() usuli
+
+Misol
+Lug'atga element kiriting:
+
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+car.update({"color": "White"})
+
+print(car)
+
+
+///////////////////////////////
+
+Ta'rifi va qo'llanilishi
+Usul update()belgilangan elementlarni lug'atga kiritadi.
+
+Belgilangan elementlar lug'at yoki kalit qiymat juftliklari bilan takrorlanadigan ob'ekt bo'lishi mumkin.
+
+Sintaksis
+dictionary.update(iterable)
+Parametr qiymatlari
+Parameter	Description
+iterable	A dictionary or an iterable object with key value pairs, that will be inserted to the dictionary

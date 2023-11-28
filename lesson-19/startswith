@@ -1,0 +1,29 @@
+Satr "Salom" bilan boshlanganligini tekshiring:
+
+txt = "Hello, welcome to my world."
+
+x = txt.startswith("Hello")
+
+print(x)
+
+Ta'rifi va qo'llanilishi
+Usul, startswith()agar satr belgilangan qiymatdan boshlansa, True qiymatini qaytaradi, aks holda False.
+
+Sintaksis
+string.startswith(value, start, end)
+
+Parametr qiymatlari
+Parameter	Description
+value	---- Required. The value to check if the string starts with
+start	---- Optional. An Integer specifying at which position to start the search
+end	    ---- Optional. An Integer specifying at which position to end the search
+
+
+Misol
+7 dan 20 gacha pozitsiyalar "wel" belgilari bilan boshlanganligini tekshiring:
+
+txt = "Hello, welcome to my world."
+
+x = txt.startswith("wel", 7, 20)
+
+print(x)

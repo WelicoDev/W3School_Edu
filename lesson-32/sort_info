@@ -1,0 +1,42 @@
+Ro'yxatni alifbo tartibida tartiblang:
+
+cars = ['Ford', 'BMW', 'Volvo']
+
+cars.sort()
+
+//////////////////////////////////////////////////////////////
+
+Ta'rifi va qo'llanilishi
+Usul sort()ro'yxatni sukut bo'yicha o'sish bo'yicha tartiblaydi.
+
+Shuningdek, tartiblash mezonlarini (mezonlarini) hal qilish uchun funktsiyani yaratishingiz mumkin.
+
+Sintaksis
+list.sort(reverse=True|False, key=myFunc)
+Parametr qiymatlari
+Parameter	Description
+reverse -------------	Optional. reverse=True will sort the list descending. Default is reverse=False
+key	 ------------  Optional. A function to specify the sorting criteria(s)
+
+
+
+/////////////////////////
+
+Misol
+Ro'yxatni kamayishiga qarab tartiblang:
+
+cars = ['Ford', 'BMW', 'Volvo']
+
+cars.sort(reverse=True)
+////////////////////////////////////////
+
+Ro'yxatni qiymatlar uzunligi bo'yicha tartiblang:
+
+# A function that returns the length of the value:
+def myFunc(e):
+  return len(e)
+
+cars = ['Ford', 'Mitsubishi', 'BMW', 'VW']
+
+cars.sort(key=myFunc)
+

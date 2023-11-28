@@ -1,0 +1,24 @@
+Ta'rifi va qo'llanilishi
+Usul rsplit()o'ngdan boshlab qatorni ro'yxatga ajratadi.
+
+Agar "maks" belgilanmagan bo'lsa, bu usul split() usul bilan bir xilni qaytaradi.
+
+Eslatma: maxsplit ko'rsatilganda, ro'yxatda ko'rsatilgan elementlar soni va bittadan iborat bo'ladi .
+
+Sintaksis
+string.rsplit(separator, maxsplit)
+
+Parametr qiymatlari
+Parameter	Description
+separator	Optional. Specifies the separator to use when splitting the string. By default any whitespace is a separator
+maxsplit	Optional. Specifies how many splits to do. Default value is -1, which is "all occurrences"
+
+Satrni maksimal 2 ta elementdan iborat roʻyxatga ajrating:
+
+txt = "apple, banana, cherry"
+
+# setting the maxsplit parameter to 1, will return a list with 2 elements!
+x = txt.rsplit(", ", 1)
+
+print(x)
+

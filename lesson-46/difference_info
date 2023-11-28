@@ -1,0 +1,32 @@
+Misol
+xTo'plamda emas, faqat to'plamda mavjud bo'lgan elementlarni o'z ichiga olgan to'plamni qaytaring y:
+
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+
+z = x.difference(y)
+
+print(z)
+
+
+Ta'rifi va qo'llanilishi
+Usul difference()ikki to'plam orasidagi farqni o'z ichiga olgan to'plamni qaytaradi.
+
+Ma'nosi: Qaytarilgan to'plam ikkala to'plamda emas, faqat birinchi to'plamda mavjud bo'lgan elementlarni o'z ichiga oladi.
+
+Sintaksis
+set.difference(set)
+Parametr qiymatlari
+Parameter	Description
+set ------ 	Required. The set to check for differences in
+
+Ko'proq misollar
+Misol
+Birinchi misolni o'zgartiring. yTo'plamda emas, faqat to'plamda mavjud bo'lgan elementlarni o'z ichiga olgan to'plamni qaytaring x:
+
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+
+z = y.difference(x)
+
+print(z)

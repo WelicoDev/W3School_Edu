@@ -1,0 +1,82 @@
+Lambda funksiyasi kichik anonim funksiyadir.
+
+Lambda funksiyasi har qanday miqdordagi argumentlarni qabul qilishi mumkin, lekin faqat bitta ifodaga ega bo'lishi mumkin.
+
+Sintaksis
+lambda arguments : expression
+Ifoda bajariladi va natija qaytariladi:
+
+argumentga 10 qo'shing ava natijani qaytaring:
+
+x = lambda a : a + 10
+print(x(5))
+
+/////////////////////////////////////////////////////////////////////////////
+
+Lambda funktsiyalari har qanday argumentlarni qabul qilishi mumkin:
+
+Misol
+aArgumentni argument bilan ko'paytiring bva natijani qaytaring:
+
+x = lambda a, b : a * b
+print(x(5, 6))
+
+/////////////////////////////////////////////////////////////////////////////
+
+Misol
+a,b ,c argumentini umumlashtiring natijani qaytaring:
+
+x = lambda a, b, c : a + b + c
+print(x(5, 6, 2))
+
+/////////////////////////////////////////////////////////////////////////////
+
+Nima uchun Lambda funktsiyalaridan foydalanish kerak?
+Lambda kuchi ularni boshqa funktsiya ichida anonim funksiya sifatida ishlatganda yaxshiroq namoyon bo'ladi.
+
+Aytaylik, sizda bitta argumentni oladigan funktsiya ta'rifi bor va bu argument noma'lum raqamga ko'paytiriladi:
+
+def myfunc(n):
+  return lambda a : a * n
+Siz yuborgan raqamni har doim ikki baravar oshiradigan funktsiyani yaratish uchun ushbu funktsiya ta'rifidan foydalaning:
+
+Misol
+def myfunc(n):
+  return lambda a : a * n
+
+mydoubler = myfunc(2)
+
+print(mydoubler(11))
+
+////////////////////////////////////
+
+Yoki siz yuborgan raqamni har doim uch baravar oshiradigan funktsiyani yaratish uchun bir xil funktsiya ta'rifidan foydalaning :
+
+Misol
+def myfunc(n):
+  return lambda a : a * n
+
+mytripler = myfunc(3)
+
+print(mytripler(11))
+
+//////////////////////////////////////////////////////////////////////////////
+
+Yoki ikkala funksiyani bir xil dasturda bajarish uchun bir xil funksiya taʼrifidan foydalaning:
+
+Misol
+def myfunc(n):
+  return lambda a : a * n
+
+mydoubler = myfunc(2)
+mytripler = myfunc(3)
+
+print(mydoubler(11))
+print(mytripler(11))
+
+///////////////////////////////////////////////////////////////////////
+
+Qisqa vaqt ichida anonim funksiya talab qilinganda lambda funksiyalaridan foydalaning.
+
+//////////////////////////////////////////////////////////////////////
+

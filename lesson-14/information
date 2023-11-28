@@ -1,0 +1,37 @@
+Slice sintaksisidan foydalanib, bir qator belgilarni qaytarishingiz mumkin.
+
+Satrning bir qismini qaytarish uchun ikki nuqta bilan ajratilgan boshlang'ich indeksini va tugatish indeksini belgilang.
+
+2-pozitsiyadan 5-pozitsiyaga belgilarni oling (qo'shilmagan):
+
+ ** b = "Hello, World!"
+ ** print(b[2:5])
+
+Eslatma: Birinchi belgi 0 indeksiga ega.
+
+Boshlanish indeksini qoldirsangiz, diapazon birinchi belgidan boshlanadi:
+
+Misol
+Belgilarni boshidan 5-holatgacha oling (qo'shilmagan):
+
+ ** b = "Hello, World!"
+ ** print(b[:5])
+
+Yakuniy indeksni qoldirsangiz , diapazon oxirigacha boradi:
+
+Misol
+Belgilarni 2-pozitsiyadan oxirigacha oling:
+
+b = "Hello, World!"
+print(b[2:])
+
+Manfiy indekslash
+Qismni satr oxiridan boshlash uchun manfiy indekslardan foydalaning:
+Misol
+
+Kimdan: "Dunyo!"da "o" (pozitsiya -5)
+
+Kimga, lekin kiritilmagan: "Dunyo!"da "d" (pozitsiya -2):
+
+b = "Hello, World!"
+print(b[-5:-2])

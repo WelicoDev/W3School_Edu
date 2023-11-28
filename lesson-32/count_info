@@ -1,0 +1,26 @@
+Misol
+Ro'yxatda "gilos" qiymati necha marta paydo bo'lishini qaytaring fruits:
+
+fruits = ['apple', 'banana', 'cherry']
+
+x = fruits.count("cherry")
+
+////
+Ta'rifi va qo'llanilishi
+Usul count()belgilangan qiymatga ega elementlar sonini qaytaradi.
+
+Sintaksis
+list.count(value)
+Parametr qiymatlari
+Parameter	Description
+value	Required. Any type (string, number, list, tuple, etc.). The value to search for.
+
+////////////////////////////////////////////////
+
+Ko'proq misollar
+Misol
+Ro'yxatda 9 qiymati necha marta paydo bo'lishini qaytaring:
+
+points = [1, 4, 2, 9, 7, 8, 9, 3, 1]
+
+x = points.count(9)

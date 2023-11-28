@@ -1,0 +1,10 @@
+Loop elementlari
+Loop yordamida o'rnatilgan elementlarni aylanib o'tishingiz mumkin for :
+
+Misol
+To'plamni aylantiring va qiymatlarni chop eting:
+
+thisset = {"apple", "banana", "cherry"}
+
+for x in thisset:
+  print(x)

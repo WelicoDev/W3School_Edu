@@ -1,0 +1,28 @@
+Comments
+
+Sharhlar Python kodini tushuntirish uchun ishlatilishi mumkin.
+
+Kodni yanada o'qilishi uchun izohlardan foydalanish mumkin.
+
+Sharhlar kodni sinab ko'rishda bajarilishini oldini olish uchun ishlatilishi mumkin.
+
+Sharhlar bilan boshlanadi #va Python ularni e'tiborsiz qoldiradi:
+
+Misol
+ ** #This is a comment
+ ** print("Hello, World!")
+
+Izohlar satr oxirida joylashtirilishi mumkin va Python qatorning qolgan qismini e'tiborsiz qoldiradi:
+
+Misol
+ ** print("Hello, World!") #This is a comment
+
+Python o'zgaruvchiga tayinlanmagan satr harflarini e'tiborsiz qoldirishi sababli, kodingizga ko'p qatorli satr (uch qo'shtirnoq) qo'shishingiz va o'z sharhingizni uning ichiga joylashtirishingiz mumkin:
+
+Misol
+"""
+This is a comment
+written in
+more than just one line
+"""
+ ** print("Hello, World!")

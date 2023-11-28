@@ -1,0 +1,47 @@
+Python Dictionary pop() usuli
+
+Misol
+Lug'atdan "model" ni olib tashlang:
+
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+car.pop("model")
+
+print(car)
+
+
+//////////////////////////////////////////
+
+Ta'rifi va qo'llanilishi
+Usul pop()belgilangan elementni lug'atdan olib tashlaydi.
+
+O'chirilgan elementning qiymati usulning qaytish qiymatidir pop() , quyidagi misolga qarang.
+
+Sintaksis
+dictionary.pop(keyname, defaultvalue)
+Parametr qiymatlari
+Parameter	Description
+keyname	Required. The keyname of the item you want to remove
+defaultvalue	Optional. A value to return if the specified key do not exist.
+
+If this parameter is not specified, and the no item with the specified key is found, an error is raised
+
+////////////////////////////////////////////////////////////////////
+
+Ko'proq misollar
+Misol
+O'chirilgan elementning qiymati pop() usulining qaytish qiymatidir:
+
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+x = car.pop("model")
+
+print(x)

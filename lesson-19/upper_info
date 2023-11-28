@@ -1,0 +1,16 @@
+Katta harfdagi satr:
+
+txt = "Hello my friends"
+
+x = txt.upper()
+
+print(x)
+
+Ta'rifi va qo'llanilishi
+Usul upper()barcha belgilar katta harf bilan yozilgan qatorni qaytaradi.
+
+ Belgilar va raqamlar e'tiborga olinmaydi.
+
+Sintaksis
+string.upper()
+

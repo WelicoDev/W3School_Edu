@@ -1,0 +1,26 @@
+Ro'yxatning ikkinchi elementini olib tashlang fruit :
+
+fruits = ['apple', 'banana', 'cherry']
+
+fruits.pop(1)
+
+Ta'rifi va qo'llanilishi
+Usul pop()belgilangan holatda elementni olib tashlaydi.
+
+Sintaksis
+list.pop(pos)
+Parametr qiymatlari
+Parameter	Description
+pos	 ---- Optional. A number specifying the position of the element you want to remove, default value is -1, which returns the last item
+
+
+Ko'proq misollar
+Misol
+O'chirilgan elementni qaytaring:
+
+fruits = ['apple', 'banana', 'cherry']
+
+x = fruits.pop(1)
+
+print(x)
+Eslatma: Usul pop()o'chirilgan qiymatni qaytaradi.

@@ -1,0 +1,40 @@
+“Banan” so‘zi almashtirilsin:
+
+txt = "I like bananas"
+
+x = txt.replace("bananas", "apples")
+
+print(x)
+
+Ta'rifi va qo'llanilishi
+Usul replace()belgilangan iborani boshqa belgilangan ibora bilan almashtiradi.
+
+Eslatma: Agar boshqa hech narsa ko'rsatilmagan bo'lsa, ko'rsatilgan iboraning barcha holatlari almashtiriladi.
+
+Sintaksis
+string.replace(oldvalue, newvalue, count)
+
+Parametr qiymatlari
+Parameter	Description
+oldvalue ----	Required. The string to search for
+newvalue ----	Required. The string to replace the old value with
+count	 ----   Optional. A number specifying how many occurrences of the old value you want to replace. Default is all occurrences
+
+
+Misol
+“Bir” so‘zining barcha ko‘rinishlari almashtirilsin:
+
+txt = "one one was a race horse, two two was one too."
+
+x = txt.replace("one", "three")
+
+print(x)
+
+Misol
+“Bir” so‘zining birinchi ikkita ko‘rinishi almashtirilsin:
+
+txt = "one one was a race horse, two two was one too."
+
+x = txt.replace("one", "three", 2)
+
+print(x)

@@ -1,0 +1,16 @@
+Ta'rifi va qo'llanilishi
+Usul, isdigit()agar barcha belgilar raqam bo'lsa, True, aks holda False qiymatini qaytaradi.
+
+² kabi ko'rsatkichlar ham raqam hisoblanadi.
+
+Sintaksis
+string.isdigit()
+
+Misol
+Matndagi barcha belgilar raqam ekanligini tekshiring:
+
+a = "\u0030" #unicode for 0
+b = "\u00B2" #unicode for ²
+
+print(a.isdigit())
+print(b.isdigit())

@@ -1,0 +1,51 @@
+Global o'zgaruvchilar
+Funktsiyadan tashqarida yaratilgan o'zgaruvchilar (yuqoridagi barcha misollarda bo'lgani kabi) global o'zgaruvchilar deb nomlanadi.
+
+Global o'zgaruvchilar funksiyalar ichida ham, tashqarisida ham hamma foydalanishi mumkin.
+
+Funksiyadan tashqarida oʻzgaruvchi yarating va uni funksiya ichida ishlating
+
+x = "awesome"
+
+def myfunc():
+  print("Python is " + x)
+
+myfunc()
+
+Agar funksiya ichida bir xil nomli o‘zgaruvchi yaratsangiz, bu o‘zgaruvchi mahalliy bo‘ladi va faqat funksiya ichida ishlatilishi mumkin. Xuddi shu nomdagi global o'zgaruvchi avvalgidek, global va asl qiymati bilan qoladi.
+
+x = "awesome"
+
+def myfunc():
+  x = "fantastic"
+  print("Python is " + x)
+
+myfunc()
+
+print("Python is " + x)
+
+Global kalit so'z
+Odatda, funksiya ichida o‘zgaruvchi yaratganingizda, u o‘zgaruvchi mahalliy bo‘lib, faqat shu funksiya ichida ishlatilishi mumkin.
+
+Funktsiya ichida global o'zgaruvchini yaratish uchun siz globalkalit so'zdan foydalanishingiz mumkin.
+
+def myfunc():
+  global x
+  x = "fantastic"
+
+myfunc()
+
+print("Python is " + x)
+
+
+Funktsiya ichidagi global o'zgaruvchining qiymatini o'zgartirish uchun kalit so'z yordamida o'zgaruvchiga murojaat qiling global:
+
+x = "awesome"
+
+def myfunc():
+  global x
+  x = "fantastic"
+
+myfunc()
+
+print("Python is " + x)

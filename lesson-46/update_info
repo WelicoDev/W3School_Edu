@@ -1,0 +1,25 @@
+Python Set update() usuli
+
+Misol
+To'plamdagi elementlarni yto'plamga joylashtiring x:
+
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+
+x.update(y)
+
+print(x)
+
+////////////////////////////////////////////////////////////////////////////
+
+Ta'rifi va qo'llanilishi
+Usul update()joriy to'plamni boshqa to'plamdan (yoki boshqa iteratsiya qilinadigan) elementlarni qo'shish orqali yangilaydi.
+
+Agar ikkala to'plamda ham element mavjud bo'lsa, yangilangan to'plamda ushbu elementning faqat bitta ko'rinishi mavjud bo'ladi.
+
+Sintaksis
+set.update(set)
+Parametr qiymatlari
+Parameter	Description
+set	Required. The iterable insert into the current set
+

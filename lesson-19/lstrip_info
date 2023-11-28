@@ -1,0 +1,18 @@
+Ta'rifi va qo'llanilishi
+Usul lstrip()har qanday bosh belgilarni olib tashlaydi (bo'sh joy olib tashlash uchun birlamchi asosiy belgidir)
+
+Sintaksis
+string.lstrip(characters)
+
+Parameter	Description
+characters ----	Optional. A set of characters to remove as leading characters
+
+Misol
+Boshlovchi belgilarni olib tashlang:
+
+txt = ",,,,,ssaaww.....banana"
+
+x = txt.lstrip(",.asw")
+
+print(x)
+

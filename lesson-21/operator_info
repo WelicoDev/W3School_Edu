@@ -1,0 +1,62 @@
+Python operatorlari
+Operatorlar o'zgaruvchilar va qiymatlar ustida amallarni bajarish uchun ishlatiladi.
+
+Quyidagi misolda biz +ikkita qiymatni qo'shish uchun operatordan foydalanamiz:
+
+print(10 + 5)
+
+Python operatorlarni quyidagi guruhlarga ajratadi:
+
+ ** Arifmetik operatorlar
+ ** Belgilash operatorlari
+ ** Taqqoslash operatorlari
+ ** Mantiqiy operatorlar
+ ** Identifikatsiya operatorlari
+ ** A'zolik operatorlari
+ ** Bitli operatorlar
+
+
+print(x & y)
+print(6&3)
+
+
+
+
+"""
+The & operator compares each bit and set it to 1 if both are 1, otherwise it is set to 0:
+
+6 = 0000000000000110
+3 = 0000000000000011
+--------------------
+2 = 0000000000000010
+====================
+
+Decimal numbers and their binary values:
+0 = 0000000000000000
+1 = 0000000000000001
+2 = 0000000000000010
+3 = 0000000000000011
+4 = 0000000000000100
+5 = 0000000000000101
+6 = 0000000000000110
+7 = 0000000000000111
+"""
+
+Operator ustunligi
+Operatorning ustuvorligi operatsiyalarni bajarish tartibini tavsiflaydi.
+
+Misol
+Qavslar eng yuqori ustunlikka ega, ya'ni qavs ichidagi iboralar birinchi navbatda baholanishi kerak:
+
+print((6 + 3) - (6 + 3))
+
+Ko'paytirish *qo'shishdan ko'ra ko'proq ustunlikka ega +va shuning uchun ko'paytirish qo'shimchalardan oldin baholanadi:
+
+print(100 + 5 * 3)
+
+Agar ikkita operator bir xil ustunlikka ega bo'lsa, ifoda chapdan o'ngga qarab baholanadi.
+
+Misol
+Qo'shish +va ayirish -bir xil ustunlikka ega va shuning uchun biz chapdan o'ngga ifodani baholaymiz:
+
+print(5 + 4 - 7 + 3)

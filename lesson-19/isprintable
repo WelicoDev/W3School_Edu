@@ -1,0 +1,16 @@
+Ta'rifi va qo'llanilishi
+Usul isprintable(), agar barcha belgilar chop etilishi mumkin bo'lsa, True qiymatini qaytaradi, aks holda False.
+
+Bosib bo'lmaydigan belgilarga misol sifatida karetni qaytarish va satr tasmasi bo'lishi mumkin.
+
+Sintaksis
+string.isprintable()
+
+Misol
+Matndagi barcha belgilar chop etilishi mumkinligini tekshiring:
+
+txt = "Hello!\nAre you #1?"
+
+x = txt.isprintable()
+
+print(x)

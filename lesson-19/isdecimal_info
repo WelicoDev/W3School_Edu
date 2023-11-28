@@ -1,0 +1,15 @@
+Ta'rifi va qo'llanilishi
+isdecimal()Agar barcha belgilar oʻnli kasr (0-9) boʻlsa, usul “True” qiymatini qaytaradi .
+
+Bu usul unicode obyektlarida ham qo'llanilishi mumkin. Quyidagi misolga qarang.
+
+Sintaksis
+string.isdecimal()
+
+Unicodedagi barcha belgilar o'nli kasr ekanligini tekshiring:
+
+a = "\u0030" #unicode for 0
+b = "\u0047" #unicode for G
+
+print(a.isdecimal())
+print(b.isdecimal())

@@ -1,0 +1,19 @@
+Ta'rifi va qo'llanilishi
+Usul islower(), agar barcha belgilar kichik harfda bo'lsa, True qiymatini qaytaradi, aks holda False.
+
+Raqamlar, belgilar va bo'shliqlar belgilanmaydi, faqat alifbo belgilar.
+
+Sintaksis
+string.islower()
+
+Misol
+Matndagi barcha belgilar kichik harf bilan yozilganligini tekshiring:
+
+a = "Hello world!"
+b = "hello 123"
+c = "mynameisPeter"
+
+print(a.islower())
+print(b.islower())
+print(c.islower())
+

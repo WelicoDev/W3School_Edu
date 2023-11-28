@@ -1,0 +1,18 @@
+Qochish belgisi - bu \siz kiritmoqchi bo'lgan belgidan keyin teskari chiziq.
+
+Noqonuniy belgining misoli qator ichidagi qo'sh tirnoq bilan o'ralgan qo'sh tirnoqdir:
+
+ERROR
+"""
+Agar siz qo'sh tirnoq bilan o'ralgan satr ichida qo'sh tirnoq ishlatsangiz, xatoga duch kelasiz:
+
+txt = "We are the so-called "Vikings" from the north."
+"""
+
+Ushbu muammoni hal qilish uchun qochish belgisidan foydalaning \":
+
+Misol
+Escape belgisi odatda ruxsat etilmaganda qo'sh tirnoqlardan foydalanishga imkon beradi:
+
+txt = "We are the so-called \"Vikings\" from the north."
+

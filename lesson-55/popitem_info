@@ -1,0 +1,40 @@
+MisolO'zingizning Python serveringizni oling
+Lug'atdan oxirgi elementni olib tashlang:
+
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+car.popitem()
+
+print(car)
+
+////////////////////////////////////////////
+
+Ta'rifi va qo'llanilishi
+Usul popitem()lug'atga oxirgi kiritilgan elementni olib tashlaydi. 3.7 dan oldingi versiyalarda popitem()usul tasodifiy elementni olib tashlaydi.
+
+O'chirilgan element - bu popitem() usulning qaytarish qiymati, kortej sifatida, quyidagi misolga qarang.
+
+Sintaksis
+dictionary.popitem()
+Parametr qiymatlari
+Parametrlar yo'q
+
+////////////////////////////////////////////
+
+Ko'proq misollar
+Misol
+O'chirilgan element popitem() usulining qaytish qiymatidir:
+
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+x = car.popitem()
+
+print(x)

@@ -1,0 +1,99 @@
+Strings
+Pythondagi satrlar bitta tirnoq yoki qo'sh tirnoq bilan o'ralgan.
+
+"salom" "salom" bilan bir xil .
+
+Funktsiya bilan satr literalini ko'rsatishingiz mumkin print():
+
+Misol
+ ** print("Hello")
+ ** print('Hello')
+
+O'zgaruvchiga satr tayinlash
+O'zgaruvchiga satr tayinlash o'zgaruvchi nomidan keyin teng belgisi va qator bilan amalga oshiriladi:
+
+Misol
+a = "Hello"
+print(a)
+
+Ko'p qatorli satrlar
+O'zgaruvchiga uchta tirnoq yordamida ko'p qatorli qatorni belgilashingiz mumkin:
+
+Misol
+Siz uchta qo'sh tirnoqdan foydalanishingiz mumkin:
+
+a = """Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua."""
+print(a)
+
+Eslatma: natijada satr uzilishlari koddagi kabi bir xil joyga qo'yiladi.
+
+Satrlar massivlardir
+Boshqa ko'plab mashhur dasturlash tillari singari, Python-dagi satrlar unicode belgilarni ifodalovchi bayt massivlaridir.
+
+Biroq, Pythonda belgilar ma'lumotlar turi mavjud emas, bitta belgi oddiygina uzunligi 1 bo'lgan qatordir.
+
+Kvadrat qavslar qator elementlariga kirish uchun ishlatilishi mumkin.
+
+Misol
+Belgini 1-pozitsiyada oling (birinchi belgi 0 pozitsiyasiga ega ekanligini unutmang):
+
+a = "Hello, World!"
+print(a[1])
+
+String orqali aylanish
+Satrlar massiv bo'lganligi sababli, biz qatordagi belgilarni tsikl bilan o'tkazishimiz mumkin for.
+
+Misol
+"Banan" so'zidagi harflarni aylantiring:
+
+ ** for x in "banana":
+ **     print(x)
+
+String uzunligi
+Satr uzunligini olish uchun funksiyadan foydalaning len().
+
+Misol
+Funktsiya len()satr uzunligini qaytaradi:
+
+ ** a = "Hello, World!"
+ ** print(len(a))
+
+
+Stringni tekshiring
+Satrda ma'lum bir ibora yoki belgi mavjudligini tekshirish uchun biz kalit so'zdan foydalanishimiz mumkin in.
+
+Misol
+Quyidagi matnda "bepul" mavjudligini tekshiring:
+
+ ** txt = "The best things in life are free!"
+ ** print("free" in txt)
+
+Uni bayonotda foydalaning if:
+
+Misol
+Faqat "bepul" mavjud bo'lganda chop eting:
+
+txt = "The best things in life are free!"
+ ** if "free" in txt:
+ **    print("Yes, 'free' is present.")
+
+YO'Qligini tekshiring
+Satrda ma'lum bir ibora yoki belgi YO'Qligini tekshirish uchun kalit so'zdan foydalanishimiz mumkin not in.
+
+Misol
+Quyidagi matnda "qimmat" YO'Qligini tekshiring:
+
+txt = "The best things in life are free!"
+print("expensive" not in txt)
+
+Uni bayonotda foydalaning if:
+
+Misol
+faqat "qimmat" bo'lmasa chop eting:
+
+txt = "The best things in life are free!"
+ ** if "expensive" not in txt:
+ **    print("No, 'expensive' is NOT present.")

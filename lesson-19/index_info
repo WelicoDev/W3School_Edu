@@ -1,0 +1,17 @@
+Ta'rifi va qo'llanilishi
+Usul index()belgilangan qiymatning birinchi paydo bo'lishini topadi.
+
+index()Agar qiymat topilmasa, usul istisno keltiradi .
+
+Usul index()deyarli usul bilan bir xil find() , yagona farq shundaki, find() agar qiymat topilmasa, usul -1 ni qaytaradi. (Quyida misolga qarang)
+
+Sintaksis
+string.index(value, start, end)
+
+Misol
+Agar qiymat topilmasa, find() usuli -1 ni qaytaradi, lekin index() usuli istisno keltiradi:
+
+txt = "Hello, welcome to my world."
+
+print(txt.find("q"))
+print(txt.index("q"))

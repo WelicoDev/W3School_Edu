@@ -1,0 +1,34 @@
+Misol
+To'plamdan tasodifiy elementni olib tashlang:
+
+fruits = {"apple", "banana", "cherry"}
+
+fruits.pop()
+
+print(fruits)
+Ta'rifi va qo'llanilishi
+Usul pop()tasodifiy elementni to'plamdan olib tashlaydi.
+
+Bu usul olib tashlangan elementni qaytaradi.
+
+Sintaksis
+set.pop()
+Parametr qiymatlari
+Parametr qiymatlari yo'q.
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+
+Ko'proq misollar
+Misol
+O'chirilgan elementni qaytaring:
+
+fruits = {"apple", "banana", "cherry"}
+
+x = fruits.pop()
+
+print(x)
+Eslatma: Usul pop()o'chirilgan qiymatni qaytaradi.

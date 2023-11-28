@@ -1,0 +1,153 @@
+Python to'plamlari
+myset = {"apple", "banana", "cherry"}
+Oʻrnatish
+To'plamlar bir nechta elementlarni bitta o'zgaruvchida saqlash uchun ishlatiladi.
+
+Set Python-da maʼlumotlar toʻplamini saqlash uchun ishlatiladigan 4 ta oʻrnatilgan maʼlumotlar turlaridan biri boʻlib, qolgan 3 tasi List , Tuple va Dictionary boʻlib , ularning barchasi turli sifat va foydalanishga ega.
+
+To'plam tartibsiz , o'zgarmas * va indekslanmagan to'plamdir .
+
+* Eslatma: To'plam elementlarini o'zgartirish mumkin emas, lekin siz elementlarni olib tashlashingiz va yangi elementlar qo'shishingiz mumkin.
+
+
+To'plamlar jingalak qavslar bilan yozilgan.
+
+
+Misol
+To'plam yaratish:
+
+thisset = {"apple", "banana", "cherry"}
+print(thisset)
+
+
+Eslatma: To'plamlar tartibsiz, shuning uchun elementlar qaysi tartibda paydo bo'lishiga ishonchingiz komil emas.
+
+Elementlarni o'rnatish
+To'plam elementlari tartibsiz, o'zgarmas va takroriy qiymatlarga ruxsat bermaydi.
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+Tartibsiz
+Tartibsiz to'plamdagi elementlarning belgilangan tartibi yo'qligini bildiradi.
+
+O'rnatilgan elementlar har safar foydalanganda boshqa tartibda paydo bo'lishi mumkin va ularni indeks yoki kalit bilan bog'lab bo'lmaydi.
+
+//////////////////////////////////////////////////////////////////////
+
+O'zgarmas
+To'plam elementlari o'zgarmasdir, ya'ni to'plam yaratilgandan keyin elementlarni o'zgartira olmaymiz.
+
+To'plam yaratilgandan so'ng siz uning elementlarini o'zgartira olmaysiz, lekin elementlarni olib tashlashingiz va yangi elementlar qo'shishingiz mumkin.
+
+
+////////////////////////////////////////////////////////////////////////
+Dublikatlarga ruxsat berilmagan
+To'plamlarda bir xil qiymatga ega ikkita element bo'lishi mumkin emas.
+
+Misol
+Ikki nusxadagi qiymatlar e'tiborga olinmaydi:
+
+thisset = {"apple", "banana", "cherry", "apple"}
+
+print(thisset)
+
+
+////////////////////////////////////////////////////////////////////////
+Eslatma:True va qiymatlari 1to'plamlarda bir xil qiymat sifatida qabul qilinadi va ular dublikat sifatida ko'rib chiqiladi:
+
+Misol
+True va 1bir xil qiymat hisoblanadi:
+
+thisset = {"apple", "banana", "cherry", True, 1, 2}
+
+print(thisset)
+
+
+/////////////////////////////////////////////////////
+
+Eslatma:False va qiymatlari 0to'plamlarda bir xil qiymat sifatida qabul qilinadi va ular dublikat sifatida ko'rib chiqiladi:
+
+Misol
+False va 0bir xil qiymat hisoblanadi:
+
+thisset = {"apple", "banana", "cherry", False, True, 0}
+
+print(thisset)
+
+
+////////////////////////////////////////////////////////////
+
+To'plamning uzunligini oling
+To'plamda nechta element borligini aniqlash uchun funktsiyadan foydalaning len() .
+
+Misol
+To'plamdagi elementlar sonini oling:
+
+thisset = {"apple", "banana", "cherry"}
+
+print(len(thisset))
+///////////////////////////////////////////////////////////////////////////
+
+
+Elementlarni o'rnatish - Ma'lumotlar turlari
+To'plam elementlari har qanday turdagi ma'lumotlarga ega bo'lishi mumkin:
+
+Misol
+String, int va boolean ma'lumotlar turlari:
+
+set1 = {"apple", "banana", "cherry"}
+set2 = {1, 5, 7, 9, 3}
+set3 = {True, False, False}
+
+
+To'plam turli xil ma'lumotlarni o'z ichiga olishi mumkin:
+
+Misol
+Satrlar, butun sonlar va mantiqiy qiymatlardan iborat to'plam:
+
+set1 = {"abc", 34, True, 40, "male"}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+turi()
+Python nuqtai nazaridan, to'plamlar "to'plam" ma'lumotlar turiga ega ob'ektlar sifatida aniqlanadi:
+
+<class 'set'>
+Misol
+To'plamning ma'lumotlar turi qanday?
+
+myset = {"apple", "banana", "cherry"}
+print(type(myset))
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+set() konstruktori
+To'plamni yaratish uchun set() konstruktoridan foydalanish ham mumkin .
+
+Misol
+To'plamni yaratish uchun set() konstruktoridan foydalaning:
+
+thisset = set(("apple", "banana", "cherry")) # note the double round-brackets
+print(thisset)
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+****************************************************************************************
+
+Python to'plamlari (massivlar)
+Python dasturlash tilida to'rtta turdagi ma'lumotlar to'plami mavjud:
+
+Ro'yxat - bu tartiblangan va o'zgaruvchan to'plam. Takroriy a'zolarga ruxsat beradi.
+Tuple - bu tartiblangan va o'zgarmas to'plam. Takroriy a'zolarga ruxsat beradi.
+Toʻplam tartibsiz, oʻzgarmas* va indekslanmagan toʻplamdir. Takroriy a'zolar yo'q.
+Lug'at tartibli** va o'zgaruvchan to'plamdir. Takroriy a'zolar yo'q.
+*Toʻplam elementlarini oʻzgartirish mumkin emas, lekin siz elementlarni olib tashlashingiz va yangi elementlar qoʻshishingiz mumkin.
+
+**Python 3.7 versiyasidan boshlab lug'atlar buyurtma qilingan . Python 3.6 va undan oldingi versiyalarida lug'atlar tartibsizdir .
+
+To'plam turini tanlashda ushbu turdagi xususiyatlarni tushunish foydalidir. Muayyan ma'lumotlar to'plami uchun to'g'ri turni tanlash ma'noni saqlab qolish va samaradorlik yoki xavfsizlikni oshirishni anglatishi mumkin.
+
+
+*******************************************************************************************
+//////////////////////////////////////////////////////////////////////////////////////////

@@ -1,0 +1,202 @@
+Python RegEx
+RegEx yoki Regular Expression - qidiruv sxemasini tashkil etuvchi belgilar ketma-ketligi.
+
+RegEx-dan satrda belgilangan qidiruv namunasi mavjudligini tekshirish uchun foydalanish mumkin.
+
+RegEx moduli
+rePython-da oddiy iboralar bilan ishlash uchun ishlatilishi mumkin bo'lgan o'rnatilgan paket mavjud .
+
+Modulni import qiling re:
+
+import re
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Pythonda RegEx
+Modulni import qilgandan so'ng re, siz oddiy iboralardan foydalanishni boshlashingiz mumkin:
+
+Misol
+"The" bilan boshlanib, "Ispaniya" bilan tugashini bilish uchun qatorni qidiring:
+
+import re
+
+txt = "The rain in Spain"
+x = re.search("^The.*Spain$", txt)
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+findall() funktsiyasi
+Funktsiya findall()barcha mosliklarni o'z ichiga olgan ro'yxatni qaytaradi.
+
+Misol
+Barcha mosliklar roʻyxatini chop eting:
+
+import re
+
+txt = "The rain in Spain"
+x = re.findall("ai", txt)
+print(x)
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Ro'yxatda ular topilgan tartibda mosliklar mavjud.
+
+Hech qanday moslik topilmasa, bo'sh ro'yxat qaytariladi:
+
+Misol
+Hech qanday moslik topilmasa, bo'sh ro'yxatni qaytaring:
+
+import re
+
+txt = "The rain in Spain"
+x = re.findall("Portugal", txt)
+print(x)
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Search() funktsiyasi
+Funktsiya search()satrda moslikni qidiradi va mos keladigan bo'lsa, Match ob'ektini qaytaradi.
+
+Agar bir nechta o'yin bo'lsa, faqat birinchi o'yin qaytariladi:
+
+Misol
+Satrdagi birinchi bo'sh joy belgisini qidiring:
+
+import re
+
+txt = "The rain in Spain"
+x = re.search("\s", txt)
+
+print("The first white-space character is located in position:", x.start())
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Hech qanday moslik topilmasa, qiymat Noneqaytariladi:
+
+Misol
+Hech qanday mos kelmaydigan qidiruvni amalga oshiring:
+
+import re
+
+txt = "The rain in Spain"
+x = re.search("Portugal", txt)
+print(x)
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Split() funktsiyasi
+Funktsiya split()har bir o'yinda satr bo'lingan ro'yxatni qaytaradi:
+
+Misol
+Har bir bo'sh joy belgisiga bo'ling:
+
+import re
+
+txt = "The rain in Spain"
+x = re.split("\s", txt)
+print(x)
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Parametrni belgilash orqali hodisalar sonini boshqarishingiz mumkin maxsplit :
+
+Misol
+Satrni faqat birinchi marta ajrating:
+
+import re
+
+txt = "The rain in Spain"
+x = re.split("\s", txt, 1)
+print(x)
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Sub() funktsiyasi
+Funktsiya sub()mosliklarni siz tanlagan matn bilan almashtiradi:
+
+Misol
+Har bir bo'sh joy belgisini 9 raqami bilan almashtiring:
+
+import re
+
+txt = "The rain in Spain"
+x = re.sub("\s", "9", txt)
+print
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Siz parametrni belgilash orqali almashtirishlar sonini boshqarishingiz mumkin count :
+
+Misol
+Birinchi 2 ta holatni almashtiring:
+
+import re
+
+txt = "The rain in Spain"
+x = re.sub("\s", "9", txt, 2)
+print(x)
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Mos ob'ekt
+Mos ob'ekt - qidiruv va natija haqidagi ma'lumotlarni o'z ichiga olgan ob'ekt.
+
+Eslatma: Agar moslik bo'lmasa, Nonemoslik ob'ekti o'rniga qiymat qaytariladi.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Misol
+Mos ob'ektni qaytaradigan qidiruvni bajaring:
+
+import re
+
+txt = "The rain in Spain"
+x = re.search("ai", txt)
+print(x) #this will print an object
+
+//////////////////////////////////////////////////
+
+Match ob'ekti qidiruv va natija haqida ma'lumot olish uchun ishlatiladigan xususiyatlar va usullarga ega:
+
+.span()o'yinning boshlang'ich va yakuniy pozitsiyalarini o'z ichiga olgan kortejni qaytaradi.
+.stringfunktsiyaga o'tkazilgan satrni qaytaradi
+.group()satrning mos keladigan qismini qaytaradi
+Misol
+Birinchi o'yin sodir bo'lgan joyni (boshlang'ich va yakuniy pozitsiyasini) chop eting.
+
+Muntazam ibora "S" bosh harfi bilan boshlangan har qanday so'zlarni qidiradi:
+
+import re
+
+txt = "The rain in Spain"
+x = re.search(r"\bS\w+", txt)
+print(x.span())
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Funktsiyaga kiritilgan satrni chop eting:
+
+import re
+
+txt = "The rain in Spain"
+x = re.search(r"\bS\w+", txt)
+print(x.string)
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Satrning mos keladigan qismini chop eting.
+
+Muntazam ibora "S" bosh harfi bilan boshlangan har qanday so'zlarni qidiradi:
+
+import re
+
+txt = "The rain in Spain"
+x = re.search(r"\bS\w+", txt)
+print(x.group())
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Eslatma: Agar moslik bo'lmasa, Nonemoslik ob'ekti o'rniga qiymat qaytariladi.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

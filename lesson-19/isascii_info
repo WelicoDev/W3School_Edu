@@ -1,0 +1,7 @@
+Ta'rifi va qo'llanilishi
+isascii()Agar barcha belgilar ascii belgilar (az) bo'lsa, usul True qiymatini qaytaradi .
+
+ASCII ma'lumotnomamizni tekshiring .
+
+Sintaksis
+string.isascii()

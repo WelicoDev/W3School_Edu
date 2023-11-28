@@ -1,0 +1,40 @@
+Qiymatlarni o'zgartirish
+Muayyan elementning qiymatini uning kalit nomiga murojaat qilib o'zgartirishingiz mumkin:
+
+MisolO'zingizning Python serveringizni oling
+"Yil" ni 2018 yilga o'zgartiring:
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict["year"] = 2018
+
+///////////////////////////////////////////////////////////////
+
+Lug'atni yangilash
+Usul update()lug'atni berilgan argumentdagi elementlar bilan yangilaydi.
+
+Argument lug'at yoki kalit: qiymat juftliklari bilan takrorlanadigan ob'ekt bo'lishi kerak.
+
+Misol
+Ushbu usul yordamida avtomobilning "yilini" yangilang update() :
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict.update({"year": 2020})
+
+////////////////////////////////////////////////////////////////////////
+
+Ushbu usul yordamida avtomobilning "yilini" yangilang update() :
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict.update({"year": 2020})

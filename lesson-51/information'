@@ -1,0 +1,66 @@
+Elementlarni olib tashlash
+Lug'atdan elementlarni olib tashlashning bir necha usullari mavjud:
+
+Misol
+Usul pop()belgilangan kalit nomi bilan elementni olib tashlaydi:
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict.pop("model")
+print(thisdict)
+
+/////////////////////////////////////////////////////
+Usul popitem()oxirgi kiritilgan elementni olib tashlaydi (3.7 dan oldingi versiyalarda uning o'rniga tasodifiy element o'chiriladi):
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict.popitem()
+print(thisdict)
+
+
+////////////////////////////////////////////////////////////////
+
+Misol
+Kalit delso'z belgilangan kalit nomi bilan elementni olib tashlaydi:
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+del thisdict["model"]
+print(thisdict)
+
+
+////////////////////////////////////////////////////////////////
+
+Misol
+Shuningdek, kalit delso'z lug'atni butunlay o'chirib tashlashi mumkin:
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+del thisdict
+print(thisdict) #this will cause an error because "thisdict" no longer exists.
+
+
+//////////////////////////////////////////////////
+
+Misol
+Usul clear()lug'atni bo'shatadi:
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict.clear()
+print(thisdict)

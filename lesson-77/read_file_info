@@ -1,0 +1,47 @@
+Satrlarni o'qing
+Usul yordamida bitta qatorni qaytarishingiz mumkin readline():
+
+Misol
+Faylning bir qatorini o'qing:
+
+f = open("demofile.txt", "r")
+print(f.readline())
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Ikki marta qo'ng'iroq qilib readline(), siz ikkita birinchi qatorni o'qishingiz mumkin:
+
+Misol
+Faylning ikki qatorini o'qing:
+
+f = open("demofile.txt", "r")
+print(f.readline())
+print(f.readline())
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Fayl satrlari bo'ylab aylanish orqali siz butun faylni satrga qarab o'qishingiz mumkin:
+
+Misol
+Faylni satr bo'yicha aylantiring:
+
+f = open("demofile.txt", "r")
+for x in f:
+  print(x)
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Fayllarni yopish
+Fayl bilan ishlashni tugatgandan so'ng uni doimo yopish yaxshi amaliyotdir.
+
+Misol
+Ishni tugatgandan so'ng faylni yoping:
+
+f = open("demofile.txt", "r")
+print(f.readline())
+f.close()
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Eslatma: Siz har doim fayllaringizni yopishingiz kerak, ba'zi hollarda buferlash tufayli faylga kiritilgan o'zgarishlar faylni yopmaguningizcha ko'rinmasligi mumkin.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

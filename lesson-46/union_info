@@ -1,0 +1,48 @@
+Python Set union() usuli
+
+Misol
+Ikkala to'plamdagi barcha elementlarni o'z ichiga olgan to'plamni qaytaring, dublikatlar bundan mustasno:
+
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+
+z = x.union(y)
+
+print(z)
+
+////////////////////////////
+
+
+Ta'rifi va qo'llanilishi
+Usul union()asl to'plamdagi barcha elementlarni va belgilangan to'plam(lar)dagi barcha elementlarni o'z ichiga olgan to'plamni qaytaradi.
+
+Siz vergul bilan ajratilgan ko'plab to'plamlarni belgilashingiz mumkin.
+
+Bu to'plam bo'lishi shart emas, u har qanday takrorlanadigan ob'ekt bo'lishi mumkin.
+
+Agar element bir nechta to'plamda mavjud bo'lsa, natijada ushbu elementning faqat bitta ko'rinishi bo'ladi.
+
+////////////////////////
+
+Sintaksis
+set.union(set1, set2...)
+Parametr qiymatlari
+Parameter	Description
+set1	------ Required. The iterable to unify with
+set2	------ Optional. The other iterable to unify with.
+You can compare as many iterables as you like.
+Separate each iterable with a comma
+
+
+////////////////////////
+Ko'proq misollar
+Misol
+2 dan ortiq to'plamni birlashtiring:
+
+x = {"a", "b", "c"}
+y = {"f", "d", "a"}
+z = {"c", "d", "e"}
+
+result = x.union(y, z)
+
+print(result)

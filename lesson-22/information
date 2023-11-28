@@ -1,0 +1,90 @@
+Roʻyxat
+Ro'yxatlar bitta o'zgaruvchida bir nechta elementlarni saqlash uchun ishlatiladi.
+
+Roʻyxatlar Python’da maʼlumotlar toʻplamini saqlash uchun ishlatiladigan 4 ta oʻrnatilgan maʼlumotlar turlaridan biri, qolgan 3 tasi Tuple , Set va Dictionary boʻlib , ularning barchasi turli sifat va foydalanishga ega.
+
+Ro'yxatlar kvadrat qavslar yordamida tuziladi:
+
+
+
+Roʻyxat yaratish:
+
+thislist = ["apple", "banana", "cherry"]
+print(thislist)
+
+
+Ro'yxat elementlari
+Ro'yxat elementlari tartiblangan, o'zgartirilishi mumkin va takroriy qiymatlarga ruxsat beriladi.
+
+Ro'yxat elementlari indekslanadi, birinchi element indeksga ega [0], ikkinchi element indeksga ega [1]va hokazo.
+
+Buyurtma qilingan
+Ro'yxatlar tartiblangan deb aytsak, bu elementlarning belgilangan tartibiga ega ekanligini va bu tartib o'zgarmasligini bildiradi.
+
+Agar siz ro'yxatga yangi elementlar qo'shsangiz, yangi elementlar ro'yxatning oxiriga joylashtiriladi.
+
+Eslatma: Buyurtmani o'zgartiradigan ba'zi ro'yxat usullari mavjud , ammo umuman olganda: elementlarning tartibi o'zgarmaydi.
+
+
+O'zgaruvchan
+Roʻyxat oʻzgarishi mumkin, yaʼni biz roʻyxatni yaratilgandan keyin oʻzgartirishimiz, qoʻshishimiz va oʻchirishimiz mumkin.
+
+Dublikatlarga ruxsat berish
+Ro'yxatlar indekslanganligi sababli, ro'yxatlar bir xil qiymatga ega bo'lishi mumkin:
+
+Misol
+Ro'yxatlar takroriy qiymatlarga ruxsat beradi:
+
+thislist = ["apple", "banana", "cherry", "apple", "cherry"]
+print(thislist)
+
+Roʻyxat uzunligi
+Ro'yxatda nechta element borligini aniqlash uchun funktsiyadan foydalaning len():
+
+Misol
+Ro'yxatdagi elementlar sonini chop eting:
+
+thislist = ["apple", "banana", "cherry"]
+print(len(thislist))
+
+Ro'yxat elementlari - Ma'lumotlar turlari
+Ro'yxat elementlari har qanday turdagi ma'lumotlarga ega bo'lishi mumkin:
+
+Misol
+String, int va boolean ma'lumotlar turlari:
+
+list1 = ["apple", "banana", "cherry"]
+list2 = [1, 5, 7, 9, 3]
+list3 = [True, False, False]
+
+Ro'yxat turli xil ma'lumotlarni o'z ichiga olishi mumkin:
+
+Misol
+Satrlar, butun sonlar va mantiqiy qiymatlardan iborat ro'yxat:
+
+list1 = ["abc", 34, True, 40, "male"]
+
+turi()
+Python nuqtai nazaridan, ro'yxatlar "ro'yxat" ma'lumotlar turiga ega ob'ektlar sifatida aniqlanadi:
+
+<class 'list'>
+
+
+
+list() konstruktori
+Yangi ro'yxat yaratishda list() konstruktoridan foydalanish ham mumkin .
+
+Misol
+list()Ro'yxatni tuzish uchun konstruktordan foydalanish :
+
+thislist = list(("apple", "banana", "cherry")) # note the double round-brackets
+print(thislist)
+
+Python to'plamlari (massivlar)
+Python dasturlash tilida to'rtta turdagi ma'lumotlar to'plami mavjud:
+
+Ro'yxat - bu tartiblangan va o'zgaruvchan to'plam. Takroriy a'zolarga ruxsat beradi.
+Tuple - bu tartiblangan va o'zgarmas to'plam. Takroriy a'zolarga ruxsat beradi.
+Toʻplam tartibsiz, oʻzgarmas* va indekslanmagan toʻplamdir. Takroriy a'zolar yo'q.
+Lug'at tartibli** va o'zgaruvchan to'plamdir. Takroriy a'zolar yo'q.
+

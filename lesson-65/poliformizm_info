@@ -1,0 +1,123 @@
+Python polimorfizmi
+"Polimorfizm" so'zi "ko'p shakllar" degan ma'noni anglatadi va dasturlashda u ko'plab ob'ektlar yoki sinflarda bajarilishi mumkin bo'lgan bir xil nomdagi usullar/funksiyalar/operatorlarga ishora qiladi.
+
+Funktsiya polimorfizmi
+Turli ob'ektlarda ishlatilishi mumkin bo'lgan Python funktsiyasiga misol bu funktsiyadir len().
+
+String
+Satrlar uchun len()belgilar sonini qaytaradi:
+
+Misol
+x = "Hello World!"
+
+print(len(x))
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Tuple
+Kortejlar uchun len()kortejdagi elementlar sonini qaytaradi:
+
+Misol
+mytuple = ("apple", "banana", "cherry")
+
+print(len(mytuple))
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Lug'at
+Lug'atlar uchun len()lug'atdagi kalit/qiymat juftlari sonini qaytaradi:
+
+Misol
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+print(len(thisdict))
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Sinf polimorfizmi
+Polimorfizm ko'pincha Class usullarida qo'llaniladi, bu erda biz bir xil usul nomi bilan bir nechta sinflarga ega bo'lishimiz mumkin.
+
+Masalan, bizda uchta sinf bor deylik: Car, Boat, va Plane, va ularning barchasida , deb nomlangan usul bor move():
+
+Misol
+Xuddi shu usul bilan turli sinflar:
+
+class Car:
+  def __init__(self, brand, model):
+    self.brand = brand
+    self.model = model
+
+  def move(self):
+    print("Drive!")
+
+class Boat:
+  def __init__(self, brand, model):
+    self.brand = brand
+    self.model = model
+
+  def move(self):
+    print("Sail!")
+
+class Plane:
+  def __init__(self, brand, model):
+    self.brand = brand
+    self.model = model
+
+  def move(self):
+    print("Fly!")
+
+car1 = Car("Ford", "Mustang")       #Create a Car class
+boat1 = Boat("Ibiza", "Touring 20") #Create a Boat class
+plane1 = Plane("Boeing", "747")     #Create a Plane class
+
+for x in (car1, boat1, plane1):
+  x.move()
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Oxirida for sikliga qarang. Polimorfizm tufayli biz uchta sinf uchun bir xil usulni bajarishimiz mumkin.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Irsiyat klassi polimorfizmi
+Xuddi shu nomdagi bolalar sinflari bo'lgan sinflar haqida nima deyish mumkin? U erda polimorfizmdan foydalana olamizmi?
+
+Ha. Agar biz yuqoridagi misoldan foydalansak va Vehicle, deb nomlangan ota-klassni yaratsak va , , ning pastki sinflarini qilsak Car, Boatbolalar Plane sinflari Vehicleusullarni meros qilib oladi Vehicle, lekin ularni bekor qilishi mumkin:
+
+///////////////////////////////////////
+
+Misol
+deb nomlangan sinf yarating Vehicleva Car, Boat, Plane bolalar sinflarini yarating Vehicle:
+
+class Vehicle:
+  def __init__(self, brand, model):
+    self.brand = brand
+    self.model = model
+
+  def move(self):
+    print("Move!")
+
+class Car(Vehicle):
+  pass
+
+class Boat(Vehicle):
+  def move(self):
+    print("Sail!")
+
+class Plane(Vehicle):
+  def move(self):
+    print("Fly!")
+
+car1 = Car("Ford", "Mustang") #Create a Car object
+boat1 = Boat("Ibiza", "Touring 20") #Create a Boat object
+plane1 = Plane("Boeing", "747") #Create a Plane object
+
+for x in (car1, boat1, plane1):
+  print(x.brand)
+  print(x.model)
+  x.move()
+

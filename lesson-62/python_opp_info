@@ -1,0 +1,181 @@
+Python sinflari va ob'ektlari
+
+Python sinflari/ob'ektlari
+
+Python - bu ob'ektga yo'naltirilgan dasturlash tili.
+
+Python-da deyarli hamma narsa o'zining xususiyatlari va usullari bilan ob'ektdir.
+
+Sinf ob'ekt konstruktori yoki ob'ektlarni yaratish uchun "loyiha"ga o'xshaydi.
+
+Sinf yaratish
+Sinf yaratish uchun kalit so'zdan foydalaning class:
+
+Misol
+X nomli xususiyatga ega MyClass nomli sinf yarating:
+
+class MyClass:
+  x = 5
+
+/////////////////////////////////////////////////////////////////////////////////
+
+Ob'ekt yaratish
+Endi biz obyektlarni yaratish uchun MyClass nomli sinfdan foydalanishimiz mumkin:
+
+Misol
+value1 nomli ob'ekt yarating va x qiymatini chop eting:
+
+value1 = MyClass()
+print(value1.x)
+
+/////////////////////////////////////////////////////////////////////////////////
+
+__init__() funktsiyasi
+Yuqoridagi misollar eng oddiy shakldagi sinflar va ob'ektlar bo'lib, ular haqiqiy hayotda qo'llanilmaydi.
+
+Sinflarning ma'nosini tushunish uchun biz o'rnatilgan __init__() funktsiyasini tushunishimiz kerak.
+
+Barcha sinflarda __init__() funksiyasi mavjud bo'lib, u har doim sinf ishga tushirilganda bajariladi.
+
+Ob'ekt xususiyatlariga qiymatlarni belgilash yoki ob'ekt yaratilayotganda bajarilishi kerak bo'lgan boshqa operatsiyalar uchun __init__() funksiyasidan foydalaning:
+
+Misol
+Person nomli sinf yarating, ism va yosh uchun qiymatlarni belgilash uchun __init__() funksiyasidan foydalaning:
+
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+p1 = Person("John", 36)
+
+print(p1.name)
+print(p1.age)
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Eslatma: Funktsiya __init__()har safar yangi ob'ekt yaratish uchun sinfdan foydalanilganda avtomatik ravishda chaqiriladi.
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+__str__() funksiyasi
+__str__() funksiyasi sinf obyekti satr sifatida taqdim etilganda nima qaytarilishi kerakligini nazorat qiladi.
+
+Agar __str__() funksiyasi o'rnatilmagan bo'lsa, ob'ektning satr ko'rinishi qaytariladi:
+
+Misol
+__str__() funksiyasi BO‘LMAGAN obyektning satrli tasviri:
+
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+value = Person("John", 36)
+
+print(value)
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Misol
+__str__() funksiyasi BILAN ob'ektning qator ko'rinishi:
+
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+  def __str__(self):
+    return f"{self.name}({self.age})"
+
+p1 = Person("John", 36)
+
+print(p1)
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Ob'ekt usullari
+Ob'ektlar ham usullarni o'z ichiga olishi mumkin. Ob'ektlardagi usullar ob'ektga tegishli funktsiyalardir.
+
+Keling, Person sinfida usul yarataylik:
+
+Misol
+Salomni chop etuvchi funksiyani kiriting va uni p1 obyektida bajaring:
+
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+  def myfunc(self):
+    print("Hello my name is " + self.name)
+
+p1 = Person("John", 36)
+p1.myfunc()
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Eslatma: Parametr self  sinfning joriy nusxasiga havola bo'lib, sinfga tegishli o'zgaruvchilarga kirish uchun ishlatiladi.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+O'z-o'zidan parametr
+Parametr selfsinfning joriy nusxasiga havola bo'lib, sinfga tegishli o'zgaruvchilarga kirish uchun ishlatiladi.
+
+Uni nomlash shart emas self, siz uni xohlaganingizcha chaqirishingiz mumkin, lekin u sinfdagi har qanday funktsiyaning birinchi parametri bo'lishi kerak:
+
+Misol
+self o'rniga mysillyobject va abc so'zlarini ishlating :
+
+class Person:
+  def __init__(mysillyobject, name, age):
+    mysillyobject.name = name
+    mysillyobject.age = age
+
+  def myfunc(abc):
+    print("Hello my name is " + abc.name)
+
+p1 = Person("John", 36)
+p1.myfunc()
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Ob'ekt xususiyatlarini o'zgartirish
+Quyidagi kabi ob'ektlardagi xususiyatlarni o'zgartirishingiz mumkin:
+
+Misol
+p1 yoshini 40 ga belgilang:
+
+p1.age = 40
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Ob'ekt xususiyatlarini o'chirish
+Kalit so'zdan foydalanib, ob'ektlardagi xususiyatlarni o'chirishingiz mumkin del:
+
+Misol
+p1 ob'ektidan age xususiyatini o'chiring:
+
+del p1.age
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Ob'ektlarni o'chirish
+Kalit so'z yordamida ob'ektlarni o'chirishingiz mumkin del:
+
+Misol
+p1 ob'ektini o'chirish:
+
+del p1
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+O'tish bayonoti
+classta'riflar bo'sh bo'lishi mumkin emas, lekin agar sizda biron sababga ko'ra classmazmunsiz ta'rif mavjud bo'lsa, passxatolikka yo'l qo'ymaslik uchun bayonotni kiriting.
+
+Misol
+class Person:
+  pass
+
+

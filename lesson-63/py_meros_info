@@ -1,0 +1,128 @@
+Python merosi
+
+//////////////////////
+
+Meros bizga boshqa sinfdan barcha usullar va xususiyatlarni meros qilib oladigan sinfni aniqlash imkonini beradi.
+
+Ota-sinf - bu meros qilib olingan sinf, uni asosiy sinf deb ham ataladi.
+
+Child sinf - bu boshqa sinfdan meros bo'lib qolgan sinf, hosila sinf deb ham ataladi.
+
+Ota-onalar sinfini yarating
+Har qanday sinf ota-sinf bo'lishi mumkin, shuning uchun sintaksis boshqa sinflarni yaratish bilan bir xil:
+
+
+Person nomli sinf va usul yarating:firstname lastname printname
+
+class Person:
+  def __init__(self, fname, lname):
+    self.firstname = fname
+    self.lastname = lname
+
+  def printname(self):
+    print(self.firstname, self.lastname)
+
+#Use the Person class to create an object, and then execute the printname method:
+
+x = Person("John", "Doe")
+x.printname()
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Bolalar sinfini yarating
+Funksionallikni boshqa sinfdan meros qilib oladigan sinf yaratish uchun asosiy sinfni asosiy sinfni yaratishda parametr sifatida yuboring:
+
+Misol
+ismli sinf yarating Student, u sinfdan xususiyatlar va usullarni meros qilib oladi Person:
+
+class Student(Person):
+  pass
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Eslatma:pass Agar sinfga boshqa xususiyat yoki usullarni qo'shishni xohlamasangiz, kalit so'zdan foydalaning .
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Endi Student sinfi Person sinfi bilan bir xil xususiyat va usullarga ega.
+
+Misol
+StudentOb'ekt yaratish uchun sinfdan foydalaning va keyin printnameusulni bajaring:
+
+x = Student("Mike", "Olsen")
+x.printname()
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+__init__() funktsiyasini qo'shing
+Hozirgacha biz ota-onasidan xususiyatlar va usullarni meros qilib olgan bolalar sinfini yaratdik.
+
+__init__()Biz funktsiyani bolalar sinfiga qo'shmoqchimiz ( passkalit so'z o'rniga).
+
+Eslatma: Funktsiya __init__()har safar yangi ob'ekt yaratish uchun sinfdan foydalanilganda avtomatik ravishda chaqiriladi.
+
+Misol
+__init__()Funktsiyani sinfga qo'shing Student:
+
+class Student(Person):
+  def __init__(self, fname, lname):
+    #add properties etc.
+
+
+Funktsiyani qo'shsangiz __init__(), bolalar sinfi endi ota-ona funksiyasini meros qilib olmaydi __init__().
+
+Eslatma: Bolaning __init__() funksiyasi ota-ona funksiyasining merosini bekor qiladi __init__() .
+
+Ota-ona funksiyasining merosini saqlab qolish uchun __init__() ota-ona funktsiyasiga qo'ng'iroqni qo'shing __init__():
+
+Misol
+class Student(Person):
+  def __init__(self, fname, lname):
+    Person.__init__(self, fname, lname)
+
+Funktsiyadan foydalangan holda super(), siz ota-element nomini ishlatishingiz shart emas, u avtomatik ravishda ota-onasidan usullar va xususiyatlarni meros qilib oladi.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Xususiyatlar qo'shish
+Misol
+graduationyearSinfga chaqirilgan xususiyatni qo'shing Student:
+
+class Student(Person):
+  def __init__(self, fname, lname):
+    super().__init__(fname, lname)
+    self.graduationyear = 2019
+Quyidagi misolda yil 2019o'zgaruvchan bo'lishi kerak va Studenttalaba ob'ektlarini yaratishda sinfga o'tishi kerak. Buning uchun __init__() funktsiyasiga boshqa parametr qo'shing:
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Misol
+Parametr qo'shing yearva ob'ektlarni yaratishda to'g'ri yilni o'tkazing:
+
+class Student(Person):
+  def __init__(self, fname, lname, year):
+    super().__init__(fname, lname)
+    self.graduationyear = year
+
+x = Student("Mike", "Olsen", 2019)
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Usullarni qo'shish
+Misol
+welcomeSinfga chaqirilgan usulni qo'shing Student:
+
+class Student(Person):
+  def __init__(self, fname, lname, year):
+    super().__init__(fname, lname)
+    self.graduationyear = year
+
+  def welcome(self):
+    print("Welcome", self.firstname, self.lastname, "to the class of", self.graduationyear)
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Agar siz ota-sinfdagi funktsiya bilan bir xil nomdagi bolalar sinfiga usul qo'shsangiz, ota-ona usulining merosi bekor qilinadi.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

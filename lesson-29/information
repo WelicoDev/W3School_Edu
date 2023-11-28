@@ -1,0 +1,89 @@
+Ro'yxatni alfanumerik tartibda tartiblash
+Ro'yxat ob'ektlarida sort()ro'yxatni sukut bo'yicha alfanumerik, o'sish bo'yicha tartiblash usuli mavjud:
+
+Ro'yxatni alifbo tartibida tartiblang:
+
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist.sort()
+print(thislist)
+
+Misol
+Ro'yxatni raqamlar bo'yicha tartiblang:
+
+thislist = [100, 50, 65, 82, 23]
+thislist.sort()
+print(thislist)
+
+Kamayish bo'yicha tartiblash
+Kamaytirish bo'yicha tartiblash uchun argument kalit so'zidan foydalaning reverse = True:
+
+Misol
+Ro'yxatni kamayishiga qarab tartiblang:
+
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist.sort(reverse = True)
+print(thislist)
+
+Misol
+Ro'yxatni kamayishiga qarab tartiblang:
+
+thislist = [100, 50, 65, 82, 23]
+thislist.sort(reverse = True)
+print(thislist)
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+Saralash funksiyasini sozlash
+Bundan tashqari, argument kalit so'zidan foydalanib, o'z funktsiyangizni sozlashingiz mumkin .key = function
+
+Funktsiya ro'yxatni saralash uchun ishlatiladigan raqamni qaytaradi (avval eng past raqam):
+
+Misol
+Raqamning 50 ga yaqinligiga qarab roʻyxatni tartiblang:
+
+def myfunc(n):
+  return abs(n - 50)
+
+thislist = [100, 50, 65, 82, 23]
+thislist.sort(key = myfunc)
+print(thislist)
+
+/////////////////////////////////////////////////
+
+Katta-kichik harflarni sezmaydigan tartiblash
+Odatiy bo'lib, sort()usul katta-kichik harflarga sezgir, buning natijasida barcha bosh harflar kichik harflardan oldin tartiblanadi:
+
+Misol
+Katta-kichik harflarga qarab tartiblash kutilmagan natija berishi mumkin:
+
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+thislist.sort()
+print(thislist)
+
+
+Yaxshiyamki, biz ro'yxatni saralashda asosiy funktsiyalar sifatida o'rnatilgan funktsiyalardan foydalanishimiz mumkin.
+
+Shunday qilib, agar siz katta-kichik harflarni sezmaydigan tartiblash funksiyasini xohlasangiz, asosiy funksiya sifatida str.lower dan foydalaning:
+
+Misol
+Ro'yxatning katta-kichik harflarga sezgir bo'lmagan turini bajaring:
+
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+thislist.sort(key = str.lower)
+print(thislist)
+
+
+////////////////////////////////////////////////////////////////////////////////
+
+Teskari tartib
+Agar alifbodan qat'i nazar, ro'yxat tartibini o'zgartirmoqchi bo'lsangiz-chi?
+
+Usul reverse()elementlarning joriy tartiblash tartibini o'zgartiradi.
+
+Misol
+Ro'yxat elementlarining tartibini o'zgartiring:
+
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+thislist.reverse()
+print(thislist)

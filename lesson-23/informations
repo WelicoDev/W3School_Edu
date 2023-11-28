@@ -1,0 +1,68 @@
+Elementlarga kirish
+Ro'yxat elementlari indekslanadi va siz ularga indeks raqamiga murojaat qilish orqali kirishingiz mumkin:
+
+Eslatma: Birinchi element 0 indeksiga ega.
+
+Manfiy indekslash
+Manfiy indekslash oxiridan boshlanadi degan ma'noni anglatadi
+
+-1oxirgi elementga ishora qiladi, -2ikkinchi oxirgi elementga ishora qiladi va hokazo.
+
+Misol
+Ro'yxatning oxirgi elementini chop eting:
+
+thislist = ["apple", "banana", "cherry"]
+print(thislist[-1])
+
+Indekslar diapazoni
+Siz diapazonni qaerdan boshlash va qayerdan tugatishni belgilash orqali bir qator indekslarni belgilashingiz mumkin.
+
+Diapazonni belgilashda qaytariladigan qiymat belgilangan elementlar bilan yangi ro'yxat bo'ladi.
+
+Misol
+Uchinchi, to'rtinchi va beshinchi bandlarni qaytaring:
+
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(thislist[2:5])
+
+
+*** Eslatma: Qidiruv 2-indeksda (qo'shilgan) boshlanadi va 5-indeksda (qo'shilmagan) tugaydi.
+
+Esda tutingki, birinchi element 0 indeksiga ega.
+
+Boshlanish qiymatini qoldirsangiz, diapazon birinchi elementdan boshlanadi:
+
+Misol
+Bu misol elementlarni boshidan qaytaradi, lekin "kivi" ni o'z ichiga olmaydi:
+
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(thislist[:4])
+
+Yakuniy qiymatni qoldirib, diapazon ro'yxatning oxiriga o'tadi:
+
+Misol
+Ushbu misol "gilos" dan oxirigacha bo'lgan narsalarni qaytaradi:
+
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(thislist[2:])
+
+
+Manfiy indekslar diapazoni
+Agar siz qidiruvni roʻyxat oxiridan boshlamoqchi boʻlsangiz, salbiy indekslarni belgilang:
+
+Misol
+Ushbu misol "to'q sariq" (-4) dan "mango" (-1) ni o'z ichiga olmaydi:
+
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(thislist[-4:-1])
+
+
+Element mavjudligini tekshiring
+Belgilangan element ro'yxatda mavjudligini aniqlash uchun inkalit so'zdan foydalaning:
+
+Misol
+Ro'yxatda "olma" mavjudligini tekshiring:
+
+thislist = ["apple", "banana", "cherry"]
+if "apple" in thislist:
+  print("Yes, 'apple' is in the fruits list")

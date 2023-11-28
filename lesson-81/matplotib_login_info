@@ -1,0 +1,25 @@
+Matplotlib Ishga kirishish
+Matplotlib-ni o'rnatish
+Agar sizda Python va PIP tizimda allaqachon o'rnatilgan bo'lsa, Matplotlibni o'rnatish juda oson.
+
+Ushbu buyruq yordamida uni o'rnating:
+
+C:\Users\Your Name>pip install matplotlib
+Agar bu buyruq bajarilmasa, Matplotlib o'rnatilgan python distributividan foydalaning, masalan, Anaconda, Spyder va boshqalar.
+
+Matplotlib-ni import qiling
+Matplotlib o'rnatilgandan so'ng, quyidagi bayonotni qo'shish orqali uni ilovalaringizga import qiling :import module
+
+import matplotlib
+Endi Matplotlib import qilingan va foydalanishga tayyor:
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Matplotlib versiyasi tekshirilmoqda
+Versiya qatori atribut ostida saqlanadi __version__ .
+
+MisolO'zingizning Python serveringizni oling
+import matplotlib
+
+print(matplotlib.__version__)
+

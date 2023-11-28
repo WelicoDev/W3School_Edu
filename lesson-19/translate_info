@@ -1,0 +1,53 @@
+Har qanday "S" belgilarini "P" belgisi bilan almashtiring:
+
+#use a dictionary with ascii codes to replace 83 (S) with 80 (P):
+mydict = {83:  80}
+txt = "Hello Sam!"
+print(txt.translate(mydict))
+
+Ta'rifi va qo'llanilishi
+Usul translate()ba'zi belgilangan belgilar lug'atda yoki xaritalash jadvalida tasvirlangan belgi bilan almashtirilgan qatorni qaytaradi.
+
+maketrans()Xaritalash jadvalini yaratish uchun usuldan foydalaning .
+
+Agar lug'atda/jadvalda belgi ko'rsatilmagan bo'lsa, belgi almashtirilmaydi.
+
+Agar siz lug'atdan foydalansangiz, belgilar o'rniga ascii kodlaridan foydalanishingiz kerak.
+
+Sintaksis
+string.translate(table)
+
+
+Misol
+"S" ni "P" bilan almashtirish uchun xaritalash jadvalidan foydalaning:
+
+txt = "Hello Sam!"
+mytable = str.maketrans("S", "P")
+print(txt.translate(mytable))
+
+
+Misol
+Ko'p belgilarni almashtirish uchun xaritalash jadvalidan foydalaning:
+
+txt = "Hi Sam!"
+x = "mSa"
+y = "eJo"
+mytable = str.maketrans(x, y)
+print(txt.translate(mytable))
+
+
+Xaritalash jadvalidagi uchinchi parametr satrdan olib tashlamoqchi bo'lgan belgilarni tavsiflaydi:
+
+txt = "Good night Sam!"
+x = "mSa"
+y = "eJo"
+z = "odnght"
+mytable = str.maketrans(x, y, z)
+print(txt.translate(mytable))
+
+Misol
+Yuqoridagi kabi bir xil misol, lekin xaritalash jadvali o'rniga lug'atdan foydalanish:
+
+txt = "Good night Sam!"
+mydict = {109: 101, 83: 74, 97: 111, 111: None, 100: None, 110: None, 103: None, 104: None, 116: None}
+print(txt.translate(mydict))

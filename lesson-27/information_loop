@@ -1,0 +1,54 @@
+Roʻyxat boʻylab aylanish
+Loop yordamida roʻyxat elementlarini aylanib chiqishingiz mumkin for
+
+Roʻyxatdagi barcha elementlarni birma-bir chop eting:
+
+thislist = ["apple", "banana", "cherry"]
+for x in thislist:
+  print(x)
+
+
+Indeks raqamlari bo'ylab aylanish
+Siz shuningdek, indeks raqamiga murojaat qilib, ro'yxat elementlarini aylanib chiqishingiz mumkin.
+
+Tegishli takrorlanuvchini yaratish uchun range()va funksiyalaridan foydalaning .len()
+
+
+Misol
+Barcha elementlarni indeks raqamiga qarab chop eting:
+
+thislist = ["apple", "banana", "cherry"]
+for i in range(len(thislist)):
+  print(thislist[i])
+
+Yuqoridagi misolda yaratilgan iterativ hisoblanadi [0, 1, 2].
+
+
+WHILE
+
+While siklidan foydalanish
+Loop yordamida ro'yxat elementlarini aylanib chiqishingiz mumkin while.
+
+len()Roʻyxat uzunligini aniqlash uchun funksiyadan foydalaning , soʻngra 0 dan boshlang va ularning indekslariga murojaat qilib, roʻyxat elementlari boʻylab aylanib chiqing.
+
+Har bir iteratsiyadan keyin indeksni 1 ga oshirishni unutmang.
+
+Misol
+whileBarcha indeks raqamlarini o'tish uchun tsikldan foydalanib, barcha elementlarni chop eting
+
+thislist = ["apple", "banana", "cherry"]
+i = 0
+while i < len(thislist):
+  print(thislist[i])
+  i = i + 1
+
+
+
+Roʻyxatni tushunish yordamida aylanish
+Ro'yxatni tushunish ro'yxatlar bo'ylab aylanish uchun eng qisqa sintaksisni taklif qiladi:
+
+Misol
+forRo'yxatdagi barcha elementlarni chop etadigan qisqa qo'l tsikli:
+
+thislist = ["apple", "banana", "cherry"]
+[print(x) for x in thislist]

@@ -1,0 +1,68 @@
+Python while loops
+Python sikl operatorlari
+
+Python ikkita ibtidoiy sikl buyrug'iga ega:
+
+while siklli
+for siklli
+
+The while Loop
+while sikli bilan biz shart to'g'ri bo'lsa, bir qator bayonotlarni bajarishimiz mumkin.
+
+Misol
+i 6 dan kichik bo'lsa, i ni chop eting:
+
+i = 1
+while i < 6:
+  print(i)
+  i += 1
+
+//////////////////////////////////////////
+Eslatma: i ni oshirishni unutmang, aks holda tsikl abadiy davom etadi.
+//////////////////////////////////////////
+
+while tsikli tegishli o'zgaruvchilar tayyor bo'lishini talab qiladi, bu misolda biz indekslovchi o'zgaruvchini aniqlashimiz kerak, biz uni 1 ga o'rnatdik.
+
+Tanaffus bayonoti
+break iborasi yordamida biz while sharti to'g'ri bo'lsa ham tsiklni to'xtata olamiz:
+
+Misol
+i 3 bo'lganda tsikldan chiqing:
+
+i = 1
+while i < 6:
+  print(i)
+  if i == 3:
+    break
+  i += 1
+
+
+/////////////////////////////////////////////////////
+
+Davom etish bayonoti
+Davom etish iborasi bilan biz joriy iteratsiyani to'xtatib, keyingisini davom ettirishimiz mumkin:
+
+Misol
+Agar i 3 bo'lsa, keyingi iteratsiyaga o'ting:
+
+i = 0
+while i < 6:
+  i += 1
+  if i == 3:
+    continue
+  print(i)
+
+//////////////////////////////////////////////////////
+
+Boshqa bayonot
+Agar shart endi to'g'ri bo'lmasa, else iborasi bilan biz kod blokini bir marta ishga tushirishimiz mumkin:
+
+Misol
+Shart noto'g'ri bo'lsa, xabarni chop eting:
+
+i = 1
+while i < 6:
+  print(i)
+  i += 1
+else:
+  print("i is no longer less than 6")

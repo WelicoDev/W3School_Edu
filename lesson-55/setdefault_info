@@ -1,0 +1,48 @@
+Python Dictionary setdefault() usuli
+
+Misol
+"Model" elementining qiymatini oling:
+
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+x = car.setdefault("model", "Bronco")
+
+print(x)
+
+
+////////////////////////////////////////////////////////
+
+Ta'rifi va qo'llanilishi
+Usul setdefault()belgilangan kalit bilan elementning qiymatini qaytaradi.
+
+Agar kalit mavjud bo'lmasa, kalitni belgilangan qiymat bilan kiriting, quyidagi misolga qarang
+
+Sintaksis
+dictionary.setdefault(keyname, value)
+Parametr qiymatlari
+Parameter	Description
+keyname	Required. The keyname of the item you want to return the value from
+value	Optional.
+If the key exist, this parameter has no effect.
+If the key does not exist, this value becomes the key's value
+Default value None
+
+
+////////////////////////////////////////////////////////////
+
+Misol
+"Rang" elementining qiymatini oling, agar "rang" elementi mavjud bo'lmasa, "rang" ni "oq" qiymati bilan kiriting:
+
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+x = car.setdefault("color", "white")
+
+print(x)

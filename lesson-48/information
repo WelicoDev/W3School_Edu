@@ -1,0 +1,169 @@
+Elementlarga kirish
+Kvadrat qavs ichidagi kalit nomiga murojaat qilib, lug'at elementlariga kirishingiz mumkin:
+
+Misol
+"Model" kalitining qiymatini oling:
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+x = thisdict["model"]
+
+
+///////////////////////////////////////////////////////////
+
+get()Sizga bir xil natija beradigan usul ham mavjud :
+
+Misol
+"Model" kalitining qiymatini oling:
+
+x = thisdict.get("model")
+
+print(x)
+
+//////////////////////////////////////////////////////////
+
+Kalitlarni oling
+Usul keys()lug'atdagi barcha kalitlarning ro'yxatini qaytaradi.
+
+Misol
+Kalitlar ro'yxatini oling:
+
+x = thisdict.keys()
+
+////////////////////////////////////////////////////////////
+
+Tugmalar ro'yxati lug'atning ko'rinishidir , ya'ni lug'atga qilingan har qanday o'zgartirishlar kalitlar ro'yxatida aks etadi.
+
+Misol
+Asl lug'atga yangi element qo'shing va kalitlar ro'yxati ham yangilanishini ko'ring:
+
+car = {
+"brand": "Ford",
+"model": "Mustang",
+"year": 1964
+}
+
+x = car.keys()
+
+print(x) #before the change
+
+car["color"] = "white"
+
+print(x) #after the change
+
+///////////////////////////////////////////////////////////////////////////
+
+Qiymatlarni oling
+Usul values()lug'atdagi barcha qiymatlar ro'yxatini qaytaradi.
+
+Misol
+Qadriyatlar ro'yxatini oling:
+
+x = thisdict.values()
+
+
+////////////////////////////////////////////////////////////
+
+Misol
+Asl lug'atga o'zgartirish kiriting va qiymatlar ro'yxati ham yangilanishini ko'ring:
+
+car = {
+"brand": "Ford",
+"model": "Mustang",
+"year": 1964
+}
+
+x = car.values()
+
+print(x) #before the change
+
+car["year"] = 2020
+
+print(x) #
+////////////////////////////////////////////////////////////////////////
+
+Asl lug'atga yangi element qo'shing va qiymatlar ro'yxati ham yangilanishini ko'ring:
+
+car = {
+"brand": "Ford",
+"model": "Mustang",
+"year": 1964
+}
+
+x = car.values()
+
+print(x) #before the change
+
+car["color"] = "red"
+
+print(x) #after the change
+
+//////////////////////////////////////////////////////////////////////
+
+Elementlarni oling
+Usul items()lug'atdagi har bir elementni ro'yxatdagi kortejlar sifatida qaytaradi.
+
+Misol
+Kalit: qiymat juftliklari ro'yxatini oling
+
+x = thisdict.items()
+
+
+////////////////////////////////////////////////////////////////////////
+
+Qaytarilgan roʻyxat lugʻat bandlarining koʻrinishi boʻlib, lugʻatga kiritilgan har qanday oʻzgarishlar elementlar roʻyxatida aks etadi.
+
+Misol
+Asl lug'atga o'zgartirish kiriting va elementlar ro'yxati ham yangilanishini ko'ring:
+
+car = {
+"brand": "Ford",
+"model": "Mustang",
+"year": 1964
+}
+
+x = car.items()
+
+print(x) #before the change
+
+car["year"] = 2020
+
+print(x) #after the change
+
+
+/////////////////////////////////////////////////////////////////////////////////
+
+Asl lug'atga yangi element qo'shing va elementlar ro'yxati ham yangilanishini ko'ring:
+
+car = {
+"brand": "Ford",
+"model": "Mustang",
+"year": 1964
+}
+
+x = car.items()
+
+print(x) #before the change
+
+car["color"] = "red"
+
+print(x) #after the change
+
+//////////////////////////////////////////////////////////////////////////////////
+
+Kalit mavjudligini tekshiring
+Lug'atda belgilangan kalit mavjudligini aniqlash uchun inkalit so'zdan foydalaning:
+
+Misol
+Lug'atda "model" mavjudligini tekshiring:
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+if "model" in thisdict:
+  print("Yes, 'model' is one of the keys in the thisdict dictionary")

@@ -1,0 +1,39 @@
+"Banan" so'zining oxirgi takrorlanishini qidiring va uchta elementdan iborat kortejni qaytaring:
+
+1 - "o'yin" dan oldingi hamma narsa
+2 - "o'yin"
+3 - "o'yin" dan keyin hamma narsa
+
+txt = "I could eat bananas all day, bananas are my favorite fruit"
+
+x = txt.rpartition("bananas")
+
+print(x)
+
+Ta'rifi va qo'llanilishi
+Usul rpartition()belgilangan satrning oxirgi takrorlanishini qidiradi va satrni uchta elementdan iborat kortejga ajratadi.
+
+Birinchi element belgilangan qatordan oldingi qismni o'z ichiga oladi.
+
+Ikkinchi element belgilangan qatorni o'z ichiga oladi.
+
+Uchinchi element qatordan keyingi qismni o'z ichiga oladi.
+
+Sintaksis
+string.rpartition(value)
+
+Parametr qiymatlari
+Parameter	Description
+value   ----	Required. The string to search for
+
+Misol
+Belgilangan qiymat topilmasa, rpartition() usuli quyidagilarni o'z ichiga olgan kortejni qaytaradi: 1 - bo'sh satr, 2 - bo'sh satr, 3 - butun qator:
+
+txt = "I could eat bananas all day, bananas are my favorite fruit"
+
+x = txt.rpartition("apples")
+
+print(x)
+
+
+

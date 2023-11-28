@@ -1,0 +1,98 @@
+Python PIP
+PIP nima?
+PIP bu Python paketlari yoki xohlasangiz modullar uchun paket menejeri.
+
+Eslatma: Agar sizda Python 3.4 yoki undan keyingi versiyasi bo'lsa, PIP sukut bo'yicha kiritilgan.
+
+Paket nima?
+Paket modul uchun kerak bo'lgan barcha fayllarni o'z ichiga oladi.
+
+Modullar loyihangizga kiritishingiz mumkin bo'lgan Python kod kutubxonalari.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+PIP o'rnatilganligini tekshiring
+Buyruqlar qatorini Python skript katalogi joylashgan joyga olib boring va quyidagilarni yozing:
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+PIP versiyasini tekshiring:
+
+C:\Users\Your Name\AppData\Local\Programs\Python\Python36-32\Scripts>pip --version
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+PIP-ni o'rnating
+Agar sizda PIP o'rnatilmagan bo'lsa, uni ushbu sahifadan yuklab olishingiz va o'rnatishingiz mumkin: https://pypi.org/project/pip/
+
+Paketni yuklab oling
+Paketni yuklab olish juda oson.
+
+Buyruqlar qatori interfeysini oching va PIP-ga kerakli paketni yuklab olishni ayting.
+
+Buyruqlar qatorini Python skript katalogi joylashgan joyga olib boring va quyidagilarni yozing:
+
+Misol
+"Camelcase" nomli paketni yuklab oling:
+
+C:\Users\Your Name\AppData\Local\Programs\Python\Python36-32\Scripts>pip install camelcase
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Endi siz birinchi paketingizni yuklab oldingiz va o'rnatdingiz!
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Paketdan foydalanish
+Paket o'rnatilgandan so'ng, u foydalanishga tayyor.
+
+Loyihangizga "camelcase" paketini import qiling.
+
+Misol
+"Camelcase" ni import qiling va foydalaning:
+
+import camelcase
+
+c = camelcase.CamelCase()
+
+txt = "hello world"
+
+print(c.hump(txt))
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Paketni olib tashlash
+uninstallPaketni olib tashlash uchun buyruqdan foydalaning :
+
+Misol
+"Camelcase" nomli paketni o'chirib tashlang:
+
+C:\Users\Your Name\AppData\Local\Programs\Python\Python36-32\Scripts>pip uninstall camelcase
+PIP paket menejeri sizdan tuya paketini olib tashlamoqchi ekanligingizni tasdiqlashingizni so'raydi:
+
+Uninstalling camelcase-02.1:
+  Would remove:
+    c:\users\Your Name\appdata\local\programs\python\python36-32\lib\site-packages\camelcase-0.2-py3.6.egg-info
+    c:\users\Your Name\appdata\local\programs\python\python36-32\lib\site-packages\camelcase\*
+Proceed (y/n)?
+bosing yva paket o'chiriladi.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Ro'yxat paketlari
+listTizimda o'rnatilgan barcha paketlarni ro'yxatlash uchun buyruqdan foydalaning :
+
+Misol
+O'rnatilgan paketlar ro'yxati:
+
+C:\Users\Your Name\AppData\Local\Programs\Python\Python36-32\Scripts>pip list
+Natija:
+
+Package         Version
+-----------------------
+camelcase       0.2
+mysql-connector 2.1.6
+pip             18.1
+pymongo         3.6.1
+setuptools      39.0.1

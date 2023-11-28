@@ -1,0 +1,33 @@
+O'zgaruvchilar nomlari
+
+O'zgaruvchining qisqa nomi (x va y kabi) yoki ko'proq tavsiflovchi nom (yosh, carname, jami_volume) bo'lishi mumkin. Python o'zgaruvchilari uchun qoidalar:
+
+ ** O'zgaruvchi nomi harf yoki pastki chiziq belgisi bilan boshlanishi kerak
+ ** O'zgaruvchi nomi raqam bilan boshlana olmaydi
+ ** Oʻzgaruvchi nomi faqat alfa-raqamli belgilar va pastki chiziqdan iborat boʻlishi mumkin (Az, 0-9 va _ )
+ **O'zgaruvchilar nomlari katta-kichik harflarga sezgir (yosh, Age va AGE uch xil o'zgaruvchidir)
+ **O'zgaruvchi nomi Python kalit so'zlaridan birortasi bo'lishi mumkin emas .
+
+
+Ko'p so'zli o'zgaruvchilar nomlari
+Bir nechta so'zli o'zgaruvchilar nomlarini o'qish qiyin bo'lishi mumkin.
+
+Ularni o'qilishi mumkin bo'lgan bir nechta usullardan foydalanishingiz mumkin:
+
+Tuya sumkasi
+Har bir so'z, birinchisidan tashqari, bosh harf bilan boshlanadi:
+
+ ** myVariableName = "John"
+
+Paskal ishi
+Har bir so'z bosh harf bilan boshlanadi:
+
+ ** MyVariableName = "John"
+
+Ilon ishi
+Har bir so'z pastki chiziq belgisi bilan ajratiladi:
+
+ ** my_variable_name = "John"
+
+
+

@@ -1,0 +1,26 @@
+Python bir qatorda bir nechta o'zgaruvchilarga qiymatlarni belgilash imkonini beradi:
+
+ ** x, y, z = "Orange", "Banana", "Cherry"
+ print(x)
+ print(y)
+ print(z)
+
+Eslatma: O'zgaruvchilar soni qiymatlar soniga mos kelishiga ishonch hosil qiling, aks holda siz xatoga yo'l qo'yasiz.
+
+Va bir qatorda bir nechta o'zgaruvchilarga bir xil qiymatni belgilashingiz mumkin :
+
+x = y = z = "Orange"
+print(x)
+print(y)
+print(z)
+
+Agar sizda roʻyxat, kortej va boshqalarda qiymatlar toʻplami boʻlsa. Python sizga qiymatlarni oʻzgaruvchilarga ajratib olish imkonini beradi. Bu o'rash deb ataladi .
+
+Misol
+Ro'yxatni oching:
+
+ ** fruits = ["apple", "banana", "cherry"]
+ ** x, y, z = fruits
+ ** print(x)
+ ** print(y)
+ ** print(z)

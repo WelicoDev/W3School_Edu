@@ -1,0 +1,19 @@
+# To'plamdan nusxa oling fruits:
+
+fruits = {"apple", "banana", "cherry"}
+
+x = fruits.copy()
+
+print(x)
+
+///////////////////////////////
+
+Ta'rifi va qo'llanilishi
+Usul copy()to'plamdan nusxa ko'chiradi.
+
+Sintaksis
+set.copy()
+Parametr qiymatlari
+Parametrlar yo'q
+
+

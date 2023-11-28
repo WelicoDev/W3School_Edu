@@ -1,0 +1,17 @@
+Python List insert() usuli
+
+Misol
+Ro'yxatning ikkinchi elementi sifatida "to'q sariq" qiymatini kiriting fruit:
+
+fruits = ['apple', 'banana', 'cherry']
+
+fruits.insert(1, "orange")
+Ta'rifi va qo'llanilishi
+Usul insert()belgilangan qiymatni belgilangan joyga kiritadi.
+
+Sintaksis
+list.insert(pos, elmnt)
+Parametr qiymatlari
+Parameter	Description
+pos	Required. A number specifying in which position to insert the value
+elmnt	Required. An element of any type (string, number, object etc.)

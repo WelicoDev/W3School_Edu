@@ -1,0 +1,54 @@
+Ichki lug'atlar
+Lug'at lug'atlarni o'z ichiga olishi mumkin, bu ichki lug'atlar deb ataladi.
+
+Misol
+Uchta lug'atdan iborat lug'at yarating:
+
+myfamily = {
+  "child1" : {
+    "name" : "Emil",
+    "year" : 2004
+  },
+  "child2" : {
+    "name" : "Tobias",
+    "year" : 2007
+  },
+  "child3" : {
+    "name" : "Linus",
+    "year" : 2011
+  }
+}
+
+///////////////////////////////////////////////////////////
+
+Misol
+Uchta lug'at yarating, so'ngra qolgan uchta lug'atni o'z ichiga olgan bitta lug'at yarating:
+
+child1 = {
+  "name" : "Emil",
+  "year" : 2004
+}
+child2 = {
+  "name" : "Tobias",
+  "year" : 2007
+}
+child3 = {
+  "name" : "Linus",
+  "year" : 2011
+}
+
+myfamily = {
+  "child1" : child1,
+  "child2" : child2,
+  "child3" : child3
+}
+
+////////////////////////////////////////////////////////////////
+
+Ichki lug'atlardagi elementlarga kirish
+Ichki lug'atdagi elementlarga kirish uchun siz tashqi lug'atdan boshlab lug'atlar nomidan foydalanasiz:
+
+Misol
+2-bolaning ismini chop eting:
+
+print(myfamily["child2"]["name"])

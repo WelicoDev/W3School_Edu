@@ -1,0 +1,107 @@
+Mantiqiy qiymatlar
+Dasturlashda siz ko'pincha ifoda Trueyoki ekanligini bilishingiz kerak False.
+
+Siz Python-da har qanday ifodani baholashingiz va ikkita javobdan birini olishingiz mumkin Trueyoki False.
+
+Ikki qiymatni solishtirganda, ifoda baholanadi va Python mantiqiy javobni qaytaradi:
+
+print(10 > 9)
+print(10 == 9)
+print(10 < 9)
+
+If iborasida shartni bajarganingizda, Python Trueyoki ni qaytaradi False:
+
+Misol
+TrueShart yoki quyidagilarga qarab xabarni chop eting False:
+
+a = 200
+b = 33
+
+if b > a:
+  print("b is greater than a")
+else:
+  print("b is not greater than a")
+
+Qiymatlar va o'zgaruvchilarni baholash
+Funktsiya bool()har qanday qiymatni baholashga imkon beradi va sizga Trueyoki False evaziga,
+
+Misol
+Satr va raqamni baholang:
+
+print(bool("Hello"))
+print(bool(15))
+
+Aksariyat qadriyatlar haqiqatdir
+TrueDeyarli har qanday qiymat, agar u qandaydir tarkibga ega bo'lsa, baholanadi .
+
+Bo'sh satrlardan tashqari har qanday satr True.
+
+Har qanday raqam True, bundan mustasno 0.
+
+Har qanday ro'yxat, kortej, to'plam va lug'at Truebo'shlardan tashqari .
+
+Misol
+Quyidagilar True qaytaradi:
+
+bool("abc")
+bool(123)
+bool(["apple", "cherry", "banana"])
+
+Ba'zi qiymatlar noto'g'ri
+Darhaqiqat, , , , raqam va qiymat Falsekabi bo'sh qiymatlardan tashqari ga baho beradigan qiymatlar ko'p emas . Va, albatta, qiymat ga baholanadi .()[]{}""0NoneFalseFalse
+
+Misol
+Quyidagilar False qiymatini qaytaradi:
+
+bool(False)
+bool(None)
+bool(0)
+bool("")
+bool(())
+bool([])
+bool({})
+
+Bu holda yana bir qiymat yoki ob'ekt ni baholaydi False, ya'ni sizda yoki __len__qaytaruvchi funksiyaga ega sinfdan yaratilgan ob'ektingiz bo'lsa :0False
+
+Misol
+class myclass():
+  def __len__(self):
+    return 0
+
+myobj = myclass()
+print(bool(myobj))
+
+
+Funktsiyalar mantiqiy qiymatni qaytarishi mumkin
+Mantiqiy qiymatni qaytaradigan funksiyalarni yaratishingiz mumkin:
+
+Misol
+Funktsiyaning javobini chop eting:
+
+def myFunction() :
+  return True
+
+print(myFunction())
+
+Funktsiyaning mantiqiy javobi asosida kodni bajarishingiz mumkin:
+
+Misol
+Chop etish "HA!" agar funktsiya True qiymatini qaytarsa, aks holda "YO'Q!" ni chop eting:
+
+def myFunction() :
+  return True
+
+if myFunction():
+  print("YES!")
+else:
+  print("NO!")
+
+
+isinstance() Python shuningdek , ob'ektning ma'lum bir ma'lumot turiga tegishli ekanligini aniqlash uchun ishlatilishi mumkin bo'lgan funktsiya kabi mantiqiy qiymatni qaytaradigan ko'plab o'rnatilgan funktsiyalarga ega :
+
+Misol
+Ob'ekt butun son yoki yo'qligini tekshiring:
+
+x = 200
+print(isinstance(x, int))
+

@@ -1,0 +1,34 @@
+Python sintaksisini bajaring
+
+>>> print("Hello, World!")
+Hello, World!
+
+Yoki serverda python faylini yaratib, .py fayl kengaytmasidan foydalanib va ​​uni Buyruqlar qatorida ishga tushiring:
+
+ **C:\Users\Your Name>python myfile.py
+
+Python indentation
+Indentatsiya kod satrining boshidagi bo'shliqlarni bildiradi.
+
+Boshqa dasturlash tillarida koddagi chekinish faqat o'qilishi uchun bo'lsa, Python-da chekinish juda muhim.
+
+Python kod blokini ko'rsatish uchun chiziqdan foydalanadi.
+
+MisolO'zingizning Python serveringizni oling
+if 5 > 2:
+  print("Five is greater than two!")
+
+Python o'zgaruvchilari
+Pythonda o'zgaruvchilar unga qiymat tayinlaganingizda yaratiladi:
+
+x = 5
+y = "Hello, World!"
+
+Izohlar
+Python kod ichidagi hujjatlar uchun sharhlash qobiliyatiga ega.
+
+Sharhlar # bilan boshlanadi va Python qatorning qolgan qismini izoh sifatida ko'rsatadi:
+
+ ** #This is a comment.
+ ** print("Hello, World!")
+

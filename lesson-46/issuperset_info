@@ -1,0 +1,36 @@
+Misol
+Agar to'plamda barcha elementlar ymavjud bo'lsa, True qiymatini qaytaring x:
+
+x = {"f", "e", "d", "c", "b", "a"}
+y = {"a", "b", "c"}
+
+z = x.issuperset(y)
+
+print(z)
+
+////////////////////////////////////////////////////////////////////////////////
+
+Ta'rifi va qo'llanilishi
+issuperset()Agar belgilangan to'plamdagi barcha elementlar asl to'plamda mavjud bo'lsa, usul "True" ni qaytaradi, aks holda "False" ni qaytaradi .
+
+Sintaksis
+set.issuperset(set)
+Parametr qiymatlari
+Parameter	Description
+set	----   Required. The set to search for equal items in
+
+
+/////////////////////////////////////////////////////////////////////////////
+
+Ko'proq misollar
+Misol
+Belgilangan to'plamda barcha elementlar mavjud bo'lmasa-chi?
+
+Agar to'plamdagi barcha elementlar yto'plamda mavjud bo'lmasa, False qiymatini qaytaring x:
+
+x = {"f", "e", "d", "c", "b"}
+y = {"a", "b", "c"}
+
+z = x.issuperset(y)
+
+print(z)

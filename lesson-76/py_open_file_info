@@ -1,0 +1,44 @@
+Python fayli ochiq
+Fayl bilan ishlash har qanday veb-ilovaning muhim qismidir.
+
+Python fayllarni yaratish, o'qish, yangilash va o'chirish uchun bir nechta funktsiyalarga ega.
+
+Fayl bilan ishlash
+Python da fayllar bilan ishlashning asosiy funksiyasi funksiya hisoblanadi open().
+
+Funktsiya open()ikkita parametrni oladi; fayl nomi va rejimi .
+
+Faylni ochishning to'rt xil usuli (rejimi) mavjud:
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+"r"- O'qish - Standart qiymat. Faylni o'qish uchun ochadi, agar fayl mavjud bo'lmasa, xato
+
+"a"- Qo'shish - faylni qo'shish uchun ochadi, agar u mavjud bo'lmasa, uni yaratadi
+
+"w"- Write - faylni yozish uchun ochadi, agar u mavjud bo'lmasa, uni yaratadi
+
+"x"- Yaratish - Belgilangan faylni yaratadi, agar fayl mavjud bo'lsa, xatoni qaytaradi
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Bundan tashqari, fayl ikkilik yoki matn rejimi sifatida ishlashi kerakligini belgilashingiz mumkin
+
+"t"- Matn - Standart qiymat. Matn rejimi
+
+"b"- Ikkilik - Ikkilik rejim (masalan, tasvirlar)
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Sintaksis
+O'qish uchun faylni ochish uchun fayl nomini ko'rsatish kifoya:
+
+f = open("demofile.txt")
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+"r"  ---- O'qish va matn uchun standart qiymatlar bo'lgani uchun "t"ularni ko'rsatish shart emas.
+
+Eslatma: Fayl mavjudligiga ishonch hosil qiling, aks holda siz xatoga yo'l qo'yasiz.
+

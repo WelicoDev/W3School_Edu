@@ -1,0 +1,29 @@
+Har bir so'z katta harf bilan boshlanganligini tekshiring:
+
+txt = "Hello, And Welcome To My World!"
+
+x = txt.istitle()
+
+print(x)
+
+
+Ta'rifi va qo'llanilishi
+istitle()Agar matndagi barcha so'zlar katta harf bilan boshlansa, VA so'zning qolgan qismi kichik harflar bo'lsa, usul "True" qiymatini qaytaradi, aks holda "False" .
+
+Belgilar va raqamlar e'tiborga olinmaydi.
+
+Sintaksis
+string.istitle()
+
+Har bir so'z katta harf bilan boshlanganligini tekshiring:
+
+a = "HELLO, AND WELCOME TO MY WORLD"
+b = "Hello"
+c = "22 Names"
+d = "This Is %'!?"
+
+print(a.istitle())
+print(b.istitle())
+print(c.istitle())
+print(d.istitle())
+

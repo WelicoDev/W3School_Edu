@@ -1,0 +1,60 @@
+Mavjud faylga yozing
+Mavjud faylga yozish uchun funktsiyaga parametr qo'shishingiz kerak open():
+
+"a"- Append - fayl oxiriga qo'shiladi
+
+"w"- Write - har qanday mavjud kontentni qayta yozadi
+
+Misol
+"demofile2.txt" faylini oching va faylga tarkibni qo'shing:
+
+f = open("demofile2.txt", "a")
+f.write("Now the file has more content!")
+f.close()
+
+#open and read the file after the appending:
+f = open("demofile2.txt", "r")
+print(f.read())
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Misol
+"demofile3.txt" faylini oching va tarkibni qayta yozing:
+
+f = open("demofile3.txt", "w")
+f.write("Woops! I have deleted the content!")
+f.close()
+
+#open and read the file after the overwriting:
+f = open("demofile3.txt", "r")
+print(f.read())
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Eslatma: "w" usuli butun faylni qayta yozadi
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Yangi fayl yarating
+Python-da yangi fayl yaratish uchun open()quyidagi parametrlardan biri bilan usuldan foydalaning:
+
+"x"- Yaratish - fayl yaratadi, agar fayl mavjud bo'lsa, xatoni qaytaradi
+
+"a"- Qo'shish - ko'rsatilgan fayl mavjud bo'lmasa fayl yaratadi
+
+"w"- Write - ko'rsatilgan fayl mavjud bo'lmasa fayl yaratadi
+
+Misol
+"myfile.txt" nomli fayl yarating:
+
+f = open("myfile.txt", "x")
+Natija: yangi bo'sh fayl yaratildi!
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Natija: yangi bo'sh fayl yaratildi!
+
+Misol
+Agar u mavjud bo'lmasa, yangi fayl yarating:
+
+f = open("myfile.txt", "w")

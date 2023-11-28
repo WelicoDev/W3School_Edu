@@ -1,0 +1,27 @@
+Har bir satr roʻyxat elementi boʻlgan qatorni roʻyxatga ajrating:
+
+txt = "Thank you for the music\nWelcome to the jungle"
+
+x = txt.splitlines()
+
+print(x)
+
+Ta'rifi va qo'llanilishi
+Usul splitlines()qatorni ro'yxatga ajratadi. Ajratish satr uzilishlarida amalga oshiriladi.
+
+Sintaksis
+string.splitlines(keeplinebreaks)
+
+Parametr qiymatlari
+Parameter	Description
+keeplinebreaks ----	Optional. Specifies if the line breaks should be included (True), or not (False). Default value is False
+
+
+Misol
+Satrni ajrating, lekin qatorlarni uzib qo'ying:
+
+txt = "Thank you for the music\nWelcome to the jungle"
+
+x = txt.splitlines(True)
+
+print(x)

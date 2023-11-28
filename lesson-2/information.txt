@@ -1,0 +1,37 @@
+Python o'rnatish
+Ko'pgina shaxsiy kompyuterlar va Mac kompyuterlarida python allaqachon o'rnatilgan bo'ladi.
+
+Windows kompyuteringizda python o'rnatilganligini tekshirish uchun boshlang'ich satrida Python-ni qidiring yoki Buyruqlar qatorida (cmd.exe) quyidagilarni bajaring:
+
+ **C:\Users\Your Name>python --version
+
+Linux yoki Mac-da python o'rnatilganligini tekshirish uchun Linux-da buyruq qatorini yoki Mac-da Terminalni oching va yozing:
+
+ **python --version
+
+Agar kompyuteringizda Python o'rnatilmaganligini aniqlasangiz, uni quyidagi veb-saytdan bepul yuklab olishingiz mumkin: https://www.python.org/
+
+Python faylini ishga tushirish usuli buyruq satrida shunday:
+
+ **C:\Users\Your Name>python helloworld.py
+
+Bu erda "helloworld.py" python faylingizning nomi.
+
+Python buyruq qatori
+Pythonda qisqa miqdordagi kodni sinab ko'rish uchun ba'zan faylga kodni yozmaslik eng tez va osondir. Bu Python buyruq satri sifatida ishga tushirilishi mumkinligi sababli amalga oshirildi.
+
+Windows, Mac yoki Linux buyruq satrida quyidagilarni yozing:
+
+ **C:\Users\Your Name>python
+
+Yoki, agar "python" buyrug'i ishlamasa, "py" ni sinab ko'rishingiz mumkin:
+ **C:\Users\Your Name>py
+
+C:\Users\WelicoDev>python
+Python 3.12.0 (tags/v3.12.0:0fb18b0, Oct  2 2023, 13:03:39) [MSC v.1935 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+
+Python buyruq satrida ishlashni tugatganingizda, python buyruq qatori interfeysidan chiqish uchun quyidagilarni yozishingiz mumkin:
+
+exit()

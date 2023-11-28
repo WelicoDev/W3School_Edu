@@ -1,0 +1,66 @@
+Elementni olib tashlash
+To‘plamdagi elementni olib tashlash uchun , remove()yoki discard()usulidan foydalaning.
+
+MisolO'zingizning Python serveringizni oling
+Ushbu usul yordamida "banan" ni olib tashlang remove() :
+
+thisset = {"apple", "banana", "cherry"}
+
+thisset.remove("banana")
+
+print(thisset)
+Eslatma: Agar olib tashlanadigan element mavjud bo'lmasa, remove()xato paydo bo'ladi.
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////
+
+
+Misol
+Ushbu usul yordamida "banan" ni olib tashlang discard() :
+
+
+Eslatma: Agar o'chiradigan element mavjud bo'lmasa, xatodiscard() EMAS .
+
+
+////////////////////////////////////////////////////////////////////////////
+
+pop()Elementni olib tashlash uchun usuldan ham foydalanishingiz mumkin , lekin bu usul tasodifiy elementni olib tashlaydi, shuning uchun qaysi element olib tashlanishiga ishonchingiz komil emas.
+
+Usulning qaytish qiymati pop()olib tashlangan element hisoblanadi.
+
+Misol
+Usul yordamida tasodifiy elementni olib tashlang pop() :
+
+thisset = {"apple", "banana", "cherry"}
+
+x = thisset.pop()
+
+print(x)
+
+print(thisset)
+
+
+Eslatma: To'plamlar tartibsizdir , shuning uchun usuldan foydalanganda pop()qaysi element olib tashlanishini bilmay qolasiz.
+
+Misol
+Usul clear() to'plamni bo'shatadi:
+
+thisset = {"apple", "banana", "cherry"}
+
+thisset.clear()
+
+print(thisset)
+/////////////////////////////////////////////////////////////
+
+Misol
+Kalit delso'z to'plamni butunlay o'chirib tashlaydi:
+
+thisset = {"apple", "banana", "cherry"}
+
+del thisset
+
+print(thisset)

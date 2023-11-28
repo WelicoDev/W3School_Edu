@@ -1,0 +1,33 @@
+Ta'rifi va qo'llanilishi
+Usul title()har bir so'zdagi birinchi belgi katta bo'lgan satrni qaytaradi. Sarlavha yoki sarlavha kabi.
+
+Agar so'zda raqam yoki belgi bo'lsa, undan keyingi birinchi harf katta harfga aylantiriladi.
+
+Sintaksis
+string.title()
+
+Har bir so'zning birinchi harfini katta harf bilan yozing:
+
+txt = "Welcome to my world"
+
+x = txt.title()
+
+print(x)
+
+Misol
+Har bir so'zning birinchi harfini katta harf bilan yozing:
+
+txt = "Welcome to my 2nd world"
+
+x = txt.title()
+
+print(x)
+
+Misol
+E'tibor bering, alifbo bo'lmagan harfdan keyingi birinchi harf katta harfga aylantiriladi:
+
+txt = "hello b2b2b2 and 3g3g3g"
+
+x = txt.title()
+
+print(x)

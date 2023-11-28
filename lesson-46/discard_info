@@ -1,0 +1,18 @@
+Misol
+To'plamdan "banan" ni olib tashlang:
+
+fruits = {"apple", "banana", "cherry"}
+
+fruits.discard("banana")
+
+print(fruits)
+Ta'rifi va qo'llanilishi
+Usul discard()belgilangan elementni to'plamdan olib tashlaydi.
+
+Bu usul usuldan farq qiladi remove(), chunki ko'rsatilgan element mavjud bo'lmasa, remove() usul xatolikni keltirib chiqaradidiscard() va usul yo'q .
+
+Sintaksis
+set.discard(value)
+Parametr qiymatlari
+Parameter	Description
+value	---- Required. The item to search for, and remove

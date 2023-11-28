@@ -1,0 +1,15 @@
+Ta'rifi va qo'llanilishi
+isalpha()Agar barcha belgilar alifbo harflari (az) bo'lsa, usul "True" ni qaytaradi .
+
+Alifbo harflari bo'lmagan belgilarga misol: (bo'shliq)!#%&? va boshqalar.
+
+Sintaksis
+string.isalpha()
+
+Matndagi barcha belgilar alifbo tartibida ekanligini tekshiring:
+
+txt = "Company10"
+
+x = txt.isalpha()
+
+print(x)

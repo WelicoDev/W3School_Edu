@@ -1,0 +1,31 @@
+Satrning boshida va oxiridagi bo'shliqlarni olib tashlang:
+
+txt = "     banana     "
+
+x = txt.strip()
+
+print("of all fruits", x, "is my favorite")
+
+
+Ta'rifi va qo'llanilishi
+Usul strip()oldingi va keyingi bo'shliqlarni olib tashlaydi.
+
+Satrning boshidagi yetakchi, oxiridagi ma’noni bildiradi.
+
+Qaysi belgilarni olib tashlashni belgilashingiz mumkin, agar bo'lmasa, bo'sh joylar o'chiriladi.
+
+Sintaksis
+string.strip(characters)
+
+Parametr qiymatlari
+Parameter	Description
+characters	---- Optional. A set of characters to remove as leading/trailing characters
+
+Misol
+Boshlovchi va keyingi belgilarni olib tashlang:
+
+txt = ",,,,,rrttgg.....banana....rrr"
+
+x = txt.strip(",.grt")
+
+print(x)

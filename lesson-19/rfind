@@ -1,0 +1,37 @@
+Ta'rifi va qo'llanilishi
+Usul rfind()belgilangan qiymatning oxirgi takrorlanishini topadi.
+
+rfind()Agar qiymat topilmasa, usul -1 ni qaytaradi .
+
+Usul rfind()deyarli usul bilan bir xil rindex() . Quyidagi misolga qarang.
+
+Sintaksis
+string.rfind(value, start, end)
+
+
+Misol
+Matnning qayerda oxirgi "e" harfi bor?:
+
+txt = "Hello, welcome to my world."
+
+x = txt.rfind("e")
+
+print(x)
+
+Misol
+5 dan 10 gacha bo'lgan o'rinlarni qidirishda "e" harfi oxirgi marta matnda qayerda uchraydi?:
+
+txt = "Hello, welcome to my world."
+
+x = txt.rfind("e", 5, 10)
+
+print(x)
+
+
+Misol
+Agar qiymat topilmasa, rfind() usuli -1 ni qaytaradi, lekin rindex() usuli istisno keltiradi:
+
+txt = "Hello, welcome to my world."
+
+print(txt.rfind("q"))
+print(txt.rindex("q"))

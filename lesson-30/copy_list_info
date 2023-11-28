@@ -1,0 +1,24 @@
+Roʻyxatni nusxalash
+Siz roʻyxatni oddiygina terish orqali nusxa koʻchira olmaysiz list2 = list1, chunki: faqat ga havolalist2 boʻladi va ichiga kiritilgan oʻzgartirishlar avtomatik ravishda ichida ham amalga oshiriladi .list1list1list2
+
+Nusxa olish usullari mavjud, ulardan biri o'rnatilgan List usulidan foydalanishdir copy().
+
+Usul bilan ro'yxatning nusxasini yarating copy():
+
+thislist = ["apple", "banana", "cherry"]
+mylist = thislist.copy()
+print(mylist)
+
+/////////////////////////////
+Nusxa olishning yana bir usuli - o'rnatilgan usuldan foydalanish list().
+
+Misol
+Usul bilan ro'yxatning nusxasini yarating list():
+
+thislist = ["apple", "banana", "cherry"]
+mylist = list(thislist)
+print(mylist)
+
+//////////////////////////////////////////////////////////
+
+

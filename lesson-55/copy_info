@@ -1,0 +1,24 @@
+Python Dictionary copy() usuli
+
+Misol
+Lug'atdan nusxa oling car:
+
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+x = car.copy()
+
+print(x)
+
+Ta'rifi va qo'llanilishi
+Usul copy()belgilangan lug'atning nusxasini qaytaradi.
+
+Sintaksis
+dictionary.copy()
+
+
+Parametr qiymatlari
+Parametrlar yo'q

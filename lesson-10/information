@@ -1,0 +1,11 @@
+Python sukut bo'yicha quyidagi toifalarga o'rnatilgan quyidagi ma'lumotlar turlariga ega:
+
+ ** Matn turi:	str
+ ** Raqamli turlar:	int, float, complex
+ ** Tartib turlari:	list, tuple, range
+ ** Xaritalash turi:	dict
+ ** To'plam turlari:	set,frozenset
+ ** Mantiqiy turi:	bool
+ ** Ikkilik turlari:	bytes, bytearray, memoryview
+ ** Yo'q turi:	NoneType
+

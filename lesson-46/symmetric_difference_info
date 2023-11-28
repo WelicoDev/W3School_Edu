@@ -1,0 +1,21 @@
+Python Set symmetric_difference() usuli
+
+Misol
+Ikkala to'plamdagi barcha elementlarni o'z ichiga olgan to'plamni qaytaring, ikkala to'plamda mavjud bo'lgan elementlardan tashqari:
+
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+
+z = x.symmetric_difference(y)
+
+print(z)
+Ta'rifi va qo'llanilishi
+Usul symmetric_difference()ikkala to'plamdagi barcha elementlarni o'z ichiga olgan to'plamni qaytaradi, lekin ikkala to'plamda mavjud bo'lgan elementlarni emas.
+
+Ma'nosi: Qaytarilgan to'plamda ikkala to'plamda ham mavjud bo'lmagan narsalar aralashmasi mavjud.
+
+Sintaksis
+set.symmetric_difference(set)
+Parametr qiymatlari
+Parameter	Description
+set	Required. The set to check for matches in
